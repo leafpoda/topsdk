@@ -6,5 +6,9 @@
             "email": "sholva@qq.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+	    "psr-4": {"topsdk\\": "src/"},
+	    "files": ["src/TopSdk.php"]
+	}
 }
