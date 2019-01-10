@@ -1,5 +1,7 @@
 {
     "name": "leafpoda/topsdk",
+    "description": "淘宝SDK文件",
+    "license": "MIT",
     "authors": [
         {
             "name": "sholva",
@@ -8,7 +10,7 @@
     ],
     "require": {},
     "autoload": {
-	    "psr-4": {"topsdk\\": "src/"},
-	    "files": ["src/TopSdk.php"]
-	}
+        "psr-4": {"topsdk\\": "src/"},
+        "files": ["src/TopSdk.php"]
+    }
 }
