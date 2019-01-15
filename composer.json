@@ -10,7 +10,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"topsdk\\": "src/"},
         "files": ["src/TopSdk.php"]
     }
 }
