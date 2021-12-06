@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.campaign.budget.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2020.09.25
  */
 class SimbaCampaignBudgetUpdateRequest
 {
@@ -86,7 +86,7 @@ class SimbaCampaignBudgetUpdateRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxValue($this->budget,99999,"budget");
+		RequestCheckUtil::checkMaxValue($this->budget,20000000,"budget");
 		RequestCheckUtil::checkMinValue($this->budget,30,"budget");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 		RequestCheckUtil::checkNotNull($this->useSmooth,"useSmooth");

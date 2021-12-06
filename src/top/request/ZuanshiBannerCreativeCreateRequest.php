@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.creative.create request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.08.20
  */
 class ZuanshiBannerCreativeCreateRequest
 {
@@ -21,6 +21,11 @@ class ZuanshiBannerCreativeCreateRequest
 	 * 图片内容.图片最大为2M,只支持jpg,png,jpeg
 	 **/
 	private $image;
+	
+	/** 
+	 * 图片中的商品
+	 **/
+	private $imgItemIds;
 	
 	/** 
 	 * 是否需要pc转无线链接，true：是，false：否
@@ -67,6 +72,17 @@ class ZuanshiBannerCreativeCreateRequest
 		return $this->image;
 	}
 
+	public function setImgItemIds($imgItemIds)
+	{
+		$this->imgItemIds = $imgItemIds;
+		$this->apiParas["img_item_ids"] = $imgItemIds;
+	}
+
+	public function getImgItemIds()
+	{
+		return $this->imgItemIds;
+	}
+
 	public function setIsTransToWifi($isTransToWifi)
 	{
 		$this->isTransToWifi = $isTransToWifi;
@@ -105,6 +121,7 @@ class ZuanshiBannerCreativeCreateRequest
 		RequestCheckUtil::checkNotNull($this->catId,"catId");
 		RequestCheckUtil::checkNotNull($this->clickUrl,"clickUrl");
 		RequestCheckUtil::checkNotNull($this->image,"image");
+		RequestCheckUtil::checkMaxListSize($this->imgItemIds,999,"imgItemIds");
 		RequestCheckUtil::checkNotNull($this->name,"name");
 	}
 	

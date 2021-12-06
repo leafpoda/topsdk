@@ -3,7 +3,7 @@
  * TOP API: taobao.openim.track.getsummary request
  * 
  * @author auto create
- * @since 1.0, 2015.11.03
+ * @since 1.0, 2019.03.07
  */
 class OpenimTrackGetsummaryRequest
 {

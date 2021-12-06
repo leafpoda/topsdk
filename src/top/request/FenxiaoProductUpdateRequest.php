@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2019.06.11
  */
 class FenxiaoProductUpdateRequest
 {

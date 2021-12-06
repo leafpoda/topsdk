@@ -3,7 +3,7 @@
  * TOP API: taobao.item.sku.add request
  * 
  * @author auto create
- * @since 1.0, 2018.08.07
+ * @since 1.0, 2019.03.28
  */
 class ItemSkuAddRequest
 {
@@ -23,7 +23,7 @@ class ItemSkuAddRequest
 	private $lang;
 	
 	/** 
-	 * Sku所属商品数字id，可通过 taobao.item.get 获取。必选
+	 * Sku所属商品数字id。必选
 	 **/
 	private $numIid;
 	

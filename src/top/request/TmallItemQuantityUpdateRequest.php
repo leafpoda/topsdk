@@ -3,7 +3,7 @@
  * TOP API: tmall.item.quantity.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.03.01
  */
 class TmallItemQuantityUpdateRequest
 {
@@ -13,7 +13,7 @@ class TmallItemQuantityUpdateRequest
 	private $itemId;
 	
 	/** 
-	 * 商品库存数；增量编辑方式支持正数、负数
+	 * 商品库存数；增量编辑方式支持正数、负数。（无SKU商品使用这个字段）
 	 **/
 	private $itemQuantity;
 	

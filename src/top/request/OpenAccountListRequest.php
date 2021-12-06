@@ -3,17 +3,17 @@
  * TOP API: taobao.open.account.list request
  * 
  * @author auto create
- * @since 1.0, 2015.08.10
+ * @since 1.0, 2018.07.26
  */
 class OpenAccountListRequest
 {
 	/** 
-	 * ISV自己账号的id列表，isvAccountId和openAccountId二选一必填
+	 * ISV自己账号的id列表，isvAccountId和openAccountId二选一必填, 每次最多查询 20 个账户
 	 **/
 	private $isvAccountIds;
 	
 	/** 
-	 * Open Account的id列表
+	 * Open Account的id列表, 每次最多查询 20 个账户
 	 **/
 	private $openAccountIds;
 	

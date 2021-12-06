@@ -3,7 +3,7 @@
  * TOP API: taobao.open.account.index.find request
  * 
  * @author auto create
- * @since 1.0, 2015.11.03
+ * @since 1.0, 2018.07.26
  */
 class OpenAccountIndexFindRequest
 {
@@ -13,7 +13,7 @@ class OpenAccountIndexFindRequest
 	private $indexType;
 	
 	/** 
-	 * 具体值
+	 * 具体值，当索引类型是 OPEN_ID 是，格式为 oauthPlatform|openId，即使用竖线分隔的组合值
 	 **/
 	private $indexValue;
 	

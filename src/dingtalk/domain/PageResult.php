@@ -1,20 +1,30 @@
 <?php
 
 /**
- * result
+ * pageResult
  * @author auto create
  */
 class PageResult
 {
 	
 	/** 
-	 * 表示下次查询的游标，为null代表没有更多的数据了
+	 * 是否还有更多数据
 	 **/
-	public $next_cursor;
+	public $has_more;
 	
 	/** 
-	 * 分页列表
+	 * 下次翻页的入参
 	 **/
-	public $page_list;	
+	public $offset;
+	
+	/** 
+	 * 能获取的总条数(offset+size不能超过这个值)
+	 **/
+	public $total;
+	
+	/** 
+	 * value
+	 **/
+	public $value_list;	
 }
 ?>

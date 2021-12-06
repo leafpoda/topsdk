@@ -245,7 +245,6 @@ class TopClient
 		{
 			$sysParams["session"] = $session;
 		}
-		$apiParams = array();
 		//获取业务参数
 		$apiParams = $request->getApiParas();
 

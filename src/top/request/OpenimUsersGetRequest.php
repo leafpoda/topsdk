@@ -3,7 +3,7 @@
  * TOP API: taobao.openim.users.get request
  * 
  * @author auto create
- * @since 1.0, 2015.12.09
+ * @since 1.0, 2018.07.26
  */
 class OpenimUsersGetRequest
 {

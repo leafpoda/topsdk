@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.advertiser.creative.rpts.total.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2018.12.11
  */
 class ZuanshiAdvertiserCreativeRptsTotalGetRequest
 {

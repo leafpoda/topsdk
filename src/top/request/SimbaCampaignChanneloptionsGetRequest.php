@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.campaign.channeloptions.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2018.08.21
  */
 class SimbaCampaignChanneloptionsGetRequest
 {

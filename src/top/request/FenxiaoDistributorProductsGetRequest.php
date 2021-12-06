@@ -8,7 +8,7 @@
 class FenxiaoDistributorProductsGetRequest
 {
 	/** 
-	 * download_status
+	 * 下载状态，默认是未下载；可选值：UNDOWNLOAD：未下载 ；DOWNLOADED：已下载；下载：指将供应商授权的产品发布为店铺新宝贝的过程，下载成功后，分销商需要将新生成的宝贝重新编辑并上架后售卖。
 	 **/
 	private $downloadStatus;
 	
@@ -68,7 +68,7 @@ class FenxiaoDistributorProductsGetRequest
 	private $timeType;
 	
 	/** 
-	 * trade_type
+	 * 分销方式；可选择：AGENT ： 代销；DEALER：经销；DIRECT：直营
 	 **/
 	private $tradeType;
 	

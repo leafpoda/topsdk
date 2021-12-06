@@ -3,7 +3,7 @@
  * TOP API: taobao.item.joint.img request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.11.08
  */
 class ItemJointImgRequest
 {
@@ -28,7 +28,7 @@ class ItemJointImgRequest
 	private $numIid;
 	
 	/** 
-	 * 图片URL,图片空间图片的相对地址
+	 * 图片URL,图片空间图片的相对地址，支持的文件类型：jpg,jpeg,png
 	 **/
 	private $picPath;
 	

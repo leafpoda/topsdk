@@ -38,6 +38,26 @@ class Order
 	public $bind_oids;
 	
 	/** 
+	 * bind_oids字段的升级，在交易成功和交易关闭状态下也能获取到，支持返回绑定的多个子订单，多个子订单以半角逗号分隔
+	 **/
+	public $bind_oids_all_status;
+	
+	/** 
+	 * 为tmall.daogoubao.cloudstore时表示云店链路
+	 **/
+	public $biz_code;
+	
+	/** 
+	 * 同城购订单source
+	 **/
+	public $brand_light_shop_source;
+	
+	/** 
+	 * 同城购门店id
+	 **/
+	public $brand_light_shop_store_id;
+	
+	/** 
 	 * 买家昵称
 	 **/
 	public $buyer_nick;
@@ -138,6 +158,26 @@ class Order
 	public $cl_tail_payment;
 	
 	/** 
+	 * 为1，且bizCode不为tmall.daogoubao.cloudstore时，为旗舰店订单
+	 **/
+	public $cloud_store;
+	
+	/** 
+	 * 云店pos单号
+	 **/
+	public $cloud_store_bind_pos;
+	
+	/** 
+	 * 云店改价用token
+	 **/
+	public $cloud_store_token;
+	
+	/** 
+	 * 最晚揽收时间
+	 **/
+	public $collect_time;
+	
+	/** 
 	 * 天猫搭配宝
 	 **/
 	public $combo_id;
@@ -148,14 +188,34 @@ class Order
 	public $consign_time;
 	
 	/** 
+	 * 有值表示信用购订单；1表示信用购一期；2表示信用购二期；3表示信用购三期
+	 **/
+	public $credit_buy;
+	
+	/** 
 	 * 定制信息
 	 **/
 	public $customization;
 	
 	/** 
+	 * 物流截单时间，分钟
+	 **/
+	public $cutoff_minutes;
+	
+	/** 
+	 * 最晚发货时间
+	 **/
+	public $delivery_time;
+	
+	/** 
 	 * 子订单级订单优惠金额。精确到2位小数;单位:元。如:200.07，表示:200元7分
 	 **/
 	public $discount_fee;
+	
+	/** 
+	 * 最晚派送时间
+	 **/
+	public $dispatch_time;
 	
 	/** 
 	 * 分摊之后的实付金额
@@ -176,6 +236,21 @@ class Order
 	 * 子订单的交易结束时间说明：子订单有单独的结束时间，与主订单的结束时间可能有所不同，在有退款发起的时候或者是主订单分阶段付款的时候，子订单的结束时间会早于主订单的结束时间，所以开放这个字段便于订单结束状态的判断
 	 **/
 	public $end_time;
+	
+	/** 
+	 * 预计送达时间
+	 **/
+	public $es_date;
+	
+	/** 
+	 * 预计配送时间段
+	 **/
+	public $es_range;
+	
+	/** 
+	 * 物流时效，相对时间，单位是天
+	 **/
+	public $es_time;
 	
 	/** 
 	 * 子订单预计发货时间
@@ -203,6 +278,11 @@ class Order
 	public $et_verified_shop_name;
 	
 	/** 
+	 * 透出的额外信息
+	 **/
+	public $extend_info;
+	
+	/** 
 	 * 订单履行状态，如喵鲜生极速达：分单完成
 	 **/
 	public $f_status;
@@ -221,6 +301,11 @@ class Order
 	 * 花呗分期期数
 	 **/
 	public $fqg_num;
+	
+	/** 
+	 * 云店是否扣拥
+	 **/
+	public $hj_settle_no_commission;
 	
 	/** 
 	 * 商品的字符串编号(注意：iid近期即将废弃，请用num_iid参数)
@@ -248,9 +333,19 @@ class Order
 	public $is_daixiao;
 	
 	/** 
+	 * 子订单优惠贬值
+	 **/
+	public $is_devalue_fee;
+	
+	/** 
 	 * 是否商家承担手续费
 	 **/
 	public $is_fqg_s_fee;
+	
+	/** 
+	 * 是否是考拉商品订单
+	 **/
+	public $is_kaola;
 	
 	/** 
 	 * 是否超卖
@@ -288,6 +383,11 @@ class Order
 	public $item_memo;
 	
 	/** 
+	 * 服务所属的交易订单号。如果服务为一年包换，则item_oid这笔订单享受改服务的保护
+	 **/
+	public $item_oid;
+	
+	/** 
 	 * 子订单发货的快递公司名称
 	 **/
 	public $logistics_company;
@@ -308,9 +408,24 @@ class Order
 	public $modified;
 	
 	/** 
+	 * 有值表示买家修改了地址；1表示付款后改地址；2表示付款前改地址
+	 **/
+	public $modify_address;
+	
+	/** 
 	 * monthPayment
 	 **/
 	public $month_payment;
+	
+	/** 
+	 * 新零售商家端商品唯一编号
+	 **/
+	public $nr_outer_iid;
+	
+	/** 
+	 * nrReduceInvFail
+	 **/
+	public $nr_reduce_inv_fail;
 	
 	/** 
 	 * 购买数量。取值范围:大于零的整数
@@ -328,6 +443,26 @@ class Order
 	public $o2o_et_order_id;
 	
 	/** 
+	 * 导购员ID
+	 **/
+	public $o2o_guide_id;
+	
+	/** 
+	 * 导购员名称
+	 **/
+	public $o2o_guide_name;
+	
+	/** 
+	 * 门店Id
+	 **/
+	public $o2o_shop_id;
+	
+	/** 
+	 * 门店名称
+	 **/
+	public $o2o_shop_name;
+	
+	/** 
 	 * 子订单编号
 	 **/
 	public $oid;
@@ -338,7 +473,12 @@ class Order
 	public $oid_str;
 	
 	/** 
-	 * top动态字段
+	 * 经销商货品商家编码
+	 **/
+	public $omni_jxs_outerid;
+	
+	/** 
+	 * 子订单扩展属性: is_free_down_payment:是否免首付：true：是，false：否，可选字段 car_back_payment:返还免首付金额，单位：分， car_ref_activity_id:服务商传入活动ID，依赖外部服务商传入；
 	 **/
 	public $order_attr;
 	
@@ -346,6 +486,46 @@ class Order
 	 * 子订单来源,如jhs(聚划算)、taobao(淘宝)、wap(无线)
 	 **/
 	public $order_from;
+	
+	/** 
+	 * 云店接单标记
+	 **/
+	public $order_taking;
+	
+	/** 
+	 * 前N有礼活动id
+	 **/
+	public $os_activity_id;
+	
+	/** 
+	 * 预约配送，用户预约时间
+	 **/
+	public $os_date;
+	
+	/** 
+	 * 前N有礼赠品id
+	 **/
+	public $os_fg_item_id;
+	
+	/** 
+	 * 前N有礼赠品数量
+	 **/
+	public $os_gift_count;
+	
+	/** 
+	 * 预约配送，用户预约时间段
+	 **/
+	public $os_range;
+	
+	/** 
+	 * 前N有礼中奖名次，获得奖品的订单才会有该字段
+	 **/
+	public $os_sort_num;
+	
+	/** 
+	 * 天猫未来店外部 ERP 商品 ID
+	 **/
+	public $out_item_id;
 	
 	/** 
 	 * outUniqueId
@@ -383,9 +563,29 @@ class Order
 	public $pic_path;
 	
 	/** 
+	 * platformSubsidyFee
+	 **/
+	public $platform_subsidy_fee;
+	
+	/** 
 	 * 商品价格。精确到2位小数;单位:元。如:200.07，表示:200元7分
 	 **/
 	public $price;
+	
+	/** 
+	 * 信用购履约结束时间
+	 **/
+	public $promise_end_time;
+	
+	/** 
+	 * 时效服务字段，服务字段，会有多个服务值，以英文半角逗号&quot;,&quot;切割
+	 **/
+	public $promise_service;
+	
+	/** 
+	 * 使用淘金币的数量，以分为单位，和订单标propoint中间那一段一样
+	 **/
+	public $propoint;
 	
 	/** 
 	 * 个人充值红包金额
@@ -403,6 +603,26 @@ class Order
 	public $refund_status;
 	
 	/** 
+	 * 天猫无人店线下店 ID
+	 **/
+	public $retail_store_id;
+	
+	/** 
+	 * 新零售全渠道订单：商家自有货品编码
+	 **/
+	public $rt_omni_outer_sc_id;
+	
+	/** 
+	 * 新零售全渠道订单：后端货品ID
+	 **/
+	public $rt_omni_sc_id;
+	
+	/** 
+	 * 
+	 **/
+	public $s_tariff_fee;
+	
+	/** 
 	 * 卖家昵称
 	 **/
 	public $seller_nick;
@@ -418,9 +638,19 @@ class Order
 	public $seller_type;
 	
 	/** 
+	 * 服务详情的URL地址
+	 **/
+	public $service_detail_url;
+	
+	/** 
 	 * serviceFee
 	 **/
 	public $service_fee;
+	
+	/** 
+	 * 服务数字id
+	 **/
+	public $service_id;
 	
 	/** 
 	 * 仓储信息
@@ -431,6 +661,11 @@ class Order
 	 * 子订单的运送方式（卖家对订单进行多次发货之后，一个主订单下的子订单的运送方式可能不同，用order.shipping_type来区分子订单的运送方式）
 	 **/
 	public $shipping_type;
+	
+	/** 
+	 * 最晚签收时间
+	 **/
+	public $sign_time;
 	
 	/** 
 	 * 商品的最小库存单位Sku的id.可以通过taobao.item.sku.get获取详细的Sku信息
@@ -451,6 +686,16 @@ class Order
 	 * 订单快照URL
 	 **/
 	public $snapshot_url;
+	
+	/** 
+	 * sortInfo
+	 **/
+	public $sort_info;
+	
+	/** 
+	 * 特殊的退款类型，比如直播返现、价保
+	 **/
+	public $special_refund_type;
 	
 	/** 
 	 * 订单状态（请关注此状态，如果为TRADE_CLOSED_BY_TAOBAO状态，则不要对此订单进行发货，切记啊！）。可选值: <ul><li>TRADE_NO_CREATE_PAY(没有创建支付宝交易) </li><li>WAIT_BUYER_PAY(等待买家付款) </li><li>WAIT_SELLER_SEND_GOODS(等待卖家发货,即:买家已付款) </li><li>WAIT_BUYER_CONFIRM_GOODS(等待买家确认收货,即:卖家已发货) </li><li>TRADE_BUYER_SIGNED(买家已签收,货到付款专用) </li><li>TRADE_FINISHED(交易成功) </li><li>TRADE_CLOSED(付款以后用户退款成功，交易自动关闭) </li><li>TRADE_CLOSED_BY_TAOBAO(付款以前，卖家或买家主动关闭交易)</li><li>PAY_PENDING(国际信用卡支付付款确认中)</li></ul>
@@ -493,6 +738,11 @@ class Order
 	public $tax_free;
 	
 	/** 
+	 * 买家修改地址时间
+	 **/
+	public $ti_modify_address_time;
+	
+	/** 
 	 * 门票有效期的key
 	 **/
 	public $ticket_expdate_key;
@@ -506,6 +756,11 @@ class Order
 	 * 订单超时到期时间。格式:yyyy-MM-dd HH:mm:ss
 	 **/
 	public $timeout_action_time;
+	
+	/** 
+	 * 时效服务身份，如tmallPromise代表天猫时效承诺
+	 **/
+	public $timing_promise;
 	
 	/** 
 	 * 商品标题

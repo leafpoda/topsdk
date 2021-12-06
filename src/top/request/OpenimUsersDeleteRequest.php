@@ -3,7 +3,7 @@
  * TOP API: taobao.openim.users.delete request
  * 
  * @author auto create
- * @since 1.0, 2015.07.13
+ * @since 1.0, 2018.07.26
  */
 class OpenimUsersDeleteRequest
 {

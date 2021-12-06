@@ -13,7 +13,7 @@ class SimbaCampaignPlatformUpdateRequest
 	private $campaignId;
 	
 	/** 
-	 * 站内无线频道折扣。百分比，数值必须是大于等于 1小于等于200的整数
+	 * 已经废弃
 	 **/
 	private $mobileDiscount;
 	
@@ -28,7 +28,7 @@ class SimbaCampaignPlatformUpdateRequest
 	private $nonsearchChannels;
 	
 	/** 
-	 * 溢价的百分比，必须是大于等于 1小于等于200的整数
+	 * 已经废弃
 	 **/
 	private $outsideDiscount;
 	

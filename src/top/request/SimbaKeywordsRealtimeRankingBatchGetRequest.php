@@ -13,7 +13,7 @@ class SimbaKeywordsRealtimeRankingBatchGetRequest
 	private $adGroupId;
 	
 	/** 
-	 * 关键词列表集合
+	 * 关键词列表集合,id用半角逗号分割，一次最多20个
 	 **/
 	private $bidwordIds;
 	

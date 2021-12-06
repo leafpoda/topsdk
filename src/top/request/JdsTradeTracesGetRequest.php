@@ -3,10 +3,15 @@
  * TOP API: taobao.jds.trade.traces.get request
  * 
  * @author auto create
- * @since 1.0, 2014-08-28 16:45:57
+ * @since 1.0, 2018.07.25
  */
 class JdsTradeTracesGetRequest
 {
+	/** 
+	 * 是否返回用户的状态(是否存在)
+	 **/
+	private $returnUserStatus;
+	
 	/** 
 	 * 淘宝的订单tid
 	 **/
@@ -14,6 +19,17 @@ class JdsTradeTracesGetRequest
 	
 	private $apiParas = array();
 	
+	public function setReturnUserStatus($returnUserStatus)
+	{
+		$this->returnUserStatus = $returnUserStatus;
+		$this->apiParas["return_user_status"] = $returnUserStatus;
+	}
+
+	public function getReturnUserStatus()
+	{
+		return $this->returnUserStatus;
+	}
+
 	public function setTid($tid)
 	{
 		$this->tid = $tid;

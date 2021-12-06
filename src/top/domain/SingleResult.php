@@ -8,6 +8,11 @@ class SingleResult
 {
 	
 	/** 
+	 * data
+	 **/
+	public $adjust_results;
+	
+	/** 
 	 * 错误码
 	 **/
 	public $error_code;
@@ -18,12 +23,7 @@ class SingleResult
 	public $error_message;
 	
 	/** 
-	 * 地点关系
-	 **/
-	public $location_relation_list;
-	
-	/** 
-	 * 是否成功
+	 * 如果是失败，可能是部分失败。如果是成功，则全部成功
 	 **/
 	public $success;	
 }

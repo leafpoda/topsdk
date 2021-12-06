@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.corp.message.corpconversation.asyncsend request
  * 
  * @author auto create
- * @since 1.0, 2017.04.11
+ * @since 1.0, 2019.07.03
  */
 class CorpMessageCorpconversationAsyncsendRequest
 {
@@ -122,7 +122,7 @@ class CorpMessageCorpconversationAsyncsendRequest
 		RequestCheckUtil::checkMaxListSize($this->deptIdList,20,"deptIdList");
 		RequestCheckUtil::checkNotNull($this->msgcontent,"msgcontent");
 		RequestCheckUtil::checkNotNull($this->msgtype,"msgtype");
-		RequestCheckUtil::checkMaxListSize($this->useridList,20,"useridList");
+		RequestCheckUtil::checkMaxListSize($this->useridList,100,"useridList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

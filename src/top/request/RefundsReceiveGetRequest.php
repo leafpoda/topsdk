@@ -3,7 +3,7 @@
  * TOP API: taobao.refunds.receive.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.27
+ * @since 1.0, 2021.08.20
  */
 class RefundsReceiveGetRequest
 {
@@ -21,6 +21,11 @@ class RefundsReceiveGetRequest
 	 * 需要返回的字段。目前支持有：refund_id, tid, title, buyer_nick, seller_nick, total_fee, status, created, refund_fee, oid, good_status, company_name, sid, payment, reason, desc, has_good_return, modified, order_status,refund_phase
 	 **/
 	private $fields;
+	
+	/** 
+	 * 系统自动生成
+	 **/
+	private $ouid;
 	
 	/** 
 	 * 页码。取值范围:大于零的整数; 默认值:1
@@ -85,6 +90,17 @@ class RefundsReceiveGetRequest
 	public function getFields()
 	{
 		return $this->fields;
+	}
+
+	public function setOuid($ouid)
+	{
+		$this->ouid = $ouid;
+		$this->apiParas["ouid"] = $ouid;
+	}
+
+	public function getOuid()
+	{
+		return $this->ouid;
 	}
 
 	public function setPageNo($pageNo)

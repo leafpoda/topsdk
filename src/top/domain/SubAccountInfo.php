@@ -8,37 +8,47 @@ class SubAccountInfo
 {
 	
 	/** 
-	 * 子账号是否参与分流 true:参与分流 false:未参与分流
+	 * openAutoReply
+	 **/
+	public $open_auto_reply;
+	
+	/** 
+	 * true
 	 **/
 	public $sub_dispatch_status;
 	
 	/** 
-	 * 子账号Id
+	 * 123456
 	 **/
 	public $sub_id;
 	
 	/** 
-	 * 子账号用户名
+	 * 小红
+	 **/
+	public $sub_name;
+	
+	/** 
+	 * zhangsan:no1
 	 **/
 	public $sub_nick;
 	
 	/** 
-	 * 子账号是否已欠费 true:已欠费 false:未欠费
+	 * true
 	 **/
 	public $sub_owed_status;
 	
 	/** 
-	 * 子账号当前状态：1正常，2卖家停用，3处罚冻结
+	 * 1
 	 **/
 	public $sub_status;
 	
 	/** 
-	 * 主账号Id
+	 * 654321
 	 **/
 	public $user_id;
 	
 	/** 
-	 * 主账号用户名
+	 * zhangsan
 	 **/
 	public $user_nick;	
 }

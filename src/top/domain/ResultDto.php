@@ -4,16 +4,11 @@
  * 返回结果对象
  * @author auto create
  */
-class ResultDTO
+class ResultDto
 {
 	
 	/** 
-	 * 行业店铺列表
-	 **/
-	public $industry_shops;
-	
-	/** 
-	 * 调用返回信息
+	 * message
 	 **/
 	public $message;
 	

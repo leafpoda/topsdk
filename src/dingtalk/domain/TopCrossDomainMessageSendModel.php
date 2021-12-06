@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * 互通消息结构
+ * @author auto create
+ */
+class TopCrossDomainMessageSendModel
+{
+	
+	/** 
+	 * 消息ID
+	 **/
+	public $message_id;
+	
+	/** 
+	 * 接收者结构体
+	 **/
+	public $message_receiver_scope_model;
+	
+	/** 
+	 * 消息发送结构
+	 **/
+	public $send_message_model;
+	
+	/** 
+	 * 发送者
+	 **/
+	public $sender;	
+}
+?>

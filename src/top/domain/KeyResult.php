@@ -1,14 +1,14 @@
 <?php
 
 /**
- * 模板的keys
+ * keys
  * @author auto create
  */
 class KeyResult
 {
 	
 	/** 
-	 * key名称
+	 * keyName
 	 **/
 	public $key_name;	
 }

@@ -48,11 +48,6 @@ class Shipping
 	public $is_spilt;
 	
 	/** 
-	 * 表明是否是拆单，默认值0，1表示拆单
-	 **/
-	public $is_split;
-	
-	/** 
 	 * 返回发货是否成功。
 	 **/
 	public $is_success;

@@ -1,0 +1,47 @@
+<?php
+/**
+ * TOP API: taobao.feedflow.item.campaign.add request
+ * 
+ * @author auto create
+ * @since 1.0, 2019.06.05
+ */
+class FeedflowItemCampaignAddRequest
+{
+	/** 
+	 * 计划信息
+	 **/
+	private $campaign;
+	
+	private $apiParas = array();
+	
+	public function setCampaign($campaign)
+	{
+		$this->campaign = $campaign;
+		$this->apiParas["campaign"] = $campaign;
+	}
+
+	public function getCampaign()
+	{
+		return $this->campaign;
+	}
+
+	public function getApiMethodName()
+	{
+		return "taobao.feedflow.item.campaign.add";
+	}
+	
+	public function getApiParas()
+	{
+		return $this->apiParas;
+	}
+	
+	public function check()
+	{
+		
+	}
+	
+	public function putOtherTextParam($key, $value) {
+		$this->apiParas[$key] = $value;
+		$this->$key = $value;
+	}
+}

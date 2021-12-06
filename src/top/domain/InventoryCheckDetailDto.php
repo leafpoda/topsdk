@@ -23,6 +23,11 @@ class InventoryCheckDetailDto
 	public $sc_item_id;
 	
 	/** 
+	 * 编辑前端商品仓库存时可以指定sku
+	 **/
+	public $sku_id;
+	
+	/** 
 	 * 每个货品的调整子单据号，作为业务调整依据，处理时会幂等
 	 **/
 	public $sub_order_id;	

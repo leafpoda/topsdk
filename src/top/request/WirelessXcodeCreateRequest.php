@@ -3,7 +3,7 @@
  * TOP API: taobao.wireless.xcode.create request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2019.10.11
  */
 class WirelessXcodeCreateRequest
 {

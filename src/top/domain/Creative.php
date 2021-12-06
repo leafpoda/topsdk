@@ -1,110 +1,70 @@
 <?php
 
 /**
- * 数据结果
+ * 创意
  * @author auto create
  */
 class Creative
 {
 	
 	/** 
-	 * 待审核：-4,-1,0，审核通过：1，审核拒绝：-2,-5,-9
+	 * 推广组id
+	 **/
+	public $adgroup_id;
+	
+	/** 
+	 * 审核拒绝原因描述
+	 **/
+	public $audit_desc;
+	
+	/** 
+	 * 审核状态： audit_wait-待审核；audit_pass-审核通过(上线)；audit_reject-审核拒绝；默认为audit_pass。
 	 **/
 	public $audit_status;
 	
 	/** 
-	 * 审核时间
+	 * 推广计划Id
 	 **/
-	public $audit_time;
+	public $campaign_id;
 	
 	/** 
-	 * 审核拒绝原因
-	 **/
-	public $block_reasons;
-	
-	/** 
-	 * 类目id
-	 **/
-	public $cat_id;
-	
-	/** 
-	 * 类目名称
-	 **/
-	public $cat_name;
-	
-	/** 
-	 * 点击链接
-	 **/
-	public $click_url;
-	
-	/** 
-	 * gmtCreate
+	 * 创建时间
 	 **/
 	public $create_time;
 	
 	/** 
-	 * 创意等级
+	 * 创意id
 	 **/
-	public $creative_level;
+	public $creative_id;
 	
 	/** 
-	 * 创意尺寸
+	 * 创意图片类型,1-主图,2-副图,3-自定义图片
 	 **/
-	public $creative_size;
+	public $img_type;
 	
 	/** 
-	 * expireTime
+	 * 创意图片地址，必须是推广组对应商品的图片之一
 	 **/
-	public $expire_time;
+	public $img_url;
 	
 	/** 
-	 * 创意格式
-	 **/
-	public $format;
-	
-	/** 
-	 * 创意ID
-	 **/
-	public $id;
-	
-	/** 
-	 * 图片地址
-	 **/
-	public $image_path;
-	
-	/** 
-	 * 创意对应的素材
-	 **/
-	public $materials;
-	
-	/** 
-	 * gmtModified
+	 * 最后修改时间
 	 **/
 	public $modified_time;
 	
 	/** 
-	 * 是否支持多个素材 1：支持 0：不支持
+	 * 主人昵称
 	 **/
-	public $multi_material;
+	public $nick;
 	
 	/** 
-	 * 创意名称
+	 * 使用副图作为创意的原始副图图片URL后缀
 	 **/
-	public $name;
+	public $second_img_origin_url;
 	
 	/** 
-	 * 0：非标尺创意，1：标尺创意，2：创意包
+	 * 创意标题，最多20个汉字
 	 **/
-	public $package_type;
-	
-	/** 
-	 * 标尺创意裂变后的创意
-	 **/
-	public $sub_creatives;
-	
-	/** 
-	 * 文字链创意内容
-	 **/
-	public $txt_value;	
+	public $title;	
 }
 ?>

@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.corp.ext.add request
  * 
  * @author auto create
- * @since 1.0, 2017.01.12
+ * @since 1.0, 2019.07.03
  */
 class CorpExtAddRequest
 {

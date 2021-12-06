@@ -13,6 +13,11 @@ class ProcessInstanceTopVo
 	public $approver_userid_list;
 	
 	/** 
+	 * 流程实例业务编号
+	 **/
+	public $business_id;
+	
+	/** 
 	 * 抄送人列表
 	 **/
 	public $cc_userid_list;

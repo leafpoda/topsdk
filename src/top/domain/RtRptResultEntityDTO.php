@@ -63,6 +63,11 @@ class RtRptResultEntityDTO
 	public $crowdid;
 	
 	/** 
+	 * 人群名称
+	 **/
+	public $crowdtitle;
+	
+	/** 
 	 * ctr
 	 **/
 	public $ctr;

@@ -23,9 +23,7 @@ class Item
 	public $auction_point;
 	
 	/** 
-	 * 代充商品类型。只有少数类目下的商品可以标记上此字段，具体哪些类目可以上传可以通过taobao.itemcat.features.get获得。在代充商品的类目下，不传表示不标记商品类型（交易搜索中就不能通过标记搜到相关的交易了）。可选类型：
-time_card(点卡软件代充)
-fee_card(话费软件代充)
+	 * 代充商品类型。只有少数类目下的商品可以标记上此字段，具体哪些类目可以上传可以通过taobao.itemcat.features.get获得。在代充商品的类目下，不传表示不标记商品类型（交易搜索中就不能通过标记搜到相关的交易了）。可选类型：time_card(点卡软件代充)fee_card(话费软件代充)
 	 **/
 	public $auto_fill;
 	
@@ -38,6 +36,21 @@ fee_card(话费软件代充)
 	 * 商品级别的条形码
 	 **/
 	public $barcode;
+	
+	/** 
+	 * 基础色数据
+	 **/
+	public $change_prop;
+	
+	/** 
+	 * 天猫超市扩展字段，天猫超市专用。
+	 **/
+	public $chaoshi_extends_info;
+	
+	/** 
+	 * 支持3期、6期、12期免息
+	 **/
+	public $charge_free_list;
 	
 	/** 
 	 * 商品所属的叶子类目 id
@@ -75,6 +88,11 @@ fee_card(话费软件代充)
 	public $delist_time;
 	
 	/** 
+	 * 发货时间信息
+	 **/
+	public $delivery_time;
+	
+	/** 
 	 * 商品描述, 字数要大于5个字节，小于25000个字节
 	 **/
 	public $desc;
@@ -105,8 +123,7 @@ fee_card(话费软件代充)
 	public $express_fee;
 	
 	/** 
-	 * 宝贝特征值，
-只有在Top支持的特征值才能保存到宝贝上
+	 * 宝贝特征值，只有在Top支持的特征值才能保存到宝贝上
 	 **/
 	public $features;
 	
@@ -126,8 +143,17 @@ fee_card(话费软件代充)
 	public $global_stock_country;
 	
 	/** 
-	 * 全球购商品采购地信息（库存类型），有两种库存类型：现货和代购;
-参数值为1时代表现货，值为2时代表代购
+	 * 全球购商品发货地，发货地现在有两种类型：&ldquo;国内&rdquo;和&ldquo;海外及港澳台&rdquo;，参数值为1时代表&ldquo;国内&rdquo;，值为2时代表&ldquo;海外及港澳台&rdquo;
+	 **/
+	public $global_stock_delivery_place;
+	
+	/** 
+	 * 全球购商品卖家包税承诺，当值为true时，代表卖家承诺包税。
+	 **/
+	public $global_stock_tax_free_promise;
+	
+	/** 
+	 * 全球购商品采购地信息（库存类型），有两种库存类型：现货和代购;参数值为1时代表现货，值为2时代表代购
 	 **/
 	public $global_stock_type;
 	
@@ -157,12 +183,7 @@ fee_card(话费软件代充)
 	public $iid;
 	
 	/** 
-	 * 加价幅度。如果为0，代表系统代理幅度。
-在竞拍中，为了超越上一个出价，会员需要在当前出价上增加金额，这个金额就是加价幅度。卖家在发布宝贝的时候可以自定义加价幅度，也可以让系统自动代理加价。系统自动代理加价的加价幅度随着当前出价金额的增加而增加，我们建议会员使用系统自动代理加价，并请买家在出价前看清楚加价幅度的具体金额。另外需要注意是，此功能只适用于拍卖的商品。
-以下是系统自动代理加价幅度表：
-当前价（加价幅度 ）
-1-40（ 1 ）、41-100（ 2 ）、101-200（5 ）、201-500 （10）、501-1001（15）、001-2000（25）、2001-5000（50）、5001-10000（100）
-10001以上         200
+	 * 加价幅度。如果为0，代表系统代理幅度。在竞拍中，为了超越上一个出价，会员需要在当前出价上增加金额，这个金额就是加价幅度。卖家在发布宝贝的时候可以自定义加价幅度，也可以让系统自动代理加价。系统自动代理加价的加价幅度随着当前出价金额的增加而增加，我们建议会员使用系统自动代理加价，并请买家在出价前看清楚加价幅度的具体金额。另外需要注意是，此功能只适用于拍卖的商品。以下是系统自动代理加价幅度表：当前价（加价幅度 ）1-40（ 1 ）、41-100（ 2 ）、101-200（5 ）、201-500 （10）、501-1001（15）、001-2000（25）、2001-5000（50）、5001-10000（100）10001以上         200
 	 **/
 	public $increment;
 	
@@ -177,12 +198,12 @@ fee_card(话费软件代充)
 	public $input_custom_cpv;
 	
 	/** 
-	 * 用户自行输入的类目属性ID串。结构："pid1,pid2,pid3"，如："20000"（表示品牌） 注：通常一个类目下用户可输入的关键属性不超过1个。
+	 * 用户自行输入的类目属性ID串。结构：&quot;pid1,pid2,pid3&quot;，如：&quot;20000&quot;（表示品牌） 注：通常一个类目下用户可输入的关键属性不超过1个。
 	 **/
 	public $input_pids;
 	
 	/** 
-	 * 用户自行输入的子属性名和属性值，结构:"父属性值;一级子属性名;一级子属性值;二级子属性名;自定义输入值,....",如：“耐克;耐克系列;科比系列;科比系列;2K5”，input_str需要与input_pids一一对应，注：通常一个类目下用户可输入的关键属性不超过1个。所有属性别名加起来不能超过 3999字节。
+	 * 用户自行输入的子属性名和属性值，结构:&quot;父属性值;一级子属性名;一级子属性值;二级子属性名;自定义输入值,....&quot;,如：&ldquo;耐克;耐克系列;科比系列;科比系列;2K5&rdquo;，input_str需要与input_pids一一对应，注：通常一个类目下用户可输入的关键属性不超过1个。所有属性别名加起来不能超过 3999字节。
 	 **/
 	public $input_str;
 	
@@ -195,6 +216,11 @@ fee_card(话费软件代充)
 	 * true:商品是区域限售商品；false:商品不是区域限售商品。
 	 **/
 	public $is_area_sale;
+	
+	/** 
+	 * 是否为达尔文挂接成功了的商品
+	 **/
+	public $is_cspu;
 	
 	/** 
 	 * 是否在外部网店显示
@@ -212,8 +238,7 @@ fee_card(话费软件代充)
 	public $is_lightning_consignment;
 	
 	/** 
-	 * 商品是否为先行赔付
-taobao.items.search和taobao.items.vip.search专用
+	 * 商品是否为先行赔付taobao.items.search和taobao.items.vip.search专用
 	 **/
 	public $is_prepay;
 	
@@ -233,8 +258,7 @@ taobao.items.search和taobao.items.vip.search专用
 	public $is_virtual;
 	
 	/** 
-	 * 标示商品是否为新品。
-值含义：true-是，false-否。
+	 * 标示商品是否为新品。值含义：true-是，false-否。
 	 **/
 	public $is_xinpin;
 	
@@ -244,8 +268,12 @@ taobao.items.search和taobao.items.vip.search专用
 	public $item_imgs;
 	
 	/** 
-	 * 表示商品的体积，用于按体积计费的运费模板。该值的单位为立方米（m3）。
-该值支持两种格式的设置：格式1：bulk:3,单位为立方米(m3),表示直接设置为商品的体积。格式2：weight:10;breadth:10;height:10，单位为米（m）
+	 * itemRectangleImgs
+	 **/
+	public $item_rectangle_imgs;
+	
+	/** 
+	 * 表示商品的体积，用于按体积计费的运费模板。该值的单位为立方米（m3）。该值支持两种格式的设置：格式1：bulk:3,单位为立方米(m3),表示直接设置为商品的体积。格式2：weight:10;breadth:10;height:10，单位为米（m）
 	 **/
 	public $item_size;
 	
@@ -253,6 +281,11 @@ taobao.items.search和taobao.items.vip.search专用
 	 * 商品的重量，用于按重量计费的运费模板。注意：单位为kg
 	 **/
 	public $item_weight;
+	
+	/** 
+	 * 商品无线主图
+	 **/
+	public $item_wireless_imgs;
 	
 	/** 
 	 * 门店大屏图
@@ -265,10 +298,7 @@ taobao.items.search和taobao.items.vip.search专用
 	public $list_time;
 	
 	/** 
-	 * 本地生活电子交易凭证业务，目前此字段只涉及到的信息为有效期:
-如果有效期为起止日期类型，此值为2012-08-06,2012-08-16
-如果有效期为【购买成功日 至】类型则格式为2012-08-16
-如果有效期为天数类型则格式为3
+	 * 本地生活电子交易凭证业务，目前此字段只涉及到的信息为有效期:如果有效期为起止日期类型，此值为2012-08-06,2012-08-16如果有效期为【购买成功日 至】类型则格式为2012-08-16如果有效期为天数类型则格式为3
 	 **/
 	public $locality_life;
 	
@@ -286,6 +316,11 @@ taobao.items.search和taobao.items.vip.search专用
 	 * 宝贝主图视频的数据信息，包括：视频ID，视频缩略图URL，视频时长，视频状态等信息。
 	 **/
 	public $mpic_video;
+	
+	/** 
+	 * 家装分阶段价格数据结构
+	 **/
+	public $ms_payment;
 	
 	/** 
 	 * 是否为新消保法中的7天无理由退货
@@ -306,6 +341,11 @@ taobao.items.search和taobao.items.vip.search专用
 	 * 商品数字id
 	 **/
 	public $num_iid;
+	
+	/** 
+	 * 是否绑定o2o
+	 **/
+	public $o2o_bind_service;
 	
 	/** 
 	 * 是否淘1站商品
@@ -358,8 +398,7 @@ taobao.items.search和taobao.items.vip.search专用
 	public $product_id;
 	
 	/** 
-	 * 消保类型，多个类型以,分割。可取以下值：
-2：假一赔三；4：7天无理由退换货；taobao.items.search和taobao.items.vip.search专用
+	 * 消保类型，多个类型以,分割。可取以下值：2：假一赔三；4：7天无理由退换货；taobao.items.search和taobao.items.vip.search专用
 	 **/
 	public $promoted_service;
 	
@@ -379,22 +418,22 @@ taobao.items.search和taobao.items.vip.search专用
 	public $props;
 	
 	/** 
-	 * 商品属性名称。标识着props内容里面的pid和vid所对应的名称。格式为：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2……(<strong>注：</strong><font color="red">属性名称中的冒号":"被转换为："#cln#";  
-分号";"被转换为："#scln#"
-</font>)
+	 * 商品属性名称。标识着props内容里面的pid和vid所对应的名称。格式为：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2&hellip;&hellip;(<strong>注：</strong><font color="red">属性名称中的冒号&quot;:&quot;被转换为：&quot;#cln#&quot;;  分号&quot;;&quot;被转换为：&quot;#scln#&quot;</font>)
 	 **/
 	public $props_name;
 	
 	/** 
-	 * 商品所属卖家的信用等级数，1表示1心，2表示2心……，只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回
+	 * 商品资质的信息，用URLEncoder做过转换，使用时，需要URLDecoder转换回来，默认字符集为：UTF-8
+	 **/
+	public $qualification;
+	
+	/** 
+	 * 商品所属卖家的信用等级数，1表示1心，2表示2心&hellip;&hellip;，只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回
 	 **/
 	public $score;
 	
 	/** 
-	 * 秒杀商品类型。打上秒杀标记的商品，用户只能下架并不能再上架，其他任何编辑或删除操作都不能进行。如果用户想取消秒杀标记，需要联系小二进行操作。如果秒杀结束需要自由编辑请联系活动负责人（小二）去掉秒杀标记。可选类型
-web_only(只能通过web网络秒杀)
-wap_only(只能通过wap网络秒杀)
-web_and_wap(既能通过web秒杀也能通过wap秒杀)
+	 * 秒杀商品类型。打上秒杀标记的商品，用户只能下架并不能再上架，其他任何编辑或删除操作都不能进行。如果用户想取消秒杀标记，需要联系小二进行操作。如果秒杀结束需要自由编辑请联系活动负责人（小二）去掉秒杀标记。可选类型web_only(只能通过web网络秒杀)wap_only(只能通过wap网络秒杀)web_and_wap(既能通过web秒杀也能通过wap秒杀)
 	 **/
 	public $second_kill;
 	
@@ -424,6 +463,11 @@ web_and_wap(既能通过web秒杀也能通过wap秒杀)
 	public $sold_quantity;
 	
 	/** 
+	 * 手机类目spu 确认信息字段
+	 **/
+	public $spu_confirm;
+	
+	/** 
 	 * 商品新旧程度(全新:new，闲置:unused，二手：second)
 	 **/
 	public $stuff_status;
@@ -432,6 +476,11 @@ web_and_wap(既能通过web秒杀也能通过wap秒杀)
 	 * 商品是否支持拍下减库存:1支持;2取消支持(付款减库存);0(默认)不更改 集市卖家默认拍下减库存; 商城卖家默认付款减库存
 	 **/
 	public $sub_stock;
+	
+	/** 
+	 * 是否支持分期免息
+	 **/
+	public $support_charge_free;
 	
 	/** 
 	 * 页面模板id
@@ -454,13 +503,17 @@ web_and_wap(既能通过web秒杀也能通过wap秒杀)
 	public $valid_thru;
 	
 	/** 
+	 * 商品竖图
+	 **/
+	public $vertical_imgs;
+	
+	/** 
 	 * 该字段废弃，请勿使用。
 	 **/
 	public $video_id;
 	
 	/** 
-	 * 商品视频列表(目前只支持单个视频关联)。fields中只设置video可以返回Video结构体中所有字段，如果设置为video.id、video.video_id、
-video.url等形式就只会返回相应的字段
+	 * 商品视频列表(目前只支持单个视频关联)。fields中只设置video可以返回Video结构体中所有字段，如果设置为video.id、video.video_id、video.url等形式就只会返回相应的字段
 	 **/
 	public $videos;
 	
@@ -485,6 +538,11 @@ video.url等形式就只会返回相应的字段
 	public $wap_detail_url;
 	
 	/** 
+	 * 白底图URL
+	 **/
+	public $white_bg_image;
+	
+	/** 
 	 * 无线的宝贝描述
 	 **/
 	public $wireless_desc;
@@ -495,8 +553,7 @@ video.url等形式就只会返回相应的字段
 	public $with_hold_quantity;
 	
 	/** 
-	 * 商品所属的商家的旺旺在线状况，
-taobao.items.search和taobao.items.vip.search专用
+	 * 商品所属的商家的旺旺在线状况，taobao.items.search和taobao.items.vip.search专用
 	 **/
 	public $ww_status;	
 }

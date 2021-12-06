@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.check.item request
  * 
  * @author auto create
- * @since 1.0, 2018.08.02
+ * @since 1.0, 2019.01.02
  */
 class TaojimuCheckItemRequest
 {
@@ -13,7 +13,7 @@ class TaojimuCheckItemRequest
 	private $bp;
 	
 	/** 
-	 * 多个宝贝id逗号隔开
+	 * 多个宝贝id逗号隔开（每次限制20个）
 	 **/
 	private $itemIds;
 	

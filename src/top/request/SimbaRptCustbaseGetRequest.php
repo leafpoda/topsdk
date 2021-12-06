@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rpt.custbase.get request
  * 
  * @author auto create
- * @since 1.0, 2015.05.07
+ * @since 1.0, 2019.11.07
  */
 class SimbaRptCustbaseGetRequest
 {

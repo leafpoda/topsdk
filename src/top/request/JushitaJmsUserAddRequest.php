@@ -3,7 +3,7 @@
  * TOP API: taobao.jushita.jms.user.add request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2020.09.28
  */
 class JushitaJmsUserAddRequest
 {

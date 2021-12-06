@@ -3,10 +3,15 @@
  * TOP API: taobao.items.inventory.get request
  * 
  * @author auto create
- * @since 1.0, 2018.08.06
+ * @since 1.0, 2020.07.21
  */
 class ItemsInventoryGetRequest
 {
+	/** 
+	 * 商品类型：a-拍卖,b-一口价
+	 **/
+	private $auctionType;
+	
 	/** 
 	 * 分类字段。可选值:<br>
 regular_shelved(定时上架)<br>
@@ -84,6 +89,17 @@ approve_status,num_iid,title,nick,type,cid,pic_url,num,props,valid_thru, list_ti
 	
 	private $apiParas = array();
 	
+	public function setAuctionType($auctionType)
+	{
+		$this->auctionType = $auctionType;
+		$this->apiParas["auction_type"] = $auctionType;
+	}
+
+	public function getAuctionType()
+	{
+		return $this->auctionType;
+	}
+
 	public function setBanner($banner)
 	{
 		$this->banner = $banner;

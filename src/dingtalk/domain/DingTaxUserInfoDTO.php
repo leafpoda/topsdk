@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * 运营数据
+ * @author auto create
+ */
+class DingTaxUserInfoDTO
+{
+	
+	/** 
+	 * 自然人/企业/个体户
+	 **/
+	public $taxation_type;
+	
+	/** 
+	 * 手机号
+	 **/
+	public $user_mobile;
+	
+	/** 
+	 * CW/FR
+	 **/
+	public $user_role;	
+}
+?>

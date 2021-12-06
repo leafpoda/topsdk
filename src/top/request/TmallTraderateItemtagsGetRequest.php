@@ -3,7 +3,7 @@
  * TOP API: tmall.traderate.itemtags.get request
  * 
  * @author auto create
- * @since 1.0, 2015.08.20
+ * @since 1.0, 2018.07.26
  */
 class TmallTraderateItemtagsGetRequest
 {

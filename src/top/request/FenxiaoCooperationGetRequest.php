@@ -3,10 +3,15 @@
  * TOP API: taobao.fenxiao.cooperation.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2021.02.02
  */
 class FenxiaoCooperationGetRequest
 {
+	/** 
+	 * 渠道code
+	 **/
+	private $channelCode;
+	
 	/** 
 	 * 合作结束时间yyyy-MM-dd HH:mm:ss
 	 **/
@@ -21,6 +26,11 @@ class FenxiaoCooperationGetRequest
 	 * 每页记录数（默认20，最大50）
 	 **/
 	private $pageSize;
+	
+	/** 
+	 * 1是供应商，2 是分销商
+	 **/
+	private $roleType;
 	
 	/** 
 	 * 合作开始时间yyyy-MM-dd HH:mm:ss
@@ -39,6 +49,17 @@ class FenxiaoCooperationGetRequest
 	
 	private $apiParas = array();
 	
+	public function setChannelCode($channelCode)
+	{
+		$this->channelCode = $channelCode;
+		$this->apiParas["channel_code"] = $channelCode;
+	}
+
+	public function getChannelCode()
+	{
+		return $this->channelCode;
+	}
+
 	public function setEndDate($endDate)
 	{
 		$this->endDate = $endDate;
@@ -70,6 +91,17 @@ class FenxiaoCooperationGetRequest
 	public function getPageSize()
 	{
 		return $this->pageSize;
+	}
+
+	public function setRoleType($roleType)
+	{
+		$this->roleType = $roleType;
+		$this->apiParas["role_type"] = $roleType;
+	}
+
+	public function getRoleType()
+	{
+		return $this->roleType;
 	}
 
 	public function setStartDate($startDate)

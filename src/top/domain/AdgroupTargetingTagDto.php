@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 定向信息
+ * result
  * @author auto create
  */
 class AdgroupTargetingTagDto
@@ -23,7 +23,7 @@ class AdgroupTargetingTagDto
 	public $id;
 	
 	/** 
-	 * 是否溢价1:不溢价,0:溢价
+	 * 是否不溢价1:不溢价,0:溢价
 	 **/
 	public $is_default_price;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.creative.find request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2018.12.17
  */
 class ZuanshiBannerCreativeFindRequest
 {
@@ -31,6 +31,11 @@ class ZuanshiBannerCreativeFindRequest
 	 * 图片：2，flash：3，视频：4，文字链：5，Flash不遮盖：9，模板：10，
 	 **/
 	private $formatList;
+	
+	/** 
+	 * 创意ID列表
+	 **/
+	private $idList;
 	
 	/** 
 	 * 创意名称
@@ -114,6 +119,17 @@ class ZuanshiBannerCreativeFindRequest
 		return $this->formatList;
 	}
 
+	public function setIdList($idList)
+	{
+		$this->idList = $idList;
+		$this->apiParas["id_list"] = $idList;
+	}
+
+	public function getIdList()
+	{
+		return $this->idList;
+	}
+
 	public function setName($name)
 	{
 		$this->name = $name;
@@ -184,6 +200,7 @@ class ZuanshiBannerCreativeFindRequest
 		
 		RequestCheckUtil::checkMaxListSize($this->auditStatusList,20,"auditStatusList");
 		RequestCheckUtil::checkMaxListSize($this->formatList,20,"formatList");
+		RequestCheckUtil::checkMaxListSize($this->idList,20,"idList");
 		RequestCheckUtil::checkMaxListSize($this->sizeList,20,"sizeList");
 	}
 	

@@ -1,24 +1,19 @@
 <?php
 
 /**
- * 出价列表
+ * 交叉出价
  * @author auto create
  */
 class MatrixPriceDTO
 {
 	
 	/** 
-	 * 定向id
+	 * 资源位id
 	 **/
-	public $crowd_id;
+	public $adzone_id;
 	
 	/** 
-	 * 定向类型
-	 **/
-	public $crowd_type;
-	
-	/** 
-	 * 出价(单位分)
+	 * 出价，单位分
 	 **/
 	public $price;	
 }

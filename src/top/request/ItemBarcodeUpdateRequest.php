@@ -3,14 +3,12 @@
  * TOP API: taobao.item.barcode.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.03.27
  */
 class ItemBarcodeUpdateRequest
 {
 	/** 
-	 * 是否强制保存商品条码。
-true：强制保存
-false ：需要执行条码库校验
+	 * 是否强制保存商品条码。true：强制保存false ：需要执行条码库校验
 	 **/
 	private $isforce;
 	
@@ -35,8 +33,7 @@ false ：需要执行条码库校验
 	private $skuIds;
 	
 	/** 
-	 * 访问来源，这字段提供给千牛扫码枪用，
-其他调用方，不需要填写
+	 * 访问来源，这字段提供给千牛扫码枪用，其他调用方，不需要填写
 	 **/
 	private $src;
 	

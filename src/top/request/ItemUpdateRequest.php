@@ -3,7 +3,7 @@
  * TOP API: taobao.item.update request
  * 
  * @author auto create
- * @since 1.0, 2018.08.07
+ * @since 1.0, 2019.10.31
  */
 class ItemUpdateRequest
 {
@@ -38,7 +38,7 @@ class ItemUpdateRequest
 	private $barcode;
 	
 	/** 
-	 * 基础色数据
+	 * 基础色数据，淘宝不使用
 	 **/
 	private $changeProp;
 	
@@ -83,7 +83,7 @@ class ItemUpdateRequest
 	private $desc;
 	
 	/** 
-	 * 商品描述模块化，模块列表，由List转化成jsonArray存入，后端逻辑验证通过，拼装成模块内容+锚点导航后存入desc中。数据结构具体参见Item_Desc_Module
+	 * 已废弃
 	 **/
 	private $descModules;
 	
@@ -103,7 +103,7 @@ class ItemUpdateRequest
 	private $expressFee;
 	
 	/** 
-	 * 宝贝特征值，格式为：【key1:value1;key2:value2;key3:value3;】，key和value用【:】分隔，key&value之间用【;】分隔，只有在Top支持的特征值才能保存到宝贝上，目前支持的Key列表为：mysize_tp
+	 * 宝贝特征值，格式为：【key1:value1;key2:value2;key3:value3;】，key和value用【:】分隔，key&value之间用【;】分隔，只有在Top支持的特征值才能保存到宝贝上，目前支持的Key列表为：mysize_tp,是指尺码库对应的key
 	 **/
 	private $features;
 	
@@ -143,7 +143,7 @@ class ItemUpdateRequest
 	private $foodSecurityMix;
 	
 	/** 
-	 * 保质期
+	 * 保质期，默认有单位，传入数字
 	 **/
 	private $foodSecurityPeriod;
 	
@@ -488,7 +488,7 @@ class ItemUpdateRequest
 	private $productId;
 	
 	/** 
-	 * 属性值别名。如pid:vid:别名;pid1:vid1:别名1， pid:属性id vid:值id。总长度不超过511字节
+	 * 属性值别名。如pid:vid:别名;pid1:vid1:别名1， pid:属性id vid:值id。总长度不超过800个字符，如"123:333:你好"，引号内的是10个字符。
 	 **/
 	private $propertyAlias;
 	
@@ -543,17 +543,17 @@ class ItemUpdateRequest
 	private $skuDeliveryTimes;
 	
 	/** 
-	 * 家装建材类目，商品SKU的高度，单位为cm，部分类目必选。天猫商家专用。 可选值为："0-15", "15-25", "25-50", "50-60", "60-80", "80-120", "120-160", "160-200"。 数据和SKU一一对应，用,分隔，如：15-25,25-50,25-50
+	 * 家装建材类目，商品SKU的高度，单位为cm，部分类目必选。 天猫和淘宝格式不同。天猫：可选值为："0-15", "15-25", "25-50", "50-60", "60-80", "80-120", "120-160", "160-200"。 数据和SKU一一对应，用,分隔，格式如：15-25,25-50,25-50。 淘宝：正整数，单位为cm,格式如：20,30,30
 	 **/
 	private $skuHdHeight;
 	
 	/** 
-	 * 家装建材类目，商品SKU的灯头数量，正整数，大于等于3，部分类目必选。天猫商家专用。 数据和SKU一一对应，用,分隔，如：3,5,7
+	 * 家装建材类目，商品SKU的灯头数量，正整数，大于等于3，部分类目必选。 数据和SKU一一对应，用,分隔，如：3,5,7
 	 **/
 	private $skuHdLampQuantity;
 	
 	/** 
-	 * 家装建材类目，商品SKU的长度，正整数，单位为cm，部分类目必选。天猫商家专用。 数据和SKU一一对应，用,分隔，如：20,30,30
+	 * 家装建材类目，商品SKU的长度，正整数，单位为cm，部分类目必选。 数据和SKU一一对应，用,分隔，如：20,30,30
 	 **/
 	private $skuHdLength;
 	
@@ -583,7 +583,7 @@ class ItemUpdateRequest
 	private $skuSpecIds;
 	
 	/** 
-	 * 手机类目spu 确认信息字段
+	 * 手机类目spu 产品信息确认声明
 	 **/
 	private $spuConfirm;
 	

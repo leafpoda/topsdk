@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rpt.adgroupkeywordbase.get request
  * 
  * @author auto create
- * @since 1.0, 2018.09.11
+ * @since 1.0, 2020.04.20
  */
 class SimbaRptAdgroupkeywordbaseGetRequest
 {

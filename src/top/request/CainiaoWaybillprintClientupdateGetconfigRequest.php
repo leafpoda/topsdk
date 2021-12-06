@@ -3,7 +3,7 @@
  * TOP API: cainiao.waybillprint.clientupdate.getconfig request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.01.18
  */
 class CainiaoWaybillprintClientupdateGetconfigRequest
 {

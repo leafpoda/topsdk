@@ -3,7 +3,7 @@
  * TOP API: taobao.sellercats.list.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2019.04.08
  */
 class SellercatsListGetRequest
 {
@@ -11,11 +11,6 @@ class SellercatsListGetRequest
 	 * fields参数
 	 **/
 	private $fields;
-	
-	/** 
-	 * 卖家昵称
-	 **/
-	private $nick;
 	
 	private $apiParas = array();
 	
@@ -28,17 +23,6 @@ class SellercatsListGetRequest
 	public function getFields()
 	{
 		return $this->fields;
-	}
-
-	public function setNick($nick)
-	{
-		$this->nick = $nick;
-		$this->apiParas["nick"] = $nick;
-	}
-
-	public function getNick()
-	{
-		return $this->nick;
 	}
 
 	public function getApiMethodName()
@@ -55,7 +39,6 @@ class SellercatsListGetRequest
 	{
 		
 		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
-		RequestCheckUtil::checkNotNull($this->nick,"nick");
 	}
 	
 	public function putOtherTextParam($key, $value) {

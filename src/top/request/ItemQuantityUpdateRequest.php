@@ -3,7 +3,7 @@
  * TOP API: taobao.item.quantity.update request
  * 
  * @author auto create
- * @since 1.0, 2018.08.06
+ * @since 1.0, 2019.10.31
  */
 class ItemQuantityUpdateRequest
 {

@@ -1,20 +1,30 @@
 <?php
 
 /**
- * result
+ * 接口返回
  * @author auto create
  */
 class Result
 {
 	
 	/** 
-	 * hasMore
+	 * 错误码
 	 **/
-	public $has_more;
+	public $errcode;
 	
 	/** 
-	 * staffIdList
+	 * 错误信息
 	 **/
-	public $staff_id_list;	
+	public $errmsg;
+	
+	/** 
+	 * 接口返回model
+	 **/
+	public $module;
+	
+	/** 
+	 * 是否成功
+	 **/
+	public $success;	
 }
 ?>

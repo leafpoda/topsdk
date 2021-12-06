@@ -3,7 +3,7 @@
  * TOP API: taobao.item.anchor.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.03.27
  */
 class ItemAnchorGetRequest
 {
@@ -13,7 +13,7 @@ class ItemAnchorGetRequest
 	private $catId;
 	
 	/** 
-	 * 宝贝模板类型是人工打标还是自动打标：人工打标为1，自动打标为0.人工和自动打标为-1.
+	 * 宝贝模板类型是人工打标还是自动打标：人工打标为1，自动打标为0.人工和自动打标为-1.(最小值：-1，最大值：1)
 	 **/
 	private $type;
 	
@@ -56,8 +56,6 @@ class ItemAnchorGetRequest
 		
 		RequestCheckUtil::checkNotNull($this->catId,"catId");
 		RequestCheckUtil::checkNotNull($this->type,"type");
-		RequestCheckUtil::checkMaxValue($this->type,1,"type");
-		RequestCheckUtil::checkMinValue($this->type,-1,"type");
 	}
 	
 	public function putOtherTextParam($key, $value) {

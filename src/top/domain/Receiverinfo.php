@@ -1,35 +1,45 @@
 <?php
 
 /**
- * 收件人信息
+ * 收货人信息
  * @author auto create
  */
-class Receiverinfo
+class ReceiverInfo
 {
 	
 	/** 
-	 * 收件方区县
+	 * 收货人区
 	 **/
-	public $receiver_area;
+	public $area;
 	
 	/** 
-	 * 收件方城市
+	 * 收货人市
 	 **/
-	public $receiver_city;
+	public $city;
 	
 	/** 
-	 * 收件方省份
+	 * 收货人详细地址
 	 **/
-	public $receiver_province;
+	public $detail_address;
 	
 	/** 
-	 * 收件方镇
+	 * 收货人移动电话
 	 **/
-	public $receiver_town;
+	public $mobile;
 	
 	/** 
-	 * 收件方邮编
+	 * 收货人姓名
 	 **/
-	public $receiver_zip_code;	
+	public $name;
+	
+	/** 
+	 * 收货人省
+	 **/
+	public $province;
+	
+	/** 
+	 * 收货人镇
+	 **/
+	public $town;	
 }
 ?>

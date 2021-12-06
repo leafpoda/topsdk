@@ -1,16 +1,11 @@
 <?php
 
 /**
- * 分销产品
+ * 产品对象记录集。返回 FenxiaoProduct 包含的字段信息。
  * @author auto create
  */
 class FenxiaoProduct
 {
-	
-	/** 
-	 * 警戒库存
-	 **/
-	public $alarm_number;
 	
 	/** 
 	 * 类目id
@@ -53,14 +48,14 @@ class FenxiaoProduct
 	public $discount_id;
 	
 	/** 
-	 * 是否有保修，可选值：false（否）、true（是）
-	 **/
-	public $have_guarantee;
-	
-	/** 
 	 * 是否有发票，可选值：false（否）、true（是）
 	 **/
 	public $have_invoice;
+	
+	/** 
+	 * 是否有保修，可选值：false（否）、true（是）
+	 **/
+	public $have_quarantee;
 	
 	/** 
 	 * 产品图片
@@ -73,16 +68,9 @@ class FenxiaoProduct
 	public $input_properties;
 	
 	/** 
-	 * 查询产品列表时，查询入参增加is_authz:yes|no 
-yes:需要授权 
-no:不需要授权
+	 * 查询产品列表时，查询入参增加is_authz:yes|no yes:需要授权 no:不需要授权
 	 **/
 	public $is_authz;
-	
-	/** 
-	 * 导入的商品ID
-	 **/
-	public $item_id;
 	
 	/** 
 	 * 下载人数
@@ -178,16 +166,6 @@ no:不需要授权
 	 * 根据商品ID查询时，返回这个产品对应的商品ID，只对分销商查询接口有效
 	 **/
 	public $query_item_id;
-	
-	/** 
-	 * 配额可用库存
-	 **/
-	public $quota_quantity;
-	
-	/** 
-	 * 预扣库存
-	 **/
-	public $reserved_quantity;
 	
 	/** 
 	 * 最高零售价，单位：分。

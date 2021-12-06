@@ -3,7 +3,7 @@
  * TOP API: taobao.trade.fullinfo.get request
  * 
  * @author auto create
- * @since 1.0, 2018.08.02
+ * @since 1.0, 2020.09.02
  */
 class TradeFullinfoGetRequest
 {

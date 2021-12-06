@@ -1,20 +1,30 @@
 <?php
 
 /**
- * 返回的Page对象
+ * 页数据结果
  * @author auto create
  */
-class PageVo
+class PageVO
 {
 	
 	/** 
-	 * 设备列表
+	 * 是否有更多记录
+	 **/
+	public $has_more;
+	
+	/** 
+	 * 投屏数据列表
 	 **/
 	public $list;
 	
 	/** 
-	 * 下次拉取列表的游标，如果为Null，代表没有数据了
+	 * 下一个游标
 	 **/
-	public $next_cursor;	
+	public $next_cursor;
+	
+	/** 
+	 * 下一游标
+	 **/
+	public $next_cursor_string;	
 }
 ?>

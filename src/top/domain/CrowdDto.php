@@ -13,32 +13,27 @@ class CrowdDto
 	public $biz_type;
 	
 	/** 
-	 * 人群id ,报表用
-	 **/
-	public $crowd_id;
-	
-	/** 
-	 * 用户id
+	 * 用户在直通车的ID
 	 **/
 	public $cust_id;
 	
 	/** 
-	 * 人群建议溢价,取值范围[5,300]
+	 * 所选择的人群id
 	 **/
-	public $fit_discount;
+	public $dmpcrowd_id;
 	
 	/** 
-	 * 人群名称
+	 * 用户所选择的人群名称
 	 **/
 	public $name;
 	
 	/** 
-	 * 人群包模版ID
+	 * 人群包模版类型
 	 **/
 	public $template_id;
 	
 	/** 
-	 * 人群类型
+	 * 人群包类型
 	 **/
 	public $type;	
 }

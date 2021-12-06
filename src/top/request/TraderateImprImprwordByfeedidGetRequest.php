@@ -3,7 +3,7 @@
  * TOP API: taobao.traderate.impr.imprword.byfeedid.get request
  * 
  * @author auto create
- * @since 1.0, 2016.04.13
+ * @since 1.0, 2019.01.21
  */
 class TraderateImprImprwordByfeedidGetRequest
 {

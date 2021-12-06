@@ -3,7 +3,7 @@
  * TOP API: taobao.wlb.wms.inventory.count request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2018.10.12
  */
 class WlbWmsInventoryCountRequest
 {

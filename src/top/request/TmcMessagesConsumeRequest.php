@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.messages.consume request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2018.10.23
  */
 class TmcMessagesConsumeRequest
 {
@@ -13,7 +13,7 @@ class TmcMessagesConsumeRequest
 	private $groupName;
 	
 	/** 
-	 * 每次批量消费消息的条数
+	 * 每次批量消费消息的条数，最小值：10；最大值：200
 	 **/
 	private $quantity;
 	

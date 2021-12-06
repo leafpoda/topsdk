@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.corp.encryption.key.list request
  * 
  * @author auto create
- * @since 1.0, 2017.02.17
+ * @since 1.0, 2018.07.25
  */
 class CorpEncryptionKeyListRequest
 {

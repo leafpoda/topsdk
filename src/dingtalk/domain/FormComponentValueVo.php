@@ -1,19 +1,19 @@
 <?php
 
 /**
- * 审批表单变量组
+ * 表单数据
  * @author auto create
  */
 class FormComponentValueVo
 {
 	
 	/** 
-	 * 表单标签名
+	 * 组件名称
 	 **/
 	public $name;
 	
 	/** 
-	 * 表单标签值
+	 * 组件值
 	 **/
 	public $value;	
 }

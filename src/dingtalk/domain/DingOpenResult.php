@@ -8,22 +8,22 @@ class DingOpenResult
 {
 	
 	/** 
-	 * 错误码
+	 * dingOpenErrcode
 	 **/
 	public $ding_open_errcode;
 	
 	/** 
-	 * 错误信息
+	 * errorMsg
 	 **/
 	public $error_msg;
 	
 	/** 
-	 * result
+	 * 返回图片的base64编码
 	 **/
 	public $result;
 	
 	/** 
-	 * 请求是否成功
+	 * success
 	 **/
 	public $success;	
 }

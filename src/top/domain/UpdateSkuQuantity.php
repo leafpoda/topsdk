@@ -8,7 +8,7 @@ class UpdateSkuQuantity
 {
 	
 	/** 
-	 * SkuID，用于指定被修改库存的SKU
+	 * Sku的商家外部id，用于指定被修改库存的SKU
 	 **/
 	public $outer_id;
 	
@@ -18,12 +18,12 @@ class UpdateSkuQuantity
 	public $properties;
 	
 	/** 
-	 * Sku的商家外部id，用于指定被修改库存的SKU
+	 * SKU属于这个sku的商品的库存；增量编辑方式支持正数、负数
 	 **/
 	public $quantity;
 	
 	/** 
-	 * 属于这个sku的商品的库存；增量编辑方式支持正数、负数
+	 * SkuID，用于指定被修改库存的
 	 **/
 	public $sku_id;	
 }

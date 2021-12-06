@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 下游买家退款信息
+ * 下游买家的退款信息
  * @author auto create
  */
 class BuyerRefund

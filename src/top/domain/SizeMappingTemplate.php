@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 天猫商品尺码表模板
+ * 尺码表模板列表
  * @author auto create
  */
 class SizeMappingTemplate

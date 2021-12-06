@@ -1,36 +1,11 @@
 <?php
 
 /**
- * 查询结果
+ * 结果
  * @author auto create
  */
 class Data
 {
-	
-	/** 
-	 * 展现量
-	 **/
-	public $ad_pv;
-	
-	/** 
-	 * transId
-	 **/
-	public $adgroup_id;
-	
-	/** 
-	 * campaignId
-	 **/
-	public $campaign_id;
-	
-	/** 
-	 * 消耗
-	 **/
-	public $charge;
-	
-	/** 
-	 * 点击量
-	 **/
-	public $click;
 	
 	/** 
 	 * 点击率
@@ -38,7 +13,12 @@ class Data
 	public $ctr;
 	
 	/** 
-	 * 平均点击单价
+	 * 转化率
+	 **/
+	public $cvr;
+	
+	/** 
+	 * 平均点击花费
 	 **/
 	public $ecpc;
 	
@@ -48,18 +28,18 @@ class Data
 	public $ecpm;
 	
 	/** 
-	 * 小时数，取值范围0-23
+	 * 投入产出比
 	 **/
-	public $hour_id;
+	public $roi;
 	
 	/** 
-	 * 查询日期
+	 * 类目id
 	 **/
-	public $log_date;
+	public $shop_main_cat_id;
 	
 	/** 
-	 * targetId
+	 * 类目名称
 	 **/
-	public $target_id;	
+	public $shop_main_cat_name;	
 }
 ?>

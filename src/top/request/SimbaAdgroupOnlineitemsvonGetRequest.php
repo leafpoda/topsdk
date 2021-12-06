@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroup.onlineitemsvon.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.04.28
  */
 class SimbaAdgroupOnlineitemsvonGetRequest
 {
@@ -31,6 +31,11 @@ class SimbaAdgroupOnlineitemsvonGetRequest
 	 * 页尺寸，最大200
 	 **/
 	private $pageSize;
+	
+	/** 
+	 * 推广单元类型 101001005代表标准推广，101001014代表销量明星推广
+	 **/
+	private $productId;
 	
 	private $apiParas = array();
 	
@@ -87,6 +92,17 @@ class SimbaAdgroupOnlineitemsvonGetRequest
 	public function getPageSize()
 	{
 		return $this->pageSize;
+	}
+
+	public function setProductId($productId)
+	{
+		$this->productId = $productId;
+		$this->apiParas["product_id"] = $productId;
+	}
+
+	public function getProductId()
+	{
+		return $this->productId;
 	}
 
 	public function getApiMethodName()

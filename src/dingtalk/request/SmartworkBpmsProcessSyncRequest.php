@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.smartwork.bpms.process.sync request
  * 
  * @author auto create
- * @since 1.0, 2017.06.12
+ * @since 1.0, 2019.07.03
  */
 class SmartworkBpmsProcessSyncRequest
 {

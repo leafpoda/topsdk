@@ -3,7 +3,7 @@
  * TOP API: taobao.item.propimg.upload request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.04.10
  */
 class ItemPropimgUploadRequest
 {

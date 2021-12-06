@@ -8,7 +8,7 @@ class Distributor
 {
 	
 	/** 
-	 * 分销商的支付宝帐户
+	 * 分销商的支付宝账户
 	 **/
 	public $alipay_account;
 	

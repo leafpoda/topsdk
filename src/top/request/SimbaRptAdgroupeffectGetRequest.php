@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rpt.adgroupeffect.get request
  * 
  * @author auto create
- * @since 1.0, 2015.05.11
+ * @since 1.0, 2019.11.08
  */
 class SimbaRptAdgroupeffectGetRequest
 {

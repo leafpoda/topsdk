@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rpt.campaigneffect.get request
  * 
  * @author auto create
- * @since 1.0, 2016.11.01
+ * @since 1.0, 2019.11.08
  */
 class SimbaRptCampaigneffectGetRequest
 {
@@ -33,8 +33,7 @@ class SimbaRptCampaigneffectGetRequest
 	private $pageSize;
 	
 	/** 
-	 * 报表类型（搜索：SEARCH,类目出价：CAT,
-定向投放：NOSEARCH 全部：ALL）可以一次取多个例如：SEARCH,CAT
+	 * 报表类型（搜索：SEARCH,类目出价：CAT,定向投放：NOSEARCH 全部：ALL）
 	 **/
 	private $searchType;
 	

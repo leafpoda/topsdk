@@ -3,7 +3,7 @@
  * TOP API: tmall.item.increment.update.schema.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.10.31
  */
 class TmallItemIncrementUpdateSchemaGetRequest
 {

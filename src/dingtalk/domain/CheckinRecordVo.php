@@ -45,6 +45,11 @@ class CheckinRecordVo
 	/** 
 	 * 员工唯一标识
 	 **/
-	public $userid;	
+	public $userid;
+	
+	/** 
+	 * 签到的拜访对象，可以为外部联系人的userid或者用户自己输入的名字
+	 **/
+	public $visit_user;	
 }
 ?>

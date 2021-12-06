@@ -1,15 +1,20 @@
 <?php
 
 /**
- * 包材信息
+ * 包裹的包材信息列表
  * @author auto create
  */
-class Packagemateriallist
+class PackageMaterialList
 {
 	
 	/** 
-	 * 包裹包材信息
+	 * 数量
 	 **/
-	public $package_material;	
+	public $material_quantity;
+	
+	/** 
+	 * 包材
+	 **/
+	public $material_type;	
 }
 ?>

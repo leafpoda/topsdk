@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.corp.device.manage.querylist request
  * 
  * @author auto create
- * @since 1.0, 2017.07.21
+ * @since 1.0, 2019.08.14
  */
 class CorpDeviceManageQuerylistRequest
 {

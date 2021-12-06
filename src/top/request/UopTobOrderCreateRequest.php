@@ -3,7 +3,7 @@
  * TOP API: taobao.uop.tob.order.create request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.09.23
  */
 class UopTobOrderCreateRequest
 {

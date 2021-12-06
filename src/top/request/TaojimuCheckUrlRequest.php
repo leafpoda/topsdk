@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.check.url request
  * 
  * @author auto create
- * @since 1.0, 2018.08.02
+ * @since 1.0, 2018.11.22
  */
 class TaojimuCheckUrlRequest
 {
@@ -13,7 +13,7 @@ class TaojimuCheckUrlRequest
 	private $bp;
 	
 	/** 
-	 * 多个url列表
+	 * 多个url逗号隔开
 	 **/
 	private $urls;
 	

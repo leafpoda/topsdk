@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.campaigns.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.04.28
  */
 class SimbaCampaignsGetRequest
 {
@@ -11,6 +11,11 @@ class SimbaCampaignsGetRequest
 	 * 主人昵称
 	 **/
 	private $nick;
+	
+	/** 
+	 * 计划类型0位标准计划，16位销量明星计划
+	 **/
+	private $type;
 	
 	private $apiParas = array();
 	
@@ -23,6 +28,17 @@ class SimbaCampaignsGetRequest
 	public function getNick()
 	{
 		return $this->nick;
+	}
+
+	public function setType($type)
+	{
+		$this->type = $type;
+		$this->apiParas["type"] = $type;
+	}
+
+	public function getType()
+	{
+		return $this->type;
 	}
 
 	public function getApiMethodName()

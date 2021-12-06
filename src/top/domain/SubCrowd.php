@@ -13,7 +13,7 @@ class SubCrowd
 	public $sub_crowd_name;
 	
 	/** 
-	 * 子人群值
+	 * 子人群取值
 	 **/
 	public $sub_crowd_value;	
 }

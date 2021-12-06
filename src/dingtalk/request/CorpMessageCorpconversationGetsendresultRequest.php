@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.corp.message.corpconversation.getsendresult request
  * 
  * @author auto create
- * @since 1.0, 2017.09.20
+ * @since 1.0, 2019.07.03
  */
 class CorpMessageCorpconversationGetsendresultRequest
 {

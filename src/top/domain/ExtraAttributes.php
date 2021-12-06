@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 直通车商品对象属性（Map）
+ * 扩展属性对象
  * @author auto create
  */
 class ExtraAttributes

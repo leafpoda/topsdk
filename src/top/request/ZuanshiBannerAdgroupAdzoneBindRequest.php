@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.adgroup.adzone.bind request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.07.30
  */
 class ZuanshiBannerAdgroupAdzoneBindRequest
 {

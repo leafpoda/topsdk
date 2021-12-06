@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroups.item.exist request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.04.28
  */
 class SimbaAdgroupsItemExistRequest
 {
@@ -21,6 +21,11 @@ class SimbaAdgroupsItemExistRequest
 	 * 主人昵称
 	 **/
 	private $nick;
+	
+	/** 
+	 * 产品类型 101001005 代表普通推广，101001014代表销量明星
+	 **/
+	private $productId;
 	
 	private $apiParas = array();
 	
@@ -55,6 +60,17 @@ class SimbaAdgroupsItemExistRequest
 	public function getNick()
 	{
 		return $this->nick;
+	}
+
+	public function setProductId($productId)
+	{
+		$this->productId = $productId;
+		$this->apiParas["product_id"] = $productId;
+	}
+
+	public function getProductId()
+	{
+		return $this->productId;
 	}
 
 	public function getApiMethodName()

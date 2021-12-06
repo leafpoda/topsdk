@@ -8,6 +8,16 @@ class ServiceOrder
 {
 	
 	/** 
+	 * appleCareEmail
+	 **/
+	public $apple_care_email;
+	
+	/** 
+	 * appleCareMPN
+	 **/
+	public $apple_care_mpn;
+	
+	/** 
 	 * 卖家昵称
 	 **/
 	public $buyer_nick;

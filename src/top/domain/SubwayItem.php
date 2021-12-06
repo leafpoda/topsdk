@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 主站商品对象
+ * 商品列表
  * @author auto create
  */
 class SubwayItem
@@ -11,6 +11,11 @@ class SubwayItem
 	 * 扩展属性对象
 	 **/
 	public $extra_attributes;
+	
+	/** 
+	 * imgUrl
+	 **/
+	public $img_url;
 	
 	/** 
 	 * 商品信息在外部系统(淘宝主站)的数字id

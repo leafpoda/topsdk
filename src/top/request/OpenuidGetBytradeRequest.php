@@ -3,7 +3,7 @@
  * TOP API: taobao.openuid.get.bytrade request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2018.10.17
  */
 class OpenuidGetBytradeRequest
 {

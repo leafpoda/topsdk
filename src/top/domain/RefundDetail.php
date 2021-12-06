@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 采购单子单退款详情
+ * 代销采购退款列表
  * @author auto create
  */
 class RefundDetail

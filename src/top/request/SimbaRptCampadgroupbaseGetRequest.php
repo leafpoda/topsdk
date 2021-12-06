@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rpt.campadgroupbase.get request
  * 
  * @author auto create
- * @since 1.0, 2015.04.10
+ * @since 1.0, 2020.04.14
  */
 class SimbaRptCampadgroupbaseGetRequest
 {

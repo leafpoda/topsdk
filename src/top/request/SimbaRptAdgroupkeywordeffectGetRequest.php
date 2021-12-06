@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rpt.adgroupkeywordeffect.get request
  * 
  * @author auto create
- * @since 1.0, 2016.08.23
+ * @since 1.0, 2020.04.14
  */
 class SimbaRptAdgroupkeywordeffectGetRequest
 {
@@ -18,7 +18,7 @@ class SimbaRptAdgroupkeywordeffectGetRequest
 	private $campaignId;
 	
 	/** 
-	 * 结束时间，格式yyyy-mm-dd；开始时间结束时间间隔不能超过30天
+	 * 结束时间，格式yyyy-mm-dd
 	 **/
 	private $endTime;
 	

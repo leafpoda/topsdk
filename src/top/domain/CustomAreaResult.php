@@ -1,19 +1,19 @@
 <?php
 
 /**
- * 数据
+ * data
  * @author auto create
  */
 class CustomAreaResult
 {
 	
 	/** 
-	 * 自定义区id
+	 * customAreaId
 	 **/
 	public $custom_area_id;
 	
 	/** 
-	 * 自定义区url
+	 * customAreaUrl
 	 **/
 	public $custom_area_url;
 	

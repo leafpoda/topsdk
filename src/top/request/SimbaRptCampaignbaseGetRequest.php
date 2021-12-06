@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rpt.campaignbase.get request
  * 
  * @author auto create
- * @since 1.0, 2015.05.19
+ * @since 1.0, 2019.11.08
  */
 class SimbaRptCampaignbaseGetRequest
 {

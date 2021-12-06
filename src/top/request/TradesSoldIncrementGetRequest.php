@@ -3,7 +3,7 @@
  * TOP API: taobao.trades.sold.increment.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2020.07.07
  */
 class TradesSoldIncrementGetRequest
 {

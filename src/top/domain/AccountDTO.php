@@ -8,32 +8,22 @@ class AccountDTO
 {
 	
 	/** 
-	 * 可用余额，单位:元
+	 * 可用余额，单位：元
 	 **/
 	public $available_balance;
 	
 	/** 
-	 * 余额，单位:元
+	 * 账户余额，单位：元
 	 **/
-	public $banlance;
+	public $balance;
 	
 	/** 
-	 * 现金余额，单位:元
+	 * 现金余额，单位：元
 	 **/
 	public $cash_balance;
 	
 	/** 
-	 * 授信额度，单位:元
-	 **/
-	public $credit_balance;
-	
-	/** 
-	 * 赠款余额，单位:元
-	 **/
-	public $grant_balance;
-	
-	/** 
-	 * 红包，单位:元
+	 * 红包，单位：元
 	 **/
 	public $red_packet;	
 }

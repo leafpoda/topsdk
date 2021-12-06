@@ -8,7 +8,7 @@ class UpdateItemQuantityOption
 {
 	
 	/** 
-	 * 增量幂等外部编码
+	 * 增量更新时幂等外部编码，只能包含十六进制字符(0-9,a-f,A-F)
 	 **/
 	public $outer_biz_key;
 	

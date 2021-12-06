@@ -3,7 +3,7 @@
  * TOP API: taobao.scitem.map.query request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.12.16
  */
 class ScitemMapQueryRequest
 {

@@ -28,11 +28,6 @@ class OpenExtContact
 	public $label_ids;
 	
 	/** 
-	 * 手机号
-	 **/
-	public $mobile;
-	
-	/** 
 	 * 名称
 	 **/
 	public $name;
@@ -45,7 +40,7 @@ class OpenExtContact
 	/** 
 	 * 共享给的部门ID
 	 **/
-	public $share_deptids;
+	public $share_dept_ids;
 	
 	/** 
 	 * 共享给的员工userId列表
@@ -53,13 +48,13 @@ class OpenExtContact
 	public $share_userids;
 	
 	/** 
-	 * 手机号国家码
-	 **/
-	public $state_code;
-	
-	/** 
 	 * 职位
 	 **/
-	public $title;	
+	public $title;
+	
+	/** 
+	 * 该外部联系人的userId
+	 **/
+	public $user_id;	
 }
 ?>

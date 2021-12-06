@@ -3,7 +3,7 @@
  * TOP API: tmall.item.calculate.hscode.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.01.22
  */
 class TmallItemCalculateHscodeGetRequest
 {

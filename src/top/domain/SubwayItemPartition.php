@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 直通车商品分页对象
+ * 带分页的淘宝商品
  * @author auto create
  */
 class SubwayItemPartition

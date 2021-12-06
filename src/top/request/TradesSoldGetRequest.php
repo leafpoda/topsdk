@@ -3,7 +3,7 @@
  * TOP API: taobao.trades.sold.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2020.07.07
  */
 class TradesSoldGetRequest
 {
@@ -11,6 +11,11 @@ class TradesSoldGetRequest
 	 * 买家昵称
 	 **/
 	private $buyerNick;
+	
+	/** 
+	 * 买家的openId
+	 **/
+	private $buyerOpenId;
 	
 	/** 
 	 * 查询交易创建时间结束。格式:yyyy-MM-dd HH:mm:ss
@@ -78,6 +83,17 @@ class TradesSoldGetRequest
 	public function getBuyerNick()
 	{
 		return $this->buyerNick;
+	}
+
+	public function setBuyerOpenId($buyerOpenId)
+	{
+		$this->buyerOpenId = $buyerOpenId;
+		$this->apiParas["buyer_open_id"] = $buyerOpenId;
+	}
+
+	public function getBuyerOpenId()
+	{
+		return $this->buyerOpenId;
 	}
 
 	public function setEndCreated($endCreated)

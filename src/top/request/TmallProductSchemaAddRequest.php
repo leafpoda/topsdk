@@ -3,7 +3,7 @@
  * TOP API: tmall.product.schema.add request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.12.31
  */
 class TmallProductSchemaAddRequest
 {

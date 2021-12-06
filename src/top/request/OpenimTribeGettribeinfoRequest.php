@@ -3,7 +3,7 @@
  * TOP API: taobao.openim.tribe.gettribeinfo request
  * 
  * @author auto create
- * @since 1.0, 2015.08.26
+ * @since 1.0, 2019.11.07
  */
 class OpenimTribeGettribeinfoRequest
 {

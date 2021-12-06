@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.smartwork.bpms.processinstance.list request
  * 
  * @author auto create
- * @since 1.0, 2017.09.20
+ * @since 1.0, 2019.07.03
  */
 class SmartworkBpmsProcessinstanceListRequest
 {
@@ -31,6 +31,11 @@ class SmartworkBpmsProcessinstanceListRequest
 	 * 审批实例开始时间，毫秒级
 	 **/
 	private $startTime;
+	
+	/** 
+	 * 发起人用户id列表
+	 **/
+	private $useridList;
 	
 	private $apiParas = array();
 	
@@ -89,6 +94,17 @@ class SmartworkBpmsProcessinstanceListRequest
 		return $this->startTime;
 	}
 
+	public function setUseridList($useridList)
+	{
+		$this->useridList = $useridList;
+		$this->apiParas["userid_list"] = $useridList;
+	}
+
+	public function getUseridList()
+	{
+		return $this->useridList;
+	}
+
 	public function getApiMethodName()
 	{
 		return "dingtalk.smartwork.bpms.processinstance.list";
@@ -104,6 +120,7 @@ class SmartworkBpmsProcessinstanceListRequest
 		
 		RequestCheckUtil::checkNotNull($this->processCode,"processCode");
 		RequestCheckUtil::checkNotNull($this->startTime,"startTime");
+		RequestCheckUtil::checkMaxListSize($this->useridList,20,"useridList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

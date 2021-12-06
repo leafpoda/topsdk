@@ -8,23 +8,23 @@ class Result
 {
 	
 	/** 
-	 * error
+	 * DimDtOs
 	 **/
-	public $error;
+	public $dim_list;
 	
 	/** 
-	 * errorCode
+	 * 人群模版id
 	 **/
-	public $error_code;
+	public $id;
 	
 	/** 
-	 * errorMsg
+	 * 人群模版名称
 	 **/
-	public $error_msg;
+	public $name;
 	
 	/** 
-	 * firstResult
+	 * 人群类型
 	 **/
-	public $results;	
+	public $type;	
 }
 ?>

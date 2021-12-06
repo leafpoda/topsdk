@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.page.publish request
  * 
  * @author auto create
- * @since 1.0, 2018.08.23
+ * @since 1.0, 2019.01.10
  */
 class TaojimuPagePublishRequest
 {

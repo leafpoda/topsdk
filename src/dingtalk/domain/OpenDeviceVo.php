@@ -18,6 +18,16 @@ class OpenDeviceVo
 	public $device_id;
 	
 	/** 
+	 * 设备MAC地址
+	 **/
+	public $device_mac;
+	
+	/** 
+	 * 设备SN
+	 **/
+	public $device_sn;
+	
+	/** 
 	 * 设备类型名称
 	 **/
 	public $device_type_name;

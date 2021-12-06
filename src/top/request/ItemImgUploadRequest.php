@@ -3,7 +3,7 @@
  * TOP API: taobao.item.img.upload request
  * 
  * @author auto create
- * @since 1.0, 2018.07.24
+ * @since 1.0, 2020.04.20
  */
 class ItemImgUploadRequest
 {
@@ -13,7 +13,7 @@ class ItemImgUploadRequest
 	private $id;
 	
 	/** 
-	 * 商品图片内容类型:JPG,GIF;最大:3M 。支持的文件类型：gif,jpg,jpeg,png
+	 * 商品图片内容类型:JPG;最大:3M 。支持的文件类型：jpg,jpeg,png
 	 **/
 	private $image;
 	

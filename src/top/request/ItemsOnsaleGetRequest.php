@@ -3,10 +3,15 @@
  * TOP API: taobao.items.onsale.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2020.08.11
  */
 class ItemsOnsaleGetRequest
 {
+	/** 
+	 * 商品类型：a-拍卖,b-一口价
+	 **/
+	private $auctionType;
+	
 	/** 
 	 * 商品类目ID。ItemCat中的cid字段。可以通过taobao.itemcats.get取到
 	 **/
@@ -84,6 +89,17 @@ class ItemsOnsaleGetRequest
 	
 	private $apiParas = array();
 	
+	public function setAuctionType($auctionType)
+	{
+		$this->auctionType = $auctionType;
+		$this->apiParas["auction_type"] = $auctionType;
+	}
+
+	public function getAuctionType()
+	{
+		return $this->auctionType;
+	}
+
 	public function setCid($cid)
 	{
 		$this->cid = $cid;

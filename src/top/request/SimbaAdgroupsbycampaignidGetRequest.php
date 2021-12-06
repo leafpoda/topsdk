@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroupsbycampaignid.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.08.29
  */
 class SimbaAdgroupsbycampaignidGetRequest
 {

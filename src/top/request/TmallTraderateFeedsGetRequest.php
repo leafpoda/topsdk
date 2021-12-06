@@ -3,7 +3,7 @@
  * TOP API: tmall.traderate.feeds.get request
  * 
  * @author auto create
- * @since 1.0, 2016.07.30
+ * @since 1.0, 2018.07.26
  */
 class TmallTraderateFeedsGetRequest
 {

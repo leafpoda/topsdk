@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.corp.message.corpconversation.sendmock request
  * 
  * @author auto create
- * @since 1.0, 2016.11.17
+ * @since 1.0, 2018.07.25
  */
 class CorpMessageCorpconversationSendmockRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.item.sku.get request
  * 
  * @author auto create
- * @since 1.0, 2018.08.02
+ * @since 1.0, 2020.07.21
  */
 class ItemSkuGetRequest
 {
@@ -13,17 +13,12 @@ class ItemSkuGetRequest
 	private $fields;
 	
 	/** 
-	 * 卖家nick(num_iid和nick必传一个)，只传卖家nick时候，该api返回的结果不包含cspu（SKu上的产品规格信息）。
-	 **/
-	private $nick;
-	
-	/** 
 	 * 商品的数字IID（num_iid和nick必传一个，推荐用num_iid），传商品的数字id返回的结果里包含cspu（SKu上的产品规格信息）。
 	 **/
 	private $numIid;
 	
 	/** 
-	 * Sku的id。可以通过taobao.item.get得到
+	 * Sku的id。可以通过taobao.item.seller.get得到
 	 **/
 	private $skuId;
 	
@@ -38,17 +33,6 @@ class ItemSkuGetRequest
 	public function getFields()
 	{
 		return $this->fields;
-	}
-
-	public function setNick($nick)
-	{
-		$this->nick = $nick;
-		$this->apiParas["nick"] = $nick;
-	}
-
-	public function getNick()
-	{
-		return $this->nick;
 	}
 
 	public function setNumIid($numIid)

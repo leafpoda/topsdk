@@ -1,7 +1,7 @@
 <?php
 
 /**
- * result
+ * 标签列表
  * @author auto create
  */
 class TagDTO
@@ -23,22 +23,17 @@ class TagDTO
 	public $tag_name;
 	
 	/** 
-	 * 标签选项分组，如店铺标签有2个分组，一个
+	 * tagOptionGroupDTOs
 	 **/
 	public $tag_option_group_d_t_os;
 	
 	/** 
-	 * 1-共享的标签,0-私有的标签
+	 * 1-共享标签,0-私有标签
 	 **/
 	public $tag_share;
 	
 	/** 
-	 * 1-正常状态,其它都为不可用状态
-	 **/
-	public $tag_status;
-	
-	/** 
-	 * 标签有效期
+	 * 有效期
 	 **/
 	public $valid_date;	
 }

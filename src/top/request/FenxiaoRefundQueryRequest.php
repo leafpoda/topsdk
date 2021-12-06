@@ -3,10 +3,15 @@
  * TOP API: taobao.fenxiao.refund.query request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2021.03.25
  */
 class FenxiaoRefundQueryRequest
 {
+	/** 
+	 * 代销：1 经销：2 寄售（猫超自营寄售）：5 平台寄售：6
+	 **/
+	private $channelCodes;
+	
 	/** 
 	 * 代销采购退款最迟修改时间。与start_date的最大时间间隔不能超过30天
 	 **/
@@ -32,8 +37,29 @@ class FenxiaoRefundQueryRequest
 	 **/
 	private $startDate;
 	
+	/** 
+	 * 渠道code，可批量 老供销渠道：999
+	 **/
+	private $tradeTypes;
+	
+	/** 
+	 * 角色，供应商：2，分销商：1
+	 **/
+	private $userRoleType;
+	
 	private $apiParas = array();
 	
+	public function setChannelCodes($channelCodes)
+	{
+		$this->channelCodes = $channelCodes;
+		$this->apiParas["channel_codes"] = $channelCodes;
+	}
+
+	public function getChannelCodes()
+	{
+		return $this->channelCodes;
+	}
+
 	public function setEndDate($endDate)
 	{
 		$this->endDate = $endDate;
@@ -89,6 +115,28 @@ class FenxiaoRefundQueryRequest
 		return $this->startDate;
 	}
 
+	public function setTradeTypes($tradeTypes)
+	{
+		$this->tradeTypes = $tradeTypes;
+		$this->apiParas["trade_types"] = $tradeTypes;
+	}
+
+	public function getTradeTypes()
+	{
+		return $this->tradeTypes;
+	}
+
+	public function setUserRoleType($userRoleType)
+	{
+		$this->userRoleType = $userRoleType;
+		$this->apiParas["user_role_type"] = $userRoleType;
+	}
+
+	public function getUserRoleType()
+	{
+		return $this->userRoleType;
+	}
+
 	public function getApiMethodName()
 	{
 		return "taobao.fenxiao.refund.query";
@@ -102,8 +150,10 @@ class FenxiaoRefundQueryRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->channelCodes,999,"channelCodes");
 		RequestCheckUtil::checkNotNull($this->endDate,"endDate");
 		RequestCheckUtil::checkNotNull($this->startDate,"startDate");
+		RequestCheckUtil::checkMaxListSize($this->tradeTypes,999,"tradeTypes");
 	}
 	
 	public function putOtherTextParam($key, $value) {

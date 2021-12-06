@@ -3,10 +3,15 @@
  * TOP API: taobao.open.account.token.apply request
  * 
  * @author auto create
- * @since 1.0, 2015.06.30
+ * @since 1.0, 2018.07.26
  */
 class OpenAccountTokenApplyRequest
 {
+	/** 
+	 * 用于透传一些业务附加参数
+	 **/
+	private $ext;
+	
 	/** 
 	 * isv自己账号的唯一id
 	 **/
@@ -34,6 +39,17 @@ class OpenAccountTokenApplyRequest
 	
 	private $apiParas = array();
 	
+	public function setExt($ext)
+	{
+		$this->ext = $ext;
+		$this->apiParas["ext"] = $ext;
+	}
+
+	public function getExt()
+	{
+		return $this->ext;
+	}
+
 	public function setIsvAccountId($isvAccountId)
 	{
 		$this->isvAccountId = $isvAccountId;

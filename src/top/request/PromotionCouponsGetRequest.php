@@ -3,7 +3,7 @@
  * TOP API: taobao.promotion.coupons.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2018.11.10
  */
 class PromotionCouponsGetRequest
 {

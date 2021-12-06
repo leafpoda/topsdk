@@ -1,14 +1,14 @@
 <?php
 
 /**
- * 关系对象列表
+ * 地点关系
  * @author auto create
  */
 class LocationRelationDto
 {
 	
 	/** 
-	 * 实体类型 2：仓库 6：门店
+	 * 实体类型 2：仓库  6：门店
 	 **/
 	public $source_inv_store_type;
 	
@@ -18,12 +18,12 @@ class LocationRelationDto
 	public $source_store_code;
 	
 	/** 
-	 * 状态  0 正常  -1 删除
+	 * 状态 0 正常  -1 删除
 	 **/
 	public $status;
 	
 	/** 
-	 * 实体类型 2：仓库 6：门店
+	 * 实体类型 2：仓库  6：门店
 	 **/
 	public $target_inv_store_type;
 	

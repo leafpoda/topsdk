@@ -3,7 +3,7 @@
  * dingtalk API: dingtalk.corp.emp.search request
  * 
  * @author auto create
- * @since 1.0, 2016.11.17
+ * @since 1.0, 2019.07.03
  */
 class CorpEmpSearchRequest
 {

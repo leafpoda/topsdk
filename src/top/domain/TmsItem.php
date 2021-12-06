@@ -1,25 +1,25 @@
 <?php
 
 /**
- * 包裹里面商品
+ * 运单信息
  * @author auto create
  */
-class Tmsitem
+class TmsItem
 {
 	
 	/** 
-	 * 商家编码
+	 * 前端商家编码
 	 **/
 	public $item_code;
 	
 	/** 
-	 * ERP商品ID
+	 * 数量
 	 **/
-	public $item_id;
+	public $item_quantity;
 	
 	/** 
-	 * 此运单里该商品的数量
+	 * 货品ID
 	 **/
-	public $item_qty;	
+	public $sc_item_id;	
 }
 ?>

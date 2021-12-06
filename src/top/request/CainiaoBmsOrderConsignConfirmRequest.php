@@ -3,7 +3,7 @@
  * TOP API: cainiao.bms.order.consign.confirm request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2019.06.20
  */
 class CainiaoBmsOrderConsignConfirmRequest
 {
