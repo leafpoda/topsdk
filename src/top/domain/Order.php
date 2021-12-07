@@ -653,6 +653,16 @@ class Order
 	public $service_id;
 	
 	/** 
+	 * 服务供应链-服务订单类型,1:主子挂载；2：双主挂载；3：单独售卖
+	 **/
+	public $service_order_type;
+	
+	/** 
+	 * 服务供应链-服务商外部编码
+	 **/
+	public $service_outer_id;
+	
+	/** 
 	 * 仓储信息
 	 **/
 	public $shipper;

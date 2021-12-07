@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.campaign.delete request
  * 
  * @author auto create
- * @since 1.0, 2020.08.18
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiCjzzCampaignDeleteRequest
 {
@@ -55,8 +55,6 @@ class ZuanshiCjzzCampaignDeleteRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
-		RequestCheckUtil::checkNotNull($this->campaignIdList,"campaignIdList");
-		RequestCheckUtil::checkMaxListSize($this->campaignIdList,999,"campaignIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

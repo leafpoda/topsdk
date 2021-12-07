@@ -3,7 +3,7 @@
  * TOP API: alibaba.item.publish.submit request
  * 
  * @author auto create
- * @since 1.0, 2021.06.21
+ * @since 1.0, 2021.11.24
  */
 class AlibabaItemPublishSubmitRequest
 {

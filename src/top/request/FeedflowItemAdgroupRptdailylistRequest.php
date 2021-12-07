@@ -3,7 +3,7 @@
  * TOP API: taobao.feedflow.item.adgroup.rptdailylist request
  * 
  * @author auto create
- * @since 1.0, 2019.07.30
+ * @since 1.0, 2021.11.23
  */
 class FeedflowItemAdgroupRptdailylistRequest
 {

@@ -43,6 +43,11 @@ class ServiceOrder
 	public $et_verified_shop_name;
 	
 	/** 
+	 * 服务订单与实物订单关联关系
+	 **/
+	public $ext_service_biz_id;
+	
+	/** 
 	 * 服务所属的交易订单号。如果服务为一年包换，则item_oid这笔订单享受改服务的保护
 	 **/
 	public $item_oid;
@@ -96,6 +101,16 @@ class ServiceOrder
 	 * 服务数字id
 	 **/
 	public $service_id;
+	
+	/** 
+	 * 服务供应链-服务订单类型,1:主子挂载；2：双主挂载；3：单独售卖
+	 **/
+	public $service_order_type;
+	
+	/** 
+	 * 服务供应链-服务商外部编码标
+	 **/
+	public $service_outer_id;
 	
 	/** 
 	 * 商品名称

@@ -3,7 +3,7 @@
  * TOP API: taobao.item.permit.check request
  * 
  * @author auto create
- * @since 1.0, 2020.09.28
+ * @since 1.0, 2021.11.23
  */
 class ItemPermitCheckRequest
 {

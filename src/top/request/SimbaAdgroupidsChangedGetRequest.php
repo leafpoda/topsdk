@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroupids.changed.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class SimbaAdgroupidsChangedGetRequest
 {
@@ -86,9 +86,6 @@ class SimbaAdgroupidsChangedGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMinValue($this->pageNo,1,"pageNo");
-		RequestCheckUtil::checkMaxValue($this->pageSize,1000,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 		RequestCheckUtil::checkNotNull($this->startTime,"startTime");
 	}
 	

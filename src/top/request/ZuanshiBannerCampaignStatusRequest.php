@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.campaign.status request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerCampaignStatusRequest
 {
@@ -54,8 +54,6 @@ class ZuanshiBannerCampaignStatusRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->campaignIdList,"campaignIdList");
-		RequestCheckUtil::checkMaxListSize($this->campaignIdList,20,"campaignIdList");
 		RequestCheckUtil::checkNotNull($this->status,"status");
 	}
 	

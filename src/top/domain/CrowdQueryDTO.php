@@ -13,6 +13,11 @@ class CrowdQueryDto
 	public $adgroup_id;
 	
 	/** 
+	 * 计划id
+	 **/
+	public $campaign_id;
+	
+	/** 
 	 * 人群id
 	 **/
 	public $crowd_id;

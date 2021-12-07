@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.creative.video.bind request
  * 
  * @author auto create
- * @since 1.0, 2021.05.28
+ * @since 1.0, 2021.11.25
  */
 class SubwayCreativeVideoBindRequest
 {

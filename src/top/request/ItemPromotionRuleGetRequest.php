@@ -3,7 +3,7 @@
  * TOP API: taobao.item.promotion.rule.get request
  * 
  * @author auto create
- * @since 1.0, 2021.03.15
+ * @since 1.0, 2021.11.24
  */
 class ItemPromotionRuleGetRequest
 {

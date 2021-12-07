@@ -3,7 +3,7 @@
  * TOP API: tmall.item.quantity.update request
  * 
  * @author auto create
- * @since 1.0, 2019.03.01
+ * @since 1.0, 2021.11.24
  */
 class TmallItemQuantityUpdateRequest
 {

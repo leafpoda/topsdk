@@ -3,7 +3,7 @@
  * TOP API: alibaba.gpu.schema.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.20
+ * @since 1.0, 2021.11.25
  */
 class AlibabaGpuSchemaUpdateRequest
 {

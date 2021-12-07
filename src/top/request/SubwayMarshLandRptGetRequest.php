@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.marsh.land.rpt.get request
  * 
  * @author auto create
- * @since 1.0, 2021.05.28
+ * @since 1.0, 2021.11.23
  */
 class SubwayMarshLandRptGetRequest
 {

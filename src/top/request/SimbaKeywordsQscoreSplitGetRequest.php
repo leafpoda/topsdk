@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.keywords.qscore.split.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.24
  */
 class SimbaKeywordsQscoreSplitGetRequest
 {
@@ -71,8 +71,6 @@ class SimbaKeywordsQscoreSplitGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adGroupId,"adGroupId");
-		RequestCheckUtil::checkNotNull($this->bidwordIds,"bidwordIds");
-		RequestCheckUtil::checkMaxListSize($this->bidwordIds,20,"bidwordIds");
 	}
 	
 	public function putOtherTextParam($key, $value) {

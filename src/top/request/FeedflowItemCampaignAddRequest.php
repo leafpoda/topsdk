@@ -3,7 +3,7 @@
  * TOP API: taobao.feedflow.item.campaign.add request
  * 
  * @author auto create
- * @since 1.0, 2019.06.05
+ * @since 1.0, 2021.11.23
  */
 class FeedflowItemCampaignAddRequest
 {

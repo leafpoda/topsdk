@@ -3,7 +3,7 @@
  * TOP API: cainiao.merchant.inventory.adjust request
  * 
  * @author auto create
- * @since 1.0, 2019.01.16
+ * @since 1.0, 2021.11.24
  */
 class CainiaoMerchantInventoryAdjustRequest
 {

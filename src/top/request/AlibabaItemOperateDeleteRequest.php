@@ -3,7 +3,7 @@
  * TOP API: alibaba.item.operate.delete request
  * 
  * @author auto create
- * @since 1.0, 2021.01.04
+ * @since 1.0, 2021.11.24
  */
 class AlibabaItemOperateDeleteRequest
 {

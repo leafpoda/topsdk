@@ -3,7 +3,7 @@
  * TOP API: tmall.item.sizemapping.template.get request
  * 
  * @author auto create
- * @since 1.0, 2018.11.23
+ * @since 1.0, 2021.11.23
  */
 class TmallItemSizemappingTemplateGetRequest
 {

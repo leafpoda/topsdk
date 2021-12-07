@@ -3,7 +3,7 @@
  * TOP API: taobao.fastlive.duration.account.daily.rpt request
  * 
  * @author auto create
- * @since 1.0, 2021.06.08
+ * @since 1.0, 2021.11.23
  */
 class FastliveDurationAccountDailyRptRequest
 {

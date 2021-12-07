@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.upgrade.crowd.page request
  * 
  * @author auto create
- * @since 1.0, 2019.04.03
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerUpgradeCrowdPageRequest
 {
@@ -200,7 +200,6 @@ class ZuanshiBannerUpgradeCrowdPageRequest
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
-		RequestCheckUtil::checkMaxListSize($this->targetTypes,20,"targetTypes");
 	}
 	
 	public function putOtherTextParam($key, $value) {

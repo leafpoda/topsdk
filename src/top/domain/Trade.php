@@ -68,6 +68,16 @@ class Trade
 	public $arrive_interval;
 	
 	/** 
+	 * asdp业务身份
+	 **/
+	public $asdp_biz_type;
+	
+	/** 
+	 * 1hold单，2释放
+	 **/
+	public $asdp_logistics_upgrade;
+	
+	/** 
 	 * 组合商品
 	 **/
 	public $assembly;
@@ -268,11 +278,6 @@ class Trade
 	public $easy_home_city_type;
 	
 	/** 
-	 * (encrypt)买家的支付宝id号，在UIC中有记录，买家支付宝的唯一标示，不因为买家更换Email账号而改变。
-	 **/
-	public $encrypt_alipay_id;
-	
-	/** 
 	 * 交易结束时间。交易成功时间(更新交易状态为成功的同时更新)/确认收货时间或者交易关闭时间 。格式:yyyy-MM-dd HH:mm:ss
 	 **/
 	public $end_time;
@@ -336,6 +341,26 @@ class Trade
 	 * 天猫电子凭证家装
 	 **/
 	public $eticket_service_addr;
+	
+	/** 
+	 * 买卡订单本金
+	 **/
+	public $expand_card_basic_price;
+	
+	/** 
+	 * 用卡订单所用的本金
+	 **/
+	public $expand_card_basic_price_used;
+	
+	/** 
+	 * 买卡订单权益金
+	 **/
+	public $expand_card_expand_price;
+	
+	/** 
+	 * 用卡订单所用的权益金
+	 **/
+	public $expand_card_expand_price_used;
 	
 	/** 
 	 * 购物金信息输出
@@ -526,6 +551,11 @@ class Trade
 	 * 是否是智慧门店订单，只有true，或者 null 两种情况
 	 **/
 	public $is_o2o_passport;
+	
+	/** 
+	 * 是否是Openmall订单
+	 **/
+	public $is_openmall;
 	
 	/** 
 	 * 是否是多次发货的订单如果卖家对订单进行多次发货，则为true否则为false
@@ -776,6 +806,11 @@ class Trade
 	 * o2oXiaopiao
 	 **/
 	public $o2o_xiaopiao;
+	
+	/** 
+	 * (收货人+手机号+收货地址+create）4字段返回值都都不能为空，否则生成不了oaid
+	 **/
+	public $oaid;
 	
 	/** 
 	 * 门店预约自提订单标

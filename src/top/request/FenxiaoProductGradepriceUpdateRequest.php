@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.gradeprice.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2021.11.23
  */
 class FenxiaoProductGradepriceUpdateRequest
 {
@@ -118,10 +118,6 @@ class FenxiaoProductGradepriceUpdateRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->ids,"ids");
-		RequestCheckUtil::checkMaxListSize($this->ids,200,"ids");
-		RequestCheckUtil::checkNotNull($this->prices,"prices");
-		RequestCheckUtil::checkMaxListSize($this->prices,200,"prices");
 		RequestCheckUtil::checkNotNull($this->productId,"productId");
 		RequestCheckUtil::checkNotNull($this->targetType,"targetType");
 	}

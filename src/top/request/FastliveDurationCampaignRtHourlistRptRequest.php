@@ -3,7 +3,7 @@
  * TOP API: taobao.fastlive.duration.campaign.rt.hourlist.rpt request
  * 
  * @author auto create
- * @since 1.0, 2021.04.06
+ * @since 1.0, 2021.11.25
  */
 class FastliveDurationCampaignRtHourlistRptRequest
 {

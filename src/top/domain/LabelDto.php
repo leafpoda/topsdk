@@ -1,19 +1,29 @@
 <?php
 
 /**
- * 定向
+ * 标签结构
  * @author auto create
  */
 class LabelDto
 {
 	
 	/** 
-	 * 标签id，可通过标签接口获取
+	 * 标签描述
+	 **/
+	public $label_desc;
+	
+	/** 
+	 * 标签id
 	 **/
 	public $label_id;
 	
 	/** 
-	 * 标签值，可通过标签接口获取
+	 * 标签名称
+	 **/
+	public $label_name;
+	
+	/** 
+	 * 标签值
 	 **/
 	public $label_value;
 	
@@ -23,7 +33,7 @@ class LabelDto
 	public $options;
 	
 	/** 
-	 * 定向id，可通过标签接口获取
+	 * 定向id
 	 **/
 	public $target_id;
 	

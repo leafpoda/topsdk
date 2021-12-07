@@ -3,7 +3,7 @@
  * TOP API: tmall.product.schema.update request
  * 
  * @author auto create
- * @since 1.0, 2019.07.26
+ * @since 1.0, 2021.11.23
  */
 class TmallProductSchemaUpdateRequest
 {

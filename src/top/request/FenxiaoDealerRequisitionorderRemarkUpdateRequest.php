@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.dealer.requisitionorder.remark.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2021.11.23
  */
 class FenxiaoDealerRequisitionorderRemarkUpdateRequest
 {
@@ -79,8 +79,6 @@ class FenxiaoDealerRequisitionorderRemarkUpdateRequest
 		
 		RequestCheckUtil::checkNotNull($this->dealerOrderId,"dealerOrderId");
 		RequestCheckUtil::checkNotNull($this->supplierMemoFlag,"supplierMemoFlag");
-		RequestCheckUtil::checkMaxValue($this->supplierMemoFlag,5,"supplierMemoFlag");
-		RequestCheckUtil::checkMinValue($this->supplierMemoFlag,1,"supplierMemoFlag");
 	}
 	
 	public function putOtherTextParam($key, $value) {

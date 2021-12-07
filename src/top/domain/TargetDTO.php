@@ -1,21 +1,11 @@
 <?php
 
 /**
- * 定向结构
+ * 定向列表
  * @author auto create
  */
-class TargetDto
+class TargetDTO
 {
-	
-	/** 
-	 * 定向描述
-	 **/
-	public $target_desc;
-	
-	/** 
-	 * 定向id
-	 **/
-	public $target_id;
 	
 	/** 
 	 * 定向名称
@@ -23,7 +13,7 @@ class TargetDto
 	public $target_name;
 	
 	/** 
-	 * 定向类型
+	 * 定向类型,用于标识定向，创建修改查询定向接口使用
 	 **/
 	public $target_type;	
 }

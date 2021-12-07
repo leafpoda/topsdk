@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.report.hourlist request
  * 
  * @author auto create
- * @since 1.0, 2020.09.29
+ * @since 1.0, 2021.11.23
  */
 class ZuanshiCjzzReportHourlistRequest
 {
@@ -154,8 +154,6 @@ class ZuanshiCjzzReportHourlistRequest
 		RequestCheckUtil::checkNotNull($this->componentType,"componentType");
 		RequestCheckUtil::checkNotNull($this->effectPeriod,"effectPeriod");
 		RequestCheckUtil::checkNotNull($this->effectType,"effectType");
-		RequestCheckUtil::checkNotNull($this->logDateList,"logDateList");
-		RequestCheckUtil::checkMaxListSize($this->logDateList,999,"logDateList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

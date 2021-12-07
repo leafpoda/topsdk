@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.adgroup.adzone.findpage request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerAdgroupAdzoneFindpageRequest
 {
@@ -135,7 +135,6 @@ class ZuanshiBannerAdgroupAdzoneFindpageRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
-		RequestCheckUtil::checkMaxListSize($this->adzoneIdList,20,"adzoneIdList");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 	}
 	

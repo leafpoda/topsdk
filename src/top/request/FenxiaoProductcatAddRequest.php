@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.productcat.add request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2021.11.25
  */
 class FenxiaoProductcatAddRequest
 {
@@ -103,19 +103,11 @@ class FenxiaoProductcatAddRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->agentCostPercent,"agentCostPercent");
-		RequestCheckUtil::checkMaxValue($this->agentCostPercent,99999,"agentCostPercent");
-		RequestCheckUtil::checkMinValue($this->agentCostPercent,100,"agentCostPercent");
 		RequestCheckUtil::checkNotNull($this->dealerCostPercent,"dealerCostPercent");
-		RequestCheckUtil::checkMaxValue($this->dealerCostPercent,99999,"dealerCostPercent");
-		RequestCheckUtil::checkMinValue($this->dealerCostPercent,100,"dealerCostPercent");
 		RequestCheckUtil::checkNotNull($this->name,"name");
 		RequestCheckUtil::checkMaxLength($this->name,10,"name");
 		RequestCheckUtil::checkNotNull($this->retailHighPercent,"retailHighPercent");
-		RequestCheckUtil::checkMaxValue($this->retailHighPercent,99999,"retailHighPercent");
-		RequestCheckUtil::checkMinValue($this->retailHighPercent,100,"retailHighPercent");
 		RequestCheckUtil::checkNotNull($this->retailLowPercent,"retailLowPercent");
-		RequestCheckUtil::checkMaxValue($this->retailLowPercent,99999,"retailLowPercent");
-		RequestCheckUtil::checkMinValue($this->retailLowPercent,100,"retailLowPercent");
 	}
 	
 	public function putOtherTextParam($key, $value) {

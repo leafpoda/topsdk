@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.creative.find request
  * 
  * @author auto create
- * @since 1.0, 2018.12.17
+ * @since 1.0, 2021.11.23
  */
 class ZuanshiBannerCreativeFindRequest
 {
@@ -198,10 +198,6 @@ class ZuanshiBannerCreativeFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->auditStatusList,20,"auditStatusList");
-		RequestCheckUtil::checkMaxListSize($this->formatList,20,"formatList");
-		RequestCheckUtil::checkMaxListSize($this->idList,20,"idList");
-		RequestCheckUtil::checkMaxListSize($this->sizeList,20,"sizeList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -33,6 +33,11 @@ class Refund
 	public $attributes;
 	
 	/** 
+	 * 买家展示昵称
+	 **/
+	public $buyer_display_nick;
+	
+	/** 
 	 * 买家昵称
 	 **/
 	public $buyer_nick;
@@ -113,6 +118,11 @@ class Refund
 	public $order_status;
 	
 	/** 
+	 * ouid
+	 **/
+	public $ouid;
+	
+	/** 
 	 * 商品外部商家编码
 	 **/
 	public $outer_id;
@@ -158,6 +168,11 @@ class Refund
 	public $refund_version;
 	
 	/** 
+	 * 卖家展示昵称
+	 **/
+	public $seller_display_nick;
+	
+	/** 
 	 * 卖家昵称
 	 **/
 	public $seller_nick;
@@ -181,6 +196,16 @@ class Refund
 	 * 商品SKU信息
 	 **/
 	public $sku_info;
+	
+	/** 
+	 * 特殊退款类型：退差返现，价保服务
+	 **/
+	public $special_flow_type;
+	
+	/** 
+	 * 逆向特殊部分退类型：价保服务、退差返现
+	 **/
+	public $special_refund_type;
 	
 	/** 
 	 * 分账给卖家的钱

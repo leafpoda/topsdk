@@ -3,7 +3,7 @@
  * TOP API: taobao.inventory.merchant.adjust request
  * 
  * @author auto create
- * @since 1.0, 2021.01.13
+ * @since 1.0, 2021.11.24
  */
 class InventoryMerchantAdjustRequest
 {

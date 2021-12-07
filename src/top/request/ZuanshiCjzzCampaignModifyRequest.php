@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.campaign.modify request
  * 
  * @author auto create
- * @since 1.0, 2020.10.16
+ * @since 1.0, 2021.11.23
  */
 class ZuanshiCjzzCampaignModifyRequest
 {
@@ -262,13 +262,9 @@ class ZuanshiCjzzCampaignModifyRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->adzoneIdList,999,"adzoneIdList");
-		RequestCheckUtil::checkMaxListSize($this->areaIdList,999,"areaIdList");
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 		RequestCheckUtil::checkNotNull($this->promotionType,"promotionType");
-		RequestCheckUtil::checkMaxListSize($this->weekEnd,999,"weekEnd");
-		RequestCheckUtil::checkMaxListSize($this->weekOneToFive,999,"weekOneToFive");
 	}
 	
 	public function putOtherTextParam($key, $value) {

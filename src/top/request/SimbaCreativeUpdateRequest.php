@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.creative.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.17
  */
 class SimbaCreativeUpdateRequest
 {
@@ -33,7 +33,7 @@ class SimbaCreativeUpdateRequest
 	private $pictureId;
 	
 	/** 
-	 * 创意标题，最多20个汉字
+	 * 创意标题，最多30个汉字
 	 **/
 	private $title;
 	
@@ -122,7 +122,7 @@ class SimbaCreativeUpdateRequest
 		RequestCheckUtil::checkNotNull($this->creativeId,"creativeId");
 		RequestCheckUtil::checkNotNull($this->imgUrl,"imgUrl");
 		RequestCheckUtil::checkNotNull($this->title,"title");
-		RequestCheckUtil::checkMaxLength($this->title,40,"title");
+		RequestCheckUtil::checkMaxLength($this->title,60,"title");
 	}
 	
 	public function putOtherTextParam($key, $value) {

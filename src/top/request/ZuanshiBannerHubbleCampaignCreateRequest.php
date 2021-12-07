@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.hubble.campaign.create request
  * 
  * @author auto create
- * @since 1.0, 2020.02.21
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerHubbleCampaignCreateRequest
 {
@@ -214,8 +214,6 @@ class ZuanshiBannerHubbleCampaignCreateRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->areaIdList,"areaIdList");
-		RequestCheckUtil::checkMaxListSize($this->areaIdList,20,"areaIdList");
 		RequestCheckUtil::checkNotNull($this->bidType,"bidType");
 		RequestCheckUtil::checkNotNull($this->dayBudget,"dayBudget");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
@@ -224,10 +222,6 @@ class ZuanshiBannerHubbleCampaignCreateRequest
 		RequestCheckUtil::checkNotNull($this->speedType,"speedType");
 		RequestCheckUtil::checkNotNull($this->startTime,"startTime");
 		RequestCheckUtil::checkNotNull($this->title,"title");
-		RequestCheckUtil::checkNotNull($this->weekday,"weekday");
-		RequestCheckUtil::checkMaxListSize($this->weekday,20,"weekday");
-		RequestCheckUtil::checkNotNull($this->weekend,"weekend");
-		RequestCheckUtil::checkMaxListSize($this->weekend,20,"weekend");
 	}
 	
 	public function putOtherTextParam($key, $value) {

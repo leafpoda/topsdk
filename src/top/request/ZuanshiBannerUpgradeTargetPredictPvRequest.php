@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.upgrade.target.predict.pv request
  * 
  * @author auto create
- * @since 1.0, 2019.04.03
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerUpgradeTargetPredictPvRequest
 {

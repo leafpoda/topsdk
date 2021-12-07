@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.hubble.adgroup.create request
  * 
  * @author auto create
- * @since 1.0, 2020.04.08
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerHubbleAdgroupCreateRequest
 {

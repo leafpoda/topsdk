@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.report.daylist request
  * 
  * @author auto create
- * @since 1.0, 2020.10.16
+ * @since 1.0, 2021.11.23
  */
 class ZuanshiCjzzReportDaylistRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.creative.modifystatus request
  * 
  * @author auto create
- * @since 1.0, 2020.08.18
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiCjzzCreativeModifystatusRequest
 {
@@ -70,8 +70,6 @@ class ZuanshiCjzzCreativeModifystatusRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->creativeIdList,"creativeIdList");
-		RequestCheckUtil::checkMaxListSize($this->creativeIdList,999,"creativeIdList");
 		RequestCheckUtil::checkNotNull($this->onlineStatus,"onlineStatus");
 	}
 	

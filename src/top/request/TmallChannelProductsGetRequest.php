@@ -3,7 +3,7 @@
  * TOP API: tmall.channel.products.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class TmallChannelProductsGetRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.feedflow.item.adgroup.delete request
  * 
  * @author auto create
- * @since 1.0, 2019.05.07
+ * @since 1.0, 2021.11.23
  */
 class FeedflowItemAdgroupDeleteRequest
 {
@@ -54,8 +54,6 @@ class FeedflowItemAdgroupDeleteRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->adgroupIdList,"adgroupIdList");
-		RequestCheckUtil::checkMaxListSize($this->adgroupIdList,20,"adgroupIdList");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 	}
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.crowd.update request
  * 
  * @author auto create
- * @since 1.0, 2018.11.08
+ * @since 1.0, 2021.11.18
  */
 class ZuanshiBannerCrowdUpdateRequest
 {

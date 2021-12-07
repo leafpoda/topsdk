@@ -3,7 +3,7 @@
  * TOP API: tmall.channel.products.query request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class TmallChannelProductsQueryRequest
 {
@@ -120,7 +120,6 @@ class TmallChannelProductsQueryRequest
 		
 		RequestCheckUtil::checkNotNull($this->pageNum,"pageNum");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");
-		RequestCheckUtil::checkMaxListSize($this->productIds,20,"productIds");
 	}
 	
 	public function putOtherTextParam($key, $value) {

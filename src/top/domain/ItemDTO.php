@@ -1,30 +1,40 @@
 <?php
 
 /**
- * 宝贝列表
+ * 商品列表
  * @author auto create
  */
-class ItemDTO
+class ItemDto
 {
 	
 	/** 
-	 * 宝贝ID
+	 * 不可以使用的原因
+	 **/
+	public $access_allowed_info;
+	
+	/** 
+	 * 商品主图
+	 **/
+	public $img_url;
+	
+	/** 
+	 * 是否可以使用，false不可以进行广告投放
+	 **/
+	public $is_access_allowed;
+	
+	/** 
+	 * 商品id
 	 **/
 	public $item_id;
 	
 	/** 
-	 * 宝贝落地页
+	 * 商品落地页
 	 **/
-	public $item_landing_page;
+	public $link_url;
 	
 	/** 
-	 * 宝贝标题
+	 * 商品标题
 	 **/
-	public $item_name;
-	
-	/** 
-	 * 图片链接
-	 **/
-	public $item_pic_url;	
+	public $title;	
 }
 ?>

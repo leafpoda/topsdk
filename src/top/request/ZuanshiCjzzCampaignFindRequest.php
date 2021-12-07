@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.campaign.find request
  * 
  * @author auto create
- * @since 1.0, 2020.09.30
+ * @since 1.0, 2021.11.23
  */
 class ZuanshiCjzzCampaignFindRequest
 {

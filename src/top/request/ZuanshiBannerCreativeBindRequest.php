@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.creative.bind request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerCreativeBindRequest
 {
@@ -72,8 +72,6 @@ class ZuanshiBannerCreativeBindRequest
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
-		RequestCheckUtil::checkNotNull($this->creativeIdList,"creativeIdList");
-		RequestCheckUtil::checkMaxListSize($this->creativeIdList,20,"creativeIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

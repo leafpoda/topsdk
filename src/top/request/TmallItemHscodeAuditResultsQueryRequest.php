@@ -3,7 +3,7 @@
  * TOP API: tmall.item.hscode.audit.results.query request
  * 
  * @author auto create
- * @since 1.0, 2019.08.19
+ * @since 1.0, 2021.11.25
  */
 class TmallItemHscodeAuditResultsQueryRequest
 {

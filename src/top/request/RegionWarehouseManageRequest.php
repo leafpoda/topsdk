@@ -3,7 +3,7 @@
  * TOP API: taobao.region.warehouse.manage request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class RegionWarehouseManageRequest
 {
@@ -54,8 +54,6 @@ class RegionWarehouseManageRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->regions,"regions");
-		RequestCheckUtil::checkMaxListSize($this->regions,100,"regions");
 		RequestCheckUtil::checkNotNull($this->storeCode,"storeCode");
 	}
 	

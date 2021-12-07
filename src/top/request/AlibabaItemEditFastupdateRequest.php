@@ -3,7 +3,7 @@
  * TOP API: alibaba.item.edit.fastupdate request
  * 
  * @author auto create
- * @since 1.0, 2021.03.05
+ * @since 1.0, 2021.11.24
  */
 class AlibabaItemEditFastupdateRequest
 {

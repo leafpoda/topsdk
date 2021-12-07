@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.crowd.find request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.22
  */
 class ZuanshiBannerCrowdFindRequest
 {
@@ -120,10 +120,6 @@ class ZuanshiBannerCrowdFindRequest
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
-		RequestCheckUtil::checkMinValue($this->pageNum,1,"pageNum");
-		RequestCheckUtil::checkMaxValue($this->pageSize,200,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
-		RequestCheckUtil::checkMaxListSize($this->targetTypes,20,"targetTypes");
 	}
 	
 	public function putOtherTextParam($key, $value) {

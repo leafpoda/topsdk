@@ -3,7 +3,7 @@
  * TOP API: alibaba.item.publish.schema.get request
  * 
  * @author auto create
- * @since 1.0, 2021.03.15
+ * @since 1.0, 2021.11.24
  */
 class AlibabaItemPublishSchemaGetRequest
 {
@@ -135,7 +135,6 @@ class AlibabaItemPublishSchemaGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->catId,"catId");
-		RequestCheckUtil::checkMaxListSize($this->images,5,"images");
 		RequestCheckUtil::checkNotNull($this->market,"market");
 	}
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.topic.group.delete request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class TmcTopicGroupDeleteRequest
 {
@@ -71,8 +71,6 @@ class TmcTopicGroupDeleteRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->groupName,"groupName");
-		RequestCheckUtil::checkNotNull($this->topics,"topics");
-		RequestCheckUtil::checkMaxListSize($this->topics,20,"topics");
 	}
 	
 	public function putOtherTextParam($key, $value) {

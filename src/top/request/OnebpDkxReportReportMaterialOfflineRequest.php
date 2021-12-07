@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.report.report.material.offline request
  * 
  * @author auto create
- * @since 1.0, 2021.10.08
+ * @since 1.0, 2021.11.23
  */
 class OnebpDkxReportReportMaterialOfflineRequest
 {

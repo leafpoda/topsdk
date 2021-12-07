@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.upgrade.target.label.find request
  * 
  * @author auto create
- * @since 1.0, 2019.04.08
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerUpgradeTargetLabelFindRequest
 {

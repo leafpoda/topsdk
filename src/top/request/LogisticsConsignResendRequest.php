@@ -3,7 +3,7 @@
  * TOP API: taobao.logistics.consign.resend request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2021.08.18
  */
 class LogisticsConsignResendRequest
 {

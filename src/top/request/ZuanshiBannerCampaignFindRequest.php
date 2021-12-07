@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.campaign.find request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerCampaignFindRequest
 {
@@ -134,10 +134,6 @@ class ZuanshiBannerCampaignFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->campaignIdList,15,"campaignIdList");
-		RequestCheckUtil::checkMinValue($this->pageNum,1,"pageNum");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
-		RequestCheckUtil::checkMaxListSize($this->statusList,3,"statusList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

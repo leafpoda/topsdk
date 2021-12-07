@@ -3,7 +3,7 @@
  * TOP API: taobao.picture.replace request
  * 
  * @author auto create
- * @since 1.0, 2019.01.21
+ * @since 1.0, 2021.11.25
  */
 class PictureReplaceRequest
 {

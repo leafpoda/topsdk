@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.topic.group.add request
  * 
  * @author auto create
- * @since 1.0, 2018.08.13
+ * @since 1.0, 2021.11.18
  */
 class TmcTopicGroupAddRequest
 {
@@ -55,8 +55,6 @@ class TmcTopicGroupAddRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->groupName,"groupName");
-		RequestCheckUtil::checkNotNull($this->topics,"topics");
-		RequestCheckUtil::checkMaxListSize($this->topics,20,"topics");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -8,7 +8,7 @@ class InventoryCheckDto
 {
 	
 	/** 
-	 * 2: 出入库盘盈盘亏
+	 * 1:全量更新   2: 出入库盘盈盘亏
 	 **/
 	public $check_mode;
 	

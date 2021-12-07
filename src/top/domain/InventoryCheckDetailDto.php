@@ -18,17 +18,17 @@ class InventoryCheckDetailDto
 	public $quantity;
 	
 	/** 
-	 * 后端货品id
+	 * 若为货品仓库存，则此处是货品ID 若为商品直接设置仓库存，则此处是商品ID， 若商品带SKU，还需要补充skuId
 	 **/
 	public $sc_item_id;
 	
 	/** 
-	 * 编辑前端商品仓库存时可以指定sku
+	 * 调整商品对应的SKUID，如果商品为货品，则为0
 	 **/
 	public $sku_id;
 	
 	/** 
-	 * 每个货品的调整子单据号，作为业务调整依据，处理时会幂等
+	 * 每个货品的调整子单据号，作为业务调整依据，处理时会根据此单据号作幂
 	 **/
 	public $sub_order_id;	
 }

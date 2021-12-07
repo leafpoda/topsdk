@@ -58,6 +58,11 @@ class User
 	public $created;
 	
 	/** 
+	 * 修改后的昵称
+	 **/
+	public $display_nick;
+	
+	/** 
 	 * 联系人email
 	 **/
 	public $email;
@@ -86,6 +91,11 @@ class User
 	 * 是否24小时闪电发货(实物类)
 	 **/
 	public $is_lightning_consignment;
+	
+	/** 
+	 * 是否是特价版商家，需要field查询
+	 **/
+	public $is_tjb_seller;
 	
 	/** 
 	 * 可上传商品图片数量

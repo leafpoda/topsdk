@@ -8,7 +8,17 @@ class OptionDto
 {
 	
 	/** 
-	 * 标签值
+	 * 选项描述
+	 **/
+	public $option_desc;
+	
+	/** 
+	 * 选项名称
+	 **/
+	public $option_name;
+	
+	/** 
+	 * 选项值
 	 **/
 	public $option_value;	
 }

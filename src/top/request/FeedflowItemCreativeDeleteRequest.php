@@ -3,7 +3,7 @@
  * TOP API: taobao.feedflow.item.creative.delete request
  * 
  * @author auto create
- * @since 1.0, 2019.05.07
+ * @since 1.0, 2021.11.25
  */
 class FeedflowItemCreativeDeleteRequest
 {
@@ -38,8 +38,6 @@ class FeedflowItemCreativeDeleteRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->creativeIdList,"creativeIdList");
-		RequestCheckUtil::checkMaxListSize($this->creativeIdList,20,"creativeIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

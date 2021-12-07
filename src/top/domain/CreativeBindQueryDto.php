@@ -18,6 +18,11 @@ class CreativeBindQueryDto
 	public $audit_status;
 	
 	/** 
+	 * 计划id
+	 **/
+	public $campaign_id;
+	
+	/** 
 	 * 创意id列表
 	 **/
 	public $creative_id_list;

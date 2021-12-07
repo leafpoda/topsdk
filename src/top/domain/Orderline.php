@@ -1,26 +1,16 @@
 <?php
 
 /**
- * 订单信息
+ * 订单行
  * @author auto create
  */
-class OrderLine
+class Orderline
 {
 	
 	/** 
-	 * 批次编码
+	 * 数量
 	 **/
-	public $batch_code;
-	
-	/** 
-	 * 过期日期，生产日期(YYYY-MM-DD)
-	 **/
-	public $expire_date;
-	
-	/** 
-	 * 库存类型，ZP=正品、CC=残次
-	 **/
-	public $inventory_type;
+	public $amount;
 	
 	/** 
 	 * 商品编码
@@ -33,38 +23,8 @@ class OrderLine
 	public $item_id;
 	
 	/** 
-	 * 商品名称
-	 **/
-	public $item_name;
-	
-	/** 
-	 * 商品数量
-	 **/
-	public $item_quantity;
-	
-	/** 
 	 * 订单行号
 	 **/
-	public $order_line_no;
-	
-	/** 
-	 * 生产批号
-	 **/
-	public $produce_code;
-	
-	/** 
-	 * 生产日期，生产日期(YYYY-MM-DD)
-	 **/
-	public $product_date;
-	
-	/** 
-	 * 原交易单，供销平台交易单号、分销平台单号
-	 **/
-	public $source_order_code;
-	
-	/** 
-	 * 子交易单号
-	 **/
-	public $sub_source_order_code;	
+	public $order_line_no;	
 }
 ?>

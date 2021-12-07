@@ -3,7 +3,7 @@
  * TOP API: taobao.fastlive.duration.crowd.page request
  * 
  * @author auto create
- * @since 1.0, 2021.03.22
+ * @since 1.0, 2021.11.25
  */
 class FastliveDurationCrowdPageRequest
 {

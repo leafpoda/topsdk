@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.campaigngroup.find request
  * 
  * @author auto create
- * @since 1.0, 2020.10.16
+ * @since 1.0, 2021.11.23
  */
 class ZuanshiCjzzCampaigngroupFindRequest
 {
@@ -103,7 +103,6 @@ class ZuanshiCjzzCampaigngroupFindRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
-		RequestCheckUtil::checkMaxListSize($this->campaignGroupIdList,999,"campaignGroupIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

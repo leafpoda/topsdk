@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.user.permit request
  * 
  * @author auto create
- * @since 1.0, 2018.12.22
+ * @since 1.0, 2021.11.24
  */
 class TmcUserPermitRequest
 {
@@ -38,7 +38,6 @@ class TmcUserPermitRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->topics,100,"topics");
 	}
 	
 	public function putOtherTextParam($key, $value) {

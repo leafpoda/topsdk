@@ -1,34 +1,24 @@
 <?php
 
 /**
- * result
+ * 分页结果
  * @author auto create
  */
 class PageResultDto
 {
 	
 	/** 
-	 * 错误码
+	 * 错误信息
 	 **/
-	public $error_code;
+	public $message;
 	
 	/** 
-	 * 异常信息
+	 * 数据结果
 	 **/
-	public $error_message;
+	public $result_list;
 	
 	/** 
-	 * 是否有下一页
-	 **/
-	public $has_next;
-	
-	/** 
-	 * 产品信息
-	 **/
-	public $product_list;
-	
-	/** 
-	 * 是否查询成功
+	 * 执行是否成功
 	 **/
 	public $success;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.crowd.crowd.template request
  * 
  * @author auto create
- * @since 1.0, 2021.10.08
+ * @since 1.0, 2021.11.25
  */
 class OnebpDkxCrowdCrowdTemplateRequest
 {

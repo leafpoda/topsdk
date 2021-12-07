@@ -1,30 +1,15 @@
 <?php
 
 /**
- * result
+ * 接口返回model
  * @author auto create
  */
 class Result
 {
 	
 	/** 
-	 * DimDtOs
+	 * 更新数目
 	 **/
-	public $dim_list;
-	
-	/** 
-	 * 人群模版id
-	 **/
-	public $id;
-	
-	/** 
-	 * 人群模版名称
-	 **/
-	public $name;
-	
-	/** 
-	 * 人群类型
-	 **/
-	public $type;	
+	public $result;	
 }
 ?>

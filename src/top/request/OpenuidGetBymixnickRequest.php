@@ -3,7 +3,7 @@
  * TOP API: taobao.openuid.get.bymixnick request
  * 
  * @author auto create
- * @since 1.0, 2021.08.20
+ * @since 1.0, 2021.11.23
  */
 class OpenuidGetBymixnickRequest
 {

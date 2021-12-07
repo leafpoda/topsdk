@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.adgroup.find request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiBannerAdgroupFindRequest
 {
@@ -118,7 +118,6 @@ class ZuanshiBannerAdgroupFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->adgroupIdList,20,"adgroupIdList");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 	}
 	

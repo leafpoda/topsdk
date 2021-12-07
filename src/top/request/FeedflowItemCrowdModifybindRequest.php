@@ -3,7 +3,7 @@
  * TOP API: taobao.feedflow.item.crowd.modifybind request
  * 
  * @author auto create
- * @since 1.0, 2020.09.15
+ * @since 1.0, 2021.11.23
  */
 class FeedflowItemCrowdModifybindRequest
 {

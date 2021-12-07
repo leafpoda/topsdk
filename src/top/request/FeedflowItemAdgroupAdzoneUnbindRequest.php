@@ -3,7 +3,7 @@
  * TOP API: taobao.feedflow.item.adgroup.adzone.unbind request
  * 
  * @author auto create
- * @since 1.0, 2019.05.07
+ * @since 1.0, 2021.11.23
  */
 class FeedflowItemAdgroupAdzoneUnbindRequest
 {
@@ -55,8 +55,6 @@ class FeedflowItemAdgroupAdzoneUnbindRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
-		RequestCheckUtil::checkNotNull($this->adzoneIdList,"adzoneIdList");
-		RequestCheckUtil::checkMaxListSize($this->adzoneIdList,20,"adzoneIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.refund.query request
  * 
  * @author auto create
- * @since 1.0, 2021.03.25
+ * @since 1.0, 2021.11.23
  */
 class FenxiaoRefundQueryRequest
 {
@@ -150,10 +150,8 @@ class FenxiaoRefundQueryRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->channelCodes,999,"channelCodes");
 		RequestCheckUtil::checkNotNull($this->endDate,"endDate");
 		RequestCheckUtil::checkNotNull($this->startDate,"startDate");
-		RequestCheckUtil::checkMaxListSize($this->tradeTypes,999,"tradeTypes");
 	}
 	
 	public function putOtherTextParam($key, $value) {

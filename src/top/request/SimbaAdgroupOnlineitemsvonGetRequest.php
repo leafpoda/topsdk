@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroup.onlineitemsvon.get request
  * 
  * @author auto create
- * @since 1.0, 2019.04.28
+ * @since 1.0, 2021.11.23
  */
 class SimbaAdgroupOnlineitemsvonGetRequest
 {
@@ -118,8 +118,6 @@ class SimbaAdgroupOnlineitemsvonGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxValue($this->pageNo,50,"pageNo");
-		RequestCheckUtil::checkMaxValue($this->pageSize,200,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

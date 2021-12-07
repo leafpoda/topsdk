@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.item.video.upload request
  * 
  * @author auto create
- * @since 1.0, 2021.05.28
+ * @since 1.0, 2021.11.25
  */
 class SubwayItemVideoUploadRequest
 {

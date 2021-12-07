@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.serchcrowd.batch.delete request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.23
  */
 class SimbaSerchcrowdBatchDeleteRequest
 {
@@ -70,8 +70,6 @@ class SimbaSerchcrowdBatchDeleteRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->adgroupCrowdIds,"adgroupCrowdIds");
-		RequestCheckUtil::checkMaxListSize($this->adgroupCrowdIds,200,"adgroupCrowdIds");
 		RequestCheckUtil::checkNotNull($this->nick,"nick");
 	}
 	

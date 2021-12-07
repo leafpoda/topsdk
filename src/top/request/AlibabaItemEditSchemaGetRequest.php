@@ -3,7 +3,7 @@
  * TOP API: alibaba.item.edit.schema.get request
  * 
  * @author auto create
- * @since 1.0, 2021.03.15
+ * @since 1.0, 2021.11.24
  */
 class AlibabaItemEditSchemaGetRequest
 {
@@ -11,6 +11,11 @@ class AlibabaItemEditSchemaGetRequest
 	 * 业务扩展参数，需与平台约定好
 	 **/
 	private $bizType;
+	
+	/** 
+	 * 制定返回schema中field字段列表，可用于裁剪返回的schema信息。不填则为全部field
+	 **/
+	private $fields;
 	
 	/** 
 	 * 商品ID
@@ -28,6 +33,17 @@ class AlibabaItemEditSchemaGetRequest
 	public function getBizType()
 	{
 		return $this->bizType;
+	}
+
+	public function setFields($fields)
+	{
+		$this->fields = $fields;
+		$this->apiParas["fields"] = $fields;
+	}
+
+	public function getFields()
+	{
+		return $this->fields;
 	}
 
 	public function setItemId($itemId)

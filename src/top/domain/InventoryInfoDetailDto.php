@@ -13,6 +13,11 @@ class InventoryInfoDetailDto
 	public $inv_store_type;
 	
 	/** 
+	 * 1前端商品 2供应链货品
+	 **/
+	public $item_type;
+	
+	/** 
 	 * 占用库存数
 	 **/
 	public $occupy_quantity;
@@ -36,6 +41,11 @@ class InventoryInfoDetailDto
 	 * 后端商品id
 	 **/
 	public $sc_item_id;
+	
+	/** 
+	 * skuId
+	 **/
+	public $sku_id;
 	
 	/** 
 	 * 仓库code

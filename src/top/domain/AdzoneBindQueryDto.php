@@ -23,6 +23,11 @@ class AdzoneBindQueryDto
 	public $adzone_name;
 	
 	/** 
+	 * 计划id
+	 **/
+	public $campaign_id;
+	
+	/** 
 	 * 分页条件
 	 **/
 	public $offset;

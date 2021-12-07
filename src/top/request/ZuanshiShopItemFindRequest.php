@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.shop.item.find request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2021.11.25
  */
 class ZuanshiShopItemFindRequest
 {
@@ -71,10 +71,7 @@ class ZuanshiShopItemFindRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->pageNum,"pageNum");
-		RequestCheckUtil::checkMinValue($this->pageNum,1,"pageNum");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");
-		RequestCheckUtil::checkMaxValue($this->pageSize,20,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {
