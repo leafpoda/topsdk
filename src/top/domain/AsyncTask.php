@@ -4,7 +4,7 @@
  * 批量异步任务结果
  * @author auto create
  */
-class Task
+class AsyncTask
 {
 	
 	/** 
