@@ -55,6 +55,8 @@ class FeedflowItemAdgroupAdzoneUnbindRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
+		RequestCheckUtil::checkNotNull($this->adzoneIdList,"adzoneIdList");
+		RequestCheckUtil::checkMaxListSize($this->adzoneIdList,20,"adzoneIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.adzone.update request
  * 
  * @author auto create
- * @since 1.0, 2021.12.06
+ * @since 1.0, 2021.12.08
  */
 class OnebpDisplayAdzoneUpdateRequest
 {

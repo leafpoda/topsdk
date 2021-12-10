@@ -71,6 +71,8 @@ class SimbaKeywordsQscoreSplitGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adGroupId,"adGroupId");
+		RequestCheckUtil::checkNotNull($this->bidwordIds,"bidwordIds");
+		RequestCheckUtil::checkMaxListSize($this->bidwordIds,20,"bidwordIds");
 	}
 	
 	public function putOtherTextParam($key, $value) {

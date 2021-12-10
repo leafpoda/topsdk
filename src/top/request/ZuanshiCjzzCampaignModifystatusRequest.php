@@ -71,6 +71,8 @@ class ZuanshiCjzzCampaignModifystatusRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
+		RequestCheckUtil::checkNotNull($this->campaignIdList,"campaignIdList");
+		RequestCheckUtil::checkMaxListSize($this->campaignIdList,999,"campaignIdList");
 		RequestCheckUtil::checkNotNull($this->status,"status");
 	}
 	

@@ -70,6 +70,8 @@ class ZuanshiCjzzCreativeModifystatusRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->creativeIdList,"creativeIdList");
+		RequestCheckUtil::checkMaxListSize($this->creativeIdList,999,"creativeIdList");
 		RequestCheckUtil::checkNotNull($this->onlineStatus,"onlineStatus");
 	}
 	

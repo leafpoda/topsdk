@@ -8,6 +8,11 @@ class BaseResult
 {
 	
 	/** 
+	 * data
+	 **/
+	public $data;
+	
+	/** 
 	 * errorCode
 	 **/
 	public $error_code;

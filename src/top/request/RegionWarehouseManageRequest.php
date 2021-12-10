@@ -54,6 +54,8 @@ class RegionWarehouseManageRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->regions,"regions");
+		RequestCheckUtil::checkMaxListSize($this->regions,15000,"regions");
 		RequestCheckUtil::checkNotNull($this->storeCode,"storeCode");
 	}
 	

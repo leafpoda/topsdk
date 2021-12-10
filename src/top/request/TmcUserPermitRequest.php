@@ -38,6 +38,7 @@ class TmcUserPermitRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->topics,100,"topics");
 	}
 	
 	public function putOtherTextParam($key, $value) {

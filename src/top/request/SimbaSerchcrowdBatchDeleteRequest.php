@@ -70,6 +70,8 @@ class SimbaSerchcrowdBatchDeleteRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->adgroupCrowdIds,"adgroupCrowdIds");
+		RequestCheckUtil::checkMaxListSize($this->adgroupCrowdIds,200,"adgroupCrowdIds");
 		RequestCheckUtil::checkNotNull($this->nick,"nick");
 	}
 	

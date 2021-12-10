@@ -86,6 +86,8 @@ class SimbaSerchcrowdStateBatchUpdateRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->adgroupCrowdIds,"adgroupCrowdIds");
+		RequestCheckUtil::checkMaxListSize($this->adgroupCrowdIds,20,"adgroupCrowdIds");
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
 		RequestCheckUtil::checkNotNull($this->nick,"nick");
 	}

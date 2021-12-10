@@ -54,6 +54,8 @@ class ZuanshiBannerCampaignStatusRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->campaignIdList,"campaignIdList");
+		RequestCheckUtil::checkMaxListSize($this->campaignIdList,20,"campaignIdList");
 		RequestCheckUtil::checkNotNull($this->status,"status");
 	}
 	

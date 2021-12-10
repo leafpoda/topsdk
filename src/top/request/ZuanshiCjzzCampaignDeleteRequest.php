@@ -55,6 +55,8 @@ class ZuanshiCjzzCampaignDeleteRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
+		RequestCheckUtil::checkNotNull($this->campaignIdList,"campaignIdList");
+		RequestCheckUtil::checkMaxListSize($this->campaignIdList,999,"campaignIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

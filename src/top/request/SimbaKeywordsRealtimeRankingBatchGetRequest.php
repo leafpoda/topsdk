@@ -71,6 +71,8 @@ class SimbaKeywordsRealtimeRankingBatchGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adGroupId,"adGroupId");
+		RequestCheckUtil::checkNotNull($this->bidwordIds,"bidwordIds");
+		RequestCheckUtil::checkMaxListSize($this->bidwordIds,20,"bidwordIds");
 		RequestCheckUtil::checkNotNull($this->nick,"nick");
 	}
 	

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 列表
+ * 不传则返回所有设置的区域价格
  * @author auto create
  */
 class RegionalPriceDto
@@ -13,13 +13,18 @@ class RegionalPriceDto
 	public $city;
 	
 	/** 
-	 * 金额（分）
+	 * 区县，特殊可选
 	 **/
-	public $price;
+	public $district;
 	
 	/** 
 	 * 省
 	 **/
-	public $province;	
+	public $province;
+	
+	/** 
+	 * 街道，特殊可选
+	 **/
+	public $street;	
 }
 ?>

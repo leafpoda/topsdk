@@ -38,6 +38,8 @@ class FeedflowItemCreativeDeleteRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->creativeIdList,"creativeIdList");
+		RequestCheckUtil::checkMaxListSize($this->creativeIdList,20,"creativeIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

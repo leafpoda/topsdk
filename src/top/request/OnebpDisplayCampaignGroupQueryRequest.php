@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.campaign.group.query request
  * 
  * @author auto create
- * @since 1.0, 2021.12.07
+ * @since 1.0, 2021.12.09
  */
 class OnebpDisplayCampaignGroupQueryRequest
 {

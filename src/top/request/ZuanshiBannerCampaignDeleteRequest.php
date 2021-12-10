@@ -38,6 +38,8 @@ class ZuanshiBannerCampaignDeleteRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->campaignIdList,"campaignIdList");
+		RequestCheckUtil::checkMaxListSize($this->campaignIdList,20,"campaignIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

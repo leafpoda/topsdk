@@ -72,6 +72,8 @@ class ZuanshiBannerCreativeUnbindRequest
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
+		RequestCheckUtil::checkNotNull($this->creativeIdList,"creativeIdList");
+		RequestCheckUtil::checkMaxListSize($this->creativeIdList,20,"creativeIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -55,6 +55,8 @@ class TmcTopicGroupAddRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->groupName,"groupName");
+		RequestCheckUtil::checkNotNull($this->topics,"topics");
+		RequestCheckUtil::checkMaxListSize($this->topics,20,"topics");
 	}
 	
 	public function putOtherTextParam($key, $value) {
