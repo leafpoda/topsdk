@@ -331,15 +331,15 @@ class DingTalkClient
         }
     }
 
-    public function executeWithAccessKey($request, $bestUrl = null, $accessKey, $accessSecret){
+    public function executeWithAccessKey($request, $bestUrl, $accessKey, $accessSecret){
         return $this->executeWithCorpId($request, $bestUrl, $accessKey, $accessSecret, null, null);
     }
 
-    public function executeWithSuiteTicket($request,$bestUrl = null, $accessKey, $accessSecret, $suiteTicket){
+    public function executeWithSuiteTicket($request,$bestUrl, $accessKey, $accessSecret, $suiteTicket){
         return $this->executeWithCorpId($request,$bestUrl, $accessKey, $accessSecret, $suiteTicket, null);
     }
 
-	public function executeWithCorpId($request, $bestUrl = null, $accessKey, $accessSecret, $suiteTicket, $corpId) {
+	public function executeWithCorpId($request, $bestUrl, $accessKey, $accessSecret, $suiteTicket, $corpId) {
         if(DingTalkConstant::$CALL_TYPE_OAPI == $this->apiCallType){
             return $this->_executeOapi($request, null, $bestUrl,$accessKey, $accessSecret, $suiteTicket, $corpId);
         }else{
@@ -347,7 +347,7 @@ class DingTalkClient
         }
     }
 
-    private function _executeOapi($request, $session = null,$bestUrl = null,$accessKey, $accessSecret, $suiteTicket, $corpId){
+    private function _executeOapi($request, $session,$bestUrl,$accessKey, $accessSecret, $suiteTicket, $corpId){
         $result =  new ResultSet();
         if($this->checkRequest) {
             try {

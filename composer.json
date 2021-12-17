@@ -8,7 +8,11 @@
             "email": "sholva@qq.com"
         }
     ],
-    "require": {},
+    "require": {
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-curl": "*"
+    },
     "autoload": {
         "files": ["src/TopSdk.php"]
     }
