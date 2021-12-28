@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.campaign.find.page request
  * 
  * @author auto create
- * @since 1.0, 2021.12.02
+ * @since 1.0, 2021.12.21
  */
 class OnebpDisplayCampaignFindPageRequest
 {
