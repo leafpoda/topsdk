@@ -1,11 +1,11 @@
 <?php
 /**
- * TOP API: taobao.onebp.display.adzone.find request
+ * TOP API: taobao.onebp.display.adzone.find.bind.page request
  * 
  * @author auto create
- * @since 1.0, 2021.12.28
+ * @since 1.0, 2021.12.21
  */
-class OnebpDisplayAdzoneFindRequest
+class OnebpDisplayAdzoneFindBindPageRequest
 {
 	/** 
 	 * 资源位查询条件信息
@@ -27,7 +27,7 @@ class OnebpDisplayAdzoneFindRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.onebp.display.adzone.find";
+		return "taobao.onebp.display.adzone.find.bind.page";
 	}
 	
 	public function getApiParas()

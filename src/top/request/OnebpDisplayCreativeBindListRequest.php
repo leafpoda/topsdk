@@ -1,11 +1,11 @@
 <?php
 /**
- * TOP API: taobao.onebp.display.creative.find.page request
+ * TOP API: taobao.onebp.display.creative.bind.list request
  * 
  * @author auto create
- * @since 1.0, 2021.12.22
+ * @since 1.0, 2021.12.24
  */
-class OnebpDisplayCreativeFindPageRequest
+class OnebpDisplayCreativeBindListRequest
 {
 	/** 
 	 * 创意查询条件信息
@@ -27,7 +27,7 @@ class OnebpDisplayCreativeFindPageRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.onebp.display.creative.find.page";
+		return "taobao.onebp.display.creative.bind.list";
 	}
 	
 	public function getApiParas()
