@@ -120,6 +120,7 @@ class TmallChannelProductsQueryRequest
 		
 		RequestCheckUtil::checkNotNull($this->pageNum,"pageNum");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");
+		RequestCheckUtil::checkMaxListSize($this->productIds,20,"productIds");
 	}
 	
 	public function putOtherTextParam($key, $value) {

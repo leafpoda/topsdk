@@ -118,6 +118,7 @@ class ZuanshiBannerAdgroupFindRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->adgroupIdList,20,"adgroupIdList");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 	}
 	

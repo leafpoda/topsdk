@@ -150,8 +150,10 @@ class FenxiaoRefundQueryRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->channelCodes,999,"channelCodes");
 		RequestCheckUtil::checkNotNull($this->endDate,"endDate");
 		RequestCheckUtil::checkNotNull($this->startDate,"startDate");
+		RequestCheckUtil::checkMaxListSize($this->tradeTypes,999,"tradeTypes");
 	}
 	
 	public function putOtherTextParam($key, $value) {

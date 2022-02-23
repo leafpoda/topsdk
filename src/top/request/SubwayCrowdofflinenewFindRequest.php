@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.crowdofflinenew.find request
  * 
  * @author auto create
- * @since 1.0, 2022.01.26
+ * @since 1.0, 2022.02.22
  */
 class SubwayCrowdofflinenewFindRequest
 {
@@ -11,6 +11,11 @@ class SubwayCrowdofflinenewFindRequest
 	 * 需要查询的创意id，不传表示不限
 	 **/
 	private $crowdIdEqual;
+	
+	/** 
+	 * 转化周期-1-15天，1-1天，3-3天，7-7天
+	 **/
+	private $effect;
 	
 	/** 
 	 * 结束时间
@@ -48,6 +53,17 @@ class SubwayCrowdofflinenewFindRequest
 	public function getCrowdIdEqual()
 	{
 		return $this->crowdIdEqual;
+	}
+
+	public function setEffect($effect)
+	{
+		$this->effect = $effect;
+		$this->apiParas["effect"] = $effect;
+	}
+
+	public function getEffect()
+	{
+		return $this->effect;
 	}
 
 	public function setEndTime($endTime)
@@ -118,6 +134,7 @@ class SubwayCrowdofflinenewFindRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");

@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.check.item request
  * 
  * @author auto create
- * @since 1.0, 2019.01.02
+ * @since 1.0, 2021.11.16
  */
 class TaojimuCheckItemRequest
 {

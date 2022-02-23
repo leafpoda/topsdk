@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.creative.creative.report.realtime request
  * 
  * @author auto create
- * @since 1.0, 2021.11.25
+ * @since 1.0, 2022.01.10
  */
 class OnebpDkxCreativeCreativeReportRealtimeRequest
 {

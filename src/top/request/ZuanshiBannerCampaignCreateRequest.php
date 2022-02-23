@@ -166,12 +166,18 @@ class ZuanshiBannerCampaignCreateRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->areaIdList,"areaIdList");
+		RequestCheckUtil::checkMaxListSize($this->areaIdList,400,"areaIdList");
 		RequestCheckUtil::checkNotNull($this->dayBudget,"dayBudget");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->name,"name");
 		RequestCheckUtil::checkNotNull($this->speedType,"speedType");
 		RequestCheckUtil::checkNotNull($this->startTime,"startTime");
 		RequestCheckUtil::checkNotNull($this->type,"type");
+		RequestCheckUtil::checkNotNull($this->weekend,"weekend");
+		RequestCheckUtil::checkMaxListSize($this->weekend,24,"weekend");
+		RequestCheckUtil::checkNotNull($this->workday,"workday");
+		RequestCheckUtil::checkMaxListSize($this->workday,24,"workday");
 	}
 	
 	public function putOtherTextParam($key, $value) {

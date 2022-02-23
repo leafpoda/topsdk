@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.resources.ingredient request
  * 
  * @author auto create
- * @since 1.0, 2018.09.04
+ * @since 1.0, 2021.11.25
  */
 class TaojimuResourcesIngredientRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.resources.uprequest request
  * 
  * @author auto create
- * @since 1.0, 2018.09.25
+ * @since 1.0, 2021.11.17
  */
 class TaojimuResourcesUprequestRequest
 {

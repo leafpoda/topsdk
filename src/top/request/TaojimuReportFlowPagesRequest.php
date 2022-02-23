@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.report.flow.pages request
  * 
  * @author auto create
- * @since 1.0, 2018.12.21
+ * @since 1.0, 2021.11.16
  */
 class TaojimuReportFlowPagesRequest
 {

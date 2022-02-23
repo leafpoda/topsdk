@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.adgroup.offline.find request
  * 
  * @author auto create
- * @since 1.0, 2022.01.13
+ * @since 1.0, 2022.02.22
  */
 class SubwayAdgroupOfflineFindRequest
 {
@@ -13,12 +13,17 @@ class SubwayAdgroupOfflineFindRequest
 	private $adgroupIdIn;
 	
 	/** 
+	 * 转化周期-1-15天，1-1天，3-3天，7-7天
+	 **/
+	private $effect;
+	
+	/** 
 	 * 结束时间
 	 **/
 	private $endTime;
 	
 	/** 
-	 * 当前页要显示数据的起始位置
+	 * 页码（0为第一页）
 	 **/
 	private $offset;
 	
@@ -28,7 +33,7 @@ class SubwayAdgroupOfflineFindRequest
 	private $pageSize;
 	
 	/** 
-	 * 数据来源（pc站内：1；pc站外：2；无限站内：4；无限站内：5）
+	 * 数据来源（pc站内：1；pc站外：2；无限站内：4；无限站内：5；销量明星：6）
 	 **/
 	private $pvTypeIn;
 	
@@ -48,6 +53,17 @@ class SubwayAdgroupOfflineFindRequest
 	public function getAdgroupIdIn()
 	{
 		return $this->adgroupIdIn;
+	}
+
+	public function setEffect($effect)
+	{
+		$this->effect = $effect;
+		$this->apiParas["effect"] = $effect;
+	}
+
+	public function getEffect()
+	{
+		return $this->effect;
 	}
 
 	public function setEndTime($endTime)
@@ -118,6 +134,8 @@ class SubwayAdgroupOfflineFindRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->adgroupIdIn,20,"adgroupIdIn");
+		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");

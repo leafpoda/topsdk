@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.resource.group.add request
  * 
  * @author auto create
- * @since 1.0, 2018.12.04
+ * @since 1.0, 2021.11.25
  */
 class TaojimuResourceGroupAddRequest
 {

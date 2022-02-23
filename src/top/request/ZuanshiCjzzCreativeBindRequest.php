@@ -88,6 +88,8 @@ class ZuanshiCjzzCreativeBindRequest
 		
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
+		RequestCheckUtil::checkNotNull($this->creativeIdList,"creativeIdList");
+		RequestCheckUtil::checkMaxListSize($this->creativeIdList,999,"creativeIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

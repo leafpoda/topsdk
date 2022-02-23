@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.campaign.campaign.modify request
  * 
  * @author auto create
- * @since 1.0, 2021.11.18
+ * @since 1.0, 2022.01.10
  */
 class OnebpDkxCampaignCampaignModifyRequest
 {

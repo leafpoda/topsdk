@@ -135,6 +135,7 @@ class AlibabaItemPublishSchemaGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->catId,"catId");
+		RequestCheckUtil::checkMaxListSize($this->images,5,"images");
 		RequestCheckUtil::checkNotNull($this->market,"market");
 	}
 	

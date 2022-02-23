@@ -134,6 +134,8 @@ class ZuanshiBannerCampaignFindRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->campaignIdList,15,"campaignIdList");
+		RequestCheckUtil::checkMaxListSize($this->statusList,3,"statusList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

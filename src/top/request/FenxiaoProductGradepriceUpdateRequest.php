@@ -118,6 +118,10 @@ class FenxiaoProductGradepriceUpdateRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->ids,"ids");
+		RequestCheckUtil::checkMaxListSize($this->ids,200,"ids");
+		RequestCheckUtil::checkNotNull($this->prices,"prices");
+		RequestCheckUtil::checkMaxListSize($this->prices,200,"prices");
 		RequestCheckUtil::checkNotNull($this->productId,"productId");
 		RequestCheckUtil::checkNotNull($this->targetType,"targetType");
 	}

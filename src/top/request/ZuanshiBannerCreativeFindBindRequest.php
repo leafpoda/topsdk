@@ -167,7 +167,10 @@ class ZuanshiBannerCreativeFindBindRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
+		RequestCheckUtil::checkMaxListSize($this->auditStatusList,20,"auditStatusList");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
+		RequestCheckUtil::checkMaxListSize($this->formatList,20,"formatList");
+		RequestCheckUtil::checkMaxListSize($this->sizeList,20,"sizeList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

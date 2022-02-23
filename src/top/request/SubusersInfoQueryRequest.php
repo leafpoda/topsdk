@@ -1,33 +1,33 @@
 <?php
 /**
- * TOP API: taobao.openuid.get.bytrade request
+ * TOP API: taobao.subusers.info.query request
  * 
  * @author auto create
- * @since 1.0, 2022.01.20
+ * @since 1.0, 2022.02.18
  */
-class OpenuidGetBytradeRequest
+class SubusersInfoQueryRequest
 {
 	/** 
-	 * 订单ID
+	 * 站点信息，淘宝天猫传0，1688传3
 	 **/
-	private $tid;
+	private $site;
 	
 	private $apiParas = array();
 	
-	public function setTid($tid)
+	public function setSite($site)
 	{
-		$this->tid = $tid;
-		$this->apiParas["tid"] = $tid;
+		$this->site = $site;
+		$this->apiParas["site"] = $site;
 	}
 
-	public function getTid()
+	public function getSite()
 	{
-		return $this->tid;
+		return $this->site;
 	}
 
 	public function getApiMethodName()
 	{
-		return "taobao.openuid.get.bytrade";
+		return "taobao.subusers.info.query";
 	}
 	
 	public function getApiParas()
@@ -38,7 +38,6 @@ class OpenuidGetBytradeRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->tid,"tid");
 	}
 	
 	public function putOtherTextParam($key, $value) {

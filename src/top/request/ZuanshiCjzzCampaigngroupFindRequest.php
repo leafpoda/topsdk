@@ -103,6 +103,7 @@ class ZuanshiCjzzCampaigngroupFindRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
+		RequestCheckUtil::checkMaxListSize($this->campaignGroupIdList,999,"campaignGroupIdList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

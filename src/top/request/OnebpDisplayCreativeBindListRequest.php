@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.creative.bind.list request
  * 
  * @author auto create
- * @since 1.0, 2021.12.24
+ * @since 1.0, 2022.02.15
  */
 class OnebpDisplayCreativeBindListRequest
 {

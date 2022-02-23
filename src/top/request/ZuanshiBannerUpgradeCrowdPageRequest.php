@@ -200,6 +200,7 @@ class ZuanshiBannerUpgradeCrowdPageRequest
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
+		RequestCheckUtil::checkMaxListSize($this->targetTypes,20,"targetTypes");
 	}
 	
 	public function putOtherTextParam($key, $value) {

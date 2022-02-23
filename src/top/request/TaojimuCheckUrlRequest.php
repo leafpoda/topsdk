@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.check.url request
  * 
  * @author auto create
- * @since 1.0, 2018.11.22
+ * @since 1.0, 2021.11.16
  */
 class TaojimuCheckUrlRequest
 {

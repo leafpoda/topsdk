@@ -198,6 +198,10 @@ class ZuanshiBannerCreativeFindRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->auditStatusList,20,"auditStatusList");
+		RequestCheckUtil::checkMaxListSize($this->formatList,20,"formatList");
+		RequestCheckUtil::checkMaxListSize($this->idList,20,"idList");
+		RequestCheckUtil::checkMaxListSize($this->sizeList,20,"sizeList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

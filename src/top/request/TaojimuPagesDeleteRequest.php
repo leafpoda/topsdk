@@ -3,7 +3,7 @@
  * TOP API: taobao.taojimu.pages.delete request
  * 
  * @author auto create
- * @since 1.0, 2018.07.30
+ * @since 1.0, 2021.11.16
  */
 class TaojimuPagesDeleteRequest
 {

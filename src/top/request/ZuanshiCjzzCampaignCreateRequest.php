@@ -342,6 +342,9 @@ class ZuanshiCjzzCampaignCreateRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->adzoneIdList,999,"adzoneIdList");
+		RequestCheckUtil::checkNotNull($this->areaIdList,"areaIdList");
+		RequestCheckUtil::checkMaxListSize($this->areaIdList,999,"areaIdList");
 		RequestCheckUtil::checkNotNull($this->beginTime,"beginTime");
 		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
 		RequestCheckUtil::checkNotNull($this->campaignGroupId,"campaignGroupId");
@@ -353,6 +356,10 @@ class ZuanshiCjzzCampaignCreateRequest
 		RequestCheckUtil::checkNotNull($this->marketAim,"marketAim");
 		RequestCheckUtil::checkNotNull($this->promotionType,"promotionType");
 		RequestCheckUtil::checkNotNull($this->speedType,"speedType");
+		RequestCheckUtil::checkNotNull($this->weekEnd,"weekEnd");
+		RequestCheckUtil::checkMaxListSize($this->weekEnd,999,"weekEnd");
+		RequestCheckUtil::checkNotNull($this->weekOneToFive,"weekOneToFive");
+		RequestCheckUtil::checkMaxListSize($this->weekOneToFive,999,"weekOneToFive");
 	}
 	
 	public function putOtherTextParam($key, $value) {

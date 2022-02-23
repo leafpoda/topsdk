@@ -135,6 +135,7 @@ class ZuanshiBannerAdgroupAdzoneFindpageRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
+		RequestCheckUtil::checkMaxListSize($this->adzoneIdList,20,"adzoneIdList");
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 	}
 	

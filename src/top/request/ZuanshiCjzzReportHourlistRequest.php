@@ -154,6 +154,8 @@ class ZuanshiCjzzReportHourlistRequest
 		RequestCheckUtil::checkNotNull($this->componentType,"componentType");
 		RequestCheckUtil::checkNotNull($this->effectPeriod,"effectPeriod");
 		RequestCheckUtil::checkNotNull($this->effectType,"effectType");
+		RequestCheckUtil::checkNotNull($this->logDateList,"logDateList");
+		RequestCheckUtil::checkMaxListSize($this->logDateList,999,"logDateList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -198,6 +198,11 @@ class ZuanshiBannerAdzoneFindpageRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->adzoneIdList,20,"adzoneIdList");
+		RequestCheckUtil::checkMaxListSize($this->adzoneSizeList,20,"adzoneSizeList");
+		RequestCheckUtil::checkMaxListSize($this->allowAdFormatList,20,"allowAdFormatList");
+		RequestCheckUtil::checkMaxListSize($this->mediaTypeList,20,"mediaTypeList");
+		RequestCheckUtil::checkMaxListSize($this->settleTypeList,20,"settleTypeList");
 	}
 	
 	public function putOtherTextParam($key, $value) {

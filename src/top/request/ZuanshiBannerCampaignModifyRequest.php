@@ -182,7 +182,10 @@ class ZuanshiBannerCampaignModifyRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->areaIdList,400,"areaIdList");
 		RequestCheckUtil::checkNotNull($this->id,"id");
+		RequestCheckUtil::checkMaxListSize($this->weekend,24,"weekend");
+		RequestCheckUtil::checkMaxListSize($this->workday,24,"workday");
 	}
 	
 	public function putOtherTextParam($key, $value) {

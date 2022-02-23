@@ -200,6 +200,8 @@ class FenxiaoDealerRequisitionorderCreateRequest
 		
 		RequestCheckUtil::checkNotNull($this->address,"address");
 		RequestCheckUtil::checkNotNull($this->buyerName,"buyerName");
+		RequestCheckUtil::checkNotNull($this->orderDetail,"orderDetail");
+		RequestCheckUtil::checkMaxListSize($this->orderDetail,50,"orderDetail");
 		RequestCheckUtil::checkNotNull($this->province,"province");
 	}
 	
