@@ -70,6 +70,7 @@ class AlibabaItemEditSchemaGetRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkMaxListSize($this->fields,999,"fields");
 		RequestCheckUtil::checkNotNull($this->itemId,"itemId");
 	}
 	

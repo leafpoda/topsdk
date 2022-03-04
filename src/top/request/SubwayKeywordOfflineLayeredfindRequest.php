@@ -1,24 +1,19 @@
 <?php
 /**
- * TOP API: taobao.subway.adgroup.offline.find request
+ * TOP API: taobao.subway.keyword.offline.layeredfind request
  * 
  * @author auto create
- * @since 1.0, 2022.03.02
+ * @since 1.0, 2022.02.22
  */
-class SubwayAdgroupOfflineFindRequest
+class SubwayKeywordOfflineLayeredfindRequest
 {
 	/** 
-	 * 需要查询的单元id列表，不传表示不限制
+	 * 需要查询的关键词id，不传表示不限
 	 **/
-	private $adgroupIdIn;
+	private $bidwordIdEqual;
 	
 	/** 
-	 * 需要查询的计划id，不传表示不限制
-	 **/
-	private $campaignIdEqual;
-	
-	/** 
-	 * 转化周期-1-15累计天数，1-1转化天数，3-3转化天数，7-7转化天数，15-15转化天数，不传默认为15累计天数
+	 * 转化周期30-30天
 	 **/
 	private $effect;
 	
@@ -49,26 +44,15 @@ class SubwayAdgroupOfflineFindRequest
 	
 	private $apiParas = array();
 	
-	public function setAdgroupIdIn($adgroupIdIn)
+	public function setBidwordIdEqual($bidwordIdEqual)
 	{
-		$this->adgroupIdIn = $adgroupIdIn;
-		$this->apiParas["adgroup_id_in"] = $adgroupIdIn;
+		$this->bidwordIdEqual = $bidwordIdEqual;
+		$this->apiParas["bidword_id_equal"] = $bidwordIdEqual;
 	}
 
-	public function getAdgroupIdIn()
+	public function getBidwordIdEqual()
 	{
-		return $this->adgroupIdIn;
-	}
-
-	public function setCampaignIdEqual($campaignIdEqual)
-	{
-		$this->campaignIdEqual = $campaignIdEqual;
-		$this->apiParas["campaign_id_equal"] = $campaignIdEqual;
-	}
-
-	public function getCampaignIdEqual()
-	{
-		return $this->campaignIdEqual;
+		return $this->bidwordIdEqual;
 	}
 
 	public function setEffect($effect)
@@ -139,7 +123,7 @@ class SubwayAdgroupOfflineFindRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.subway.adgroup.offline.find";
+		return "taobao.subway.keyword.offline.layeredfind";
 	}
 	
 	public function getApiParas()
@@ -150,7 +134,7 @@ class SubwayAdgroupOfflineFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->adgroupIdIn,20,"adgroupIdIn");
+		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");

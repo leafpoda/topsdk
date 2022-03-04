@@ -3,12 +3,12 @@
  * TOP API: taobao.subway.account.offline.find request
  * 
  * @author auto create
- * @since 1.0, 2022.02.22
+ * @since 1.0, 2022.03.02
  */
 class SubwayAccountOfflineFindRequest
 {
 	/** 
-	 * 转化周期-1-15天，1-1天，3-3天，7-7天
+	 * 转化周期-1-15累计天数，1-1转化天数，3-3转化天数，7-7转化天数，15-15转化天数，不传默认为15累计天数
 	 **/
 	private $effect;
 	
@@ -102,7 +102,6 @@ class SubwayAccountOfflineFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");

@@ -1,21 +1,16 @@
 <?php
 /**
- * TOP API: taobao.onebp.dkx.report.report.campaign.realtime request
+ * TOP API: taobao.onebp.dkx.crowd.crowd.finddmpcrowd request
  * 
  * @author auto create
- * @since 1.0, 2022.03.01
+ * @since 1.0, 2022.01.20
  */
-class OnebpDkxReportReportCampaignRealtimeRequest
+class OnebpDkxCrowdCrowdFinddmpcrowdRequest
 {
 	/** 
 	 * 请求体
 	 **/
 	private $apiServiceContext;
-	
-	/** 
-	 * 报表查询参数
-	 **/
-	private $reportQuery;
 	
 	private $apiParas = array();
 	
@@ -30,20 +25,9 @@ class OnebpDkxReportReportCampaignRealtimeRequest
 		return $this->apiServiceContext;
 	}
 
-	public function setReportQuery($reportQuery)
-	{
-		$this->reportQuery = $reportQuery;
-		$this->apiParas["report_query"] = $reportQuery;
-	}
-
-	public function getReportQuery()
-	{
-		return $this->reportQuery;
-	}
-
 	public function getApiMethodName()
 	{
-		return "taobao.onebp.dkx.report.report.campaign.realtime";
+		return "taobao.onebp.dkx.crowd.crowd.finddmpcrowd";
 	}
 	
 	public function getApiParas()

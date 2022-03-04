@@ -1,24 +1,14 @@
 <?php
 /**
- * TOP API: taobao.subway.adgroup.offline.find request
+ * TOP API: taobao.subway.account.offline.layeredfind request
  * 
  * @author auto create
- * @since 1.0, 2022.03.02
+ * @since 1.0, 2022.02.22
  */
-class SubwayAdgroupOfflineFindRequest
+class SubwayAccountOfflineLayeredfindRequest
 {
 	/** 
-	 * 需要查询的单元id列表，不传表示不限制
-	 **/
-	private $adgroupIdIn;
-	
-	/** 
-	 * 需要查询的计划id，不传表示不限制
-	 **/
-	private $campaignIdEqual;
-	
-	/** 
-	 * 转化周期-1-15累计天数，1-1转化天数，3-3转化天数，7-7转化天数，15-15转化天数，不传默认为15累计天数
+	 * 转化周期30-30天
 	 **/
 	private $effect;
 	
@@ -38,39 +28,12 @@ class SubwayAdgroupOfflineFindRequest
 	private $pageSize;
 	
 	/** 
-	 * 数据来源（pc站内：1；pc站外：2；无限站内：4；无限站内：5；销量明星：6）
-	 **/
-	private $pvTypeIn;
-	
-	/** 
 	 * 开始时间
 	 **/
 	private $startTime;
 	
 	private $apiParas = array();
 	
-	public function setAdgroupIdIn($adgroupIdIn)
-	{
-		$this->adgroupIdIn = $adgroupIdIn;
-		$this->apiParas["adgroup_id_in"] = $adgroupIdIn;
-	}
-
-	public function getAdgroupIdIn()
-	{
-		return $this->adgroupIdIn;
-	}
-
-	public function setCampaignIdEqual($campaignIdEqual)
-	{
-		$this->campaignIdEqual = $campaignIdEqual;
-		$this->apiParas["campaign_id_equal"] = $campaignIdEqual;
-	}
-
-	public function getCampaignIdEqual()
-	{
-		return $this->campaignIdEqual;
-	}
-
 	public function setEffect($effect)
 	{
 		$this->effect = $effect;
@@ -115,17 +78,6 @@ class SubwayAdgroupOfflineFindRequest
 		return $this->pageSize;
 	}
 
-	public function setPvTypeIn($pvTypeIn)
-	{
-		$this->pvTypeIn = $pvTypeIn;
-		$this->apiParas["pv_type_in"] = $pvTypeIn;
-	}
-
-	public function getPvTypeIn()
-	{
-		return $this->pvTypeIn;
-	}
-
 	public function setStartTime($startTime)
 	{
 		$this->startTime = $startTime;
@@ -139,7 +91,7 @@ class SubwayAdgroupOfflineFindRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.subway.adgroup.offline.find";
+		return "taobao.subway.account.offline.layeredfind";
 	}
 	
 	public function getApiParas()
@@ -150,7 +102,7 @@ class SubwayAdgroupOfflineFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->adgroupIdIn,20,"adgroupIdIn");
+		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");

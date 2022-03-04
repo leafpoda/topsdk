@@ -1,11 +1,11 @@
 <?php
 /**
- * TOP API: taobao.subway.adgroup.offline.find request
+ * TOP API: taobao.subway.adgroup.offline.layeredfind request
  * 
  * @author auto create
- * @since 1.0, 2022.03.02
+ * @since 1.0, 2022.02.22
  */
-class SubwayAdgroupOfflineFindRequest
+class SubwayAdgroupOfflineLayeredfindRequest
 {
 	/** 
 	 * 需要查询的单元id列表，不传表示不限制
@@ -13,12 +13,7 @@ class SubwayAdgroupOfflineFindRequest
 	private $adgroupIdIn;
 	
 	/** 
-	 * 需要查询的计划id，不传表示不限制
-	 **/
-	private $campaignIdEqual;
-	
-	/** 
-	 * 转化周期-1-15累计天数，1-1转化天数，3-3转化天数，7-7转化天数，15-15转化天数，不传默认为15累计天数
+	 * 转化周期30-30天
 	 **/
 	private $effect;
 	
@@ -58,17 +53,6 @@ class SubwayAdgroupOfflineFindRequest
 	public function getAdgroupIdIn()
 	{
 		return $this->adgroupIdIn;
-	}
-
-	public function setCampaignIdEqual($campaignIdEqual)
-	{
-		$this->campaignIdEqual = $campaignIdEqual;
-		$this->apiParas["campaign_id_equal"] = $campaignIdEqual;
-	}
-
-	public function getCampaignIdEqual()
-	{
-		return $this->campaignIdEqual;
 	}
 
 	public function setEffect($effect)
@@ -139,7 +123,7 @@ class SubwayAdgroupOfflineFindRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.subway.adgroup.offline.find";
+		return "taobao.subway.adgroup.offline.layeredfind";
 	}
 	
 	public function getApiParas()
@@ -151,6 +135,7 @@ class SubwayAdgroupOfflineFindRequest
 	{
 		
 		RequestCheckUtil::checkMaxListSize($this->adgroupIdIn,20,"adgroupIdIn");
+		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");

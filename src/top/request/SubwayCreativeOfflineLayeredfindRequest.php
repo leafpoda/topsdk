@@ -1,24 +1,24 @@
 <?php
 /**
- * TOP API: taobao.subway.adgroup.offline.find request
+ * TOP API: taobao.subway.creative.offline.layeredfind request
  * 
  * @author auto create
- * @since 1.0, 2022.03.02
+ * @since 1.0, 2022.02.22
  */
-class SubwayAdgroupOfflineFindRequest
+class SubwayCreativeOfflineLayeredfindRequest
 {
 	/** 
-	 * 需要查询的单元id列表，不传表示不限制
+	 * 需要查询的创意id，不传表示不限
 	 **/
-	private $adgroupIdIn;
+	private $creativeIdEqual;
 	
 	/** 
-	 * 需要查询的计划id，不传表示不限制
+	 * 需要查询的创意id列表，不传表示不限制
 	 **/
-	private $campaignIdEqual;
+	private $creativeIdIn;
 	
 	/** 
-	 * 转化周期-1-15累计天数，1-1转化天数，3-3转化天数，7-7转化天数，15-15转化天数，不传默认为15累计天数
+	 * 转化周期30-30天
 	 **/
 	private $effect;
 	
@@ -49,26 +49,26 @@ class SubwayAdgroupOfflineFindRequest
 	
 	private $apiParas = array();
 	
-	public function setAdgroupIdIn($adgroupIdIn)
+	public function setCreativeIdEqual($creativeIdEqual)
 	{
-		$this->adgroupIdIn = $adgroupIdIn;
-		$this->apiParas["adgroup_id_in"] = $adgroupIdIn;
+		$this->creativeIdEqual = $creativeIdEqual;
+		$this->apiParas["creative_id_equal"] = $creativeIdEqual;
 	}
 
-	public function getAdgroupIdIn()
+	public function getCreativeIdEqual()
 	{
-		return $this->adgroupIdIn;
+		return $this->creativeIdEqual;
 	}
 
-	public function setCampaignIdEqual($campaignIdEqual)
+	public function setCreativeIdIn($creativeIdIn)
 	{
-		$this->campaignIdEqual = $campaignIdEqual;
-		$this->apiParas["campaign_id_equal"] = $campaignIdEqual;
+		$this->creativeIdIn = $creativeIdIn;
+		$this->apiParas["creative_id_in"] = $creativeIdIn;
 	}
 
-	public function getCampaignIdEqual()
+	public function getCreativeIdIn()
 	{
-		return $this->campaignIdEqual;
+		return $this->creativeIdIn;
 	}
 
 	public function setEffect($effect)
@@ -139,7 +139,7 @@ class SubwayAdgroupOfflineFindRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.subway.adgroup.offline.find";
+		return "taobao.subway.creative.offline.layeredfind";
 	}
 	
 	public function getApiParas()
@@ -150,7 +150,8 @@ class SubwayAdgroupOfflineFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxListSize($this->adgroupIdIn,20,"adgroupIdIn");
+		RequestCheckUtil::checkMaxListSize($this->creativeIdIn,20,"creativeIdIn");
+		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");

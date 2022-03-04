@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.keyword.offline.find request
  * 
  * @author auto create
- * @since 1.0, 2022.02.22
+ * @since 1.0, 2022.03.02
  */
 class SubwayKeywordOfflineFindRequest
 {
@@ -13,7 +13,12 @@ class SubwayKeywordOfflineFindRequest
 	private $bidwordIdEqual;
 	
 	/** 
-	 * 转化周期-1-15天，1-1天，3-3天，7-7天
+	 * 需要查询的计划id，不传表示不限制
+	 **/
+	private $campaignIdEqual;
+	
+	/** 
+	 * 转化周期-1-15累计天数，1-1转化天数，3-3转化天数，7-7转化天数，15-15转化天数，不传默认为15累计天数
 	 **/
 	private $effect;
 	
@@ -53,6 +58,17 @@ class SubwayKeywordOfflineFindRequest
 	public function getBidwordIdEqual()
 	{
 		return $this->bidwordIdEqual;
+	}
+
+	public function setCampaignIdEqual($campaignIdEqual)
+	{
+		$this->campaignIdEqual = $campaignIdEqual;
+		$this->apiParas["campaign_id_equal"] = $campaignIdEqual;
+	}
+
+	public function getCampaignIdEqual()
+	{
+		return $this->campaignIdEqual;
 	}
 
 	public function setEffect($effect)
@@ -134,7 +150,6 @@ class SubwayKeywordOfflineFindRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->effect,"effect");
 		RequestCheckUtil::checkNotNull($this->endTime,"endTime");
 		RequestCheckUtil::checkNotNull($this->offset,"offset");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");
