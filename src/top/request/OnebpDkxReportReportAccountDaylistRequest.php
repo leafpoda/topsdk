@@ -1,11 +1,11 @@
 <?php
 /**
- * TOP API: taobao.onebp.display.report.find.domain.rpt.page request
+ * TOP API: taobao.onebp.dkx.report.report.account.daylist request
  * 
  * @author auto create
- * @since 1.0, 2022.03.29
+ * @since 1.0, 2022.03.28
  */
-class OnebpDisplayReportFindDomainRptPageRequest
+class OnebpDkxReportReportAccountDaylistRequest
 {
 	/** 
 	 * 请求体
@@ -13,7 +13,7 @@ class OnebpDisplayReportFindDomainRptPageRequest
 	private $apiServiceContext;
 	
 	/** 
-	 * 报表查询
+	 * 报表查询参数
 	 **/
 	private $reportQuery;
 	
@@ -43,7 +43,7 @@ class OnebpDisplayReportFindDomainRptPageRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.onebp.display.report.find.domain.rpt.page";
+		return "taobao.onebp.dkx.report.report.account.daylist";
 	}
 	
 	public function getApiParas()
@@ -54,6 +54,7 @@ class OnebpDisplayReportFindDomainRptPageRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->apiServiceContext,"apiServiceContext");
 	}
 	
 	public function putOtherTextParam($key, $value) {

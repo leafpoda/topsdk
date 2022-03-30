@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.refund.query request
  * 
  * @author auto create
- * @since 1.0, 2021.11.23
+ * @since 1.0, 2022.03.30
  */
 class FenxiaoRefundQueryRequest
 {
