@@ -1,19 +1,19 @@
 <?php
 
 /**
- * 返回码
+ * 返回状态码
  * @author auto create
  */
 class ResultCode
 {
 	
 	/** 
-	 * 返回码
+	 * 错误编码
 	 **/
 	public $code;
 	
 	/** 
-	 * 返回码描述
+	 * 错误信息
 	 **/
 	public $message;	
 }

@@ -1,10 +1,10 @@
 <?php
 
 /**
- * 人群标签
+ * 标签
  * @author auto create
  */
-class UpgradeTargetLabelDto
+class UpgradeTargetLabelDTO
 {
 	
 	/** 
@@ -28,12 +28,17 @@ class UpgradeTargetLabelDto
 	public $label_name;
 	
 	/** 
-	 * 选项模式
+	 * 标签模式
 	 **/
 	public $label_option_mode;
 	
 	/** 
-	 * 标签选项来源
+	 * 标签出价模式
+	 **/
+	public $label_price_mode;
+	
+	/** 
+	 * 标签来源类型
 	 **/
 	public $label_source_type;
 	
@@ -43,14 +48,14 @@ class UpgradeTargetLabelDto
 	public $label_value;
 	
 	/** 
-	 * 选项分页总数
+	 * 选项总数
 	 **/
 	public $option_count;
 	
 	/** 
 	 * 选项
 	 **/
-	public $options;
+	public $options_list;
 	
 	/** 
 	 * 标签附属信息
@@ -58,12 +63,12 @@ class UpgradeTargetLabelDto
 	public $properties;
 	
 	/** 
-	 * 排序字段
+	 * 标签排序
 	 **/
 	public $sort_num;
 	
 	/** 
-	 * 状态
+	 * 标签状态
 	 **/
 	public $status;
 	

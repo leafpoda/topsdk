@@ -1,10 +1,10 @@
 <?php
 
 /**
- * 打折范围
+ * 折扣时间
  * @author auto create
  */
-class LaunchPeriodDTO
+class LaunchPeriodDto
 {
 	
 	/** 

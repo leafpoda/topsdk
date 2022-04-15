@@ -1,19 +1,19 @@
 <?php
 
 /**
- * 推广地域
+ * 投放地域
  * @author auto create
  */
-class LaunchAreaDTO
+class LaunchAreaDto
 {
 	
 	/** 
-	 * 地址code
+	 * 地域编码
 	 **/
 	public $code;
 	
 	/** 
-	 * 地址名称
+	 * 地域名称
 	 **/
 	public $name;	
 }

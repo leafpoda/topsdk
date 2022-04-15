@@ -1,10 +1,10 @@
 <?php
 
 /**
- * 出价
+ * 交叉出价
  * @author auto create
  */
-class MatrixPriceDto
+class MatrixPriceDTO
 {
 	
 	/** 
@@ -13,7 +13,7 @@ class MatrixPriceDto
 	public $adzone_id;
 	
 	/** 
-	 * 价格，单位分
+	 * 出价，单位分
 	 **/
 	public $price;	
 }

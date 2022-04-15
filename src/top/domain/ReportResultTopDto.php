@@ -1,61 +1,136 @@
 <?php
 
 /**
- * 返回结果
+ * 返回参数
  * @author auto create
  */
-class ReportResultTopDto
+class ReportResultTopDTO
 {
 	
 	/** 
-	 * 展现数
+	 * 单元id
 	 **/
-	public $ad_pv;
+	public $adgroup_id;
 	
 	/** 
-	 * 成交金额
+	 * 单元标题
 	 **/
-	public $alipay_inshop_amt;
+	public $adgroup_title;
 	
 	/** 
-	 * 成交金额
+	 * 平均展现排名
 	 **/
-	public $alipay_inshop_amt_kuan;
+	public $avg_rank;
 	
 	/** 
-	 * 成交笔数
+	 * 关键词ID
 	 **/
-	public $alipay_inshop_num;
+	public $bidword_id;
 	
 	/** 
-	 * 成交笔数
+	 * 关键词名称
 	 **/
-	public $alipay_inshop_num_kuan;
+	public $bidword_str;
 	
 	/** 
-	 * 计划ID
+	 * 日限额
+	 **/
+	public $campaign_budget;
+	
+	/** 
+	 * 计划id
 	 **/
 	public $campaign_id;
 	
 	/** 
-	 * 加购量
+	 * 计划标题
 	 **/
-	public $car_num;
+	public $campaign_title;
 	
 	/** 
-	 * 加购量
+	 * 计划类型（直通车搜索-无线/pc：0；智能推广计划：8；销量明星计划：16；口碑L店计划：17；新享一键推广计划-独立结算账户(策略中心)：21；超级直播-一键推广计划（策略中心：订单模式、计划不复用：22；大快消一键推广计划（策略中心）：23；超级直播-持续推广计划（策略中心:计划模式、可复用、类似单品）：24；合约广告、流量卡计划：31；极速推计划：37；AI智投：38；）
 	 **/
-	public $car_num_kuan;
+	public $campaign_type;
 	
 	/** 
-	 * 消耗
+	 * 计划类型名称
 	 **/
-	public $charge;
+	public $campaign_type_name;
 	
 	/** 
-	 * 点击数
+	 * 总购物车数
+	 **/
+	public $cart_total;
+	
+	/** 
+	 * 加购成本
+	 **/
+	public $cart_total_cost;
+	
+	/** 
+	 * 加购成本（单位元）
+	 **/
+	public $cart_total_cost_in_yuan;
+	
+	/** 
+	 * 加购率
+	 **/
+	public $cart_total_coverage;
+	
+	/** 
+	 * 点击量
 	 **/
 	public $click;
+	
+	/** 
+	 * 购物金充值金额
+	 **/
+	public $click_shopping_amt;
+	
+	/** 
+	 * 购物金充值金额（单位元）
+	 **/
+	public $click_shopping_amt_in_yuan;
+	
+	/** 
+	 * 购物金充值笔数
+	 **/
+	public $click_shopping_num;
+	
+	/** 
+	 * 花费
+	 **/
+	public $cost;
+	
+	/** 
+	 * 花费（单位元）
+	 **/
+	public $cost_in_yuan;
+	
+	/** 
+	 * 点击转化率
+	 **/
+	public $coverage;
+	
+	/** 
+	 * 平均点击花费
+	 **/
+	public $cpc;
+	
+	/** 
+	 * 平均点击花费（单位元）
+	 **/
+	public $cpc_in_yuan;
+	
+	/** 
+	 * 千次展现花费
+	 **/
+	public $cpm;
+	
+	/** 
+	 * 千次展现花费（单位元）
+	 **/
+	public $cpm_in_yuan;
 	
 	/** 
 	 * 点击率
@@ -63,173 +138,253 @@ class ReportResultTopDto
 	public $ctr;
 	
 	/** 
-	 * 成交转化率
+	 * 直接预售成交金额
 	 **/
-	public $cvr;
+	public $dir_epre_pay_amt;
 	
 	/** 
-	 * 成交转化率
+	 * 直接预售成交金额（单位元）
 	 **/
-	public $cvr_kuan;
+	public $dir_epre_pay_amt_in_yuan;
+	
+	/** 
+	 * 直接预售成交笔数
+	 **/
+	public $dir_epre_pay_cnt;
+	
+	/** 
+	 * 直接购物车数
+	 **/
+	public $direct_cart_total;
 	
 	/** 
 	 * 直接成交金额
 	 **/
-	public $dir_alipay_inshop_amt;
+	public $direct_transaction;
 	
 	/** 
-	 * 直接成交金额
+	 * 直接成交金额（单位元）
 	 **/
-	public $dir_alipay_inshop_amt_kuan;
+	public $direct_transaction_in_yuan;
 	
 	/** 
 	 * 直接成交笔数
 	 **/
-	public $dir_alipay_inshop_num;
+	public $direct_transaction_shipping;
 	
 	/** 
-	 * 直接成交笔数
+	 * 直接点击转化率
 	 **/
-	public $dir_alipay_inshop_num_kuan;
+	public $direct_transaction_shipping_coverage;
 	
 	/** 
-	 * 直接加购量
+	 * 总预售成交金额
 	 **/
-	public $dir_car_num;
+	public $epre_pay_amt;
 	
 	/** 
-	 * 直接加购量
+	 * 总预售成交金额（单位元）
 	 **/
-	public $dir_car_num_kuan;
+	public $epre_pay_amt_in_yuan;
 	
 	/** 
-	 * 点击成本
+	 * 总预售成交笔数
 	 **/
-	public $ecpc;
+	public $epre_pay_cnt;
 	
 	/** 
-	 * 千次展现成本
+	 * 收藏宝贝数
 	 **/
-	public $ecpm;
+	public $fav_item_total;
 	
 	/** 
-	 * 按小时维度划分的小时ID
+	 * 宝贝收藏成本
 	 **/
-	public $hour_id;
+	public $fav_item_total_cost;
+	
+	/** 
+	 * 宝贝收藏成本（单位元）
+	 **/
+	public $fav_item_total_cost_in_yuan;
+	
+	/** 
+	 * 宝贝收藏率
+	 **/
+	public $fav_item_total_coverage;
+	
+	/** 
+	 * 收藏店铺数
+	 **/
+	public $fav_shop_total;
+	
+	/** 
+	 * 总收藏数
+	 **/
+	public $fav_total;
+	
+	/** 
+	 * 特权订金金额
+	 **/
+	public $hfh_dj_amt;
+	
+	/** 
+	 * 特权订金金额（单位元）
+	 **/
+	public $hfh_dj_amt_in_yuan;
+	
+	/** 
+	 * 特权订金订单支付笔数
+	 **/
+	public $hfh_dj_cnt;
+	
+	/** 
+	 * 一口价金额
+	 **/
+	public $hfh_ykj_amt;
+	
+	/** 
+	 * 一口价金额（单位元）
+	 **/
+	public $hfh_ykj_amt_in_yuan;
+	
+	/** 
+	 * 一口价支付笔数
+	 **/
+	public $hfh_ykj_cnt;
+	
+	/** 
+	 * 尾款金额
+	 **/
+	public $hfh_ys_amt;
+	
+	/** 
+	 * 尾款金额（单位元）
+	 **/
+	public $hfh_ys_amt_in_yuan;
+	
+	/** 
+	 * 尾款支付笔数
+	 **/
+	public $hfh_ys_cnt;
+	
+	/** 
+	 * 创意图片url
+	 **/
+	public $img_url;
+	
+	/** 
+	 * 展现量
+	 **/
+	public $impression;
+	
+	/** 
+	 * 间接预售成交金额
+	 **/
+	public $indir_epre_pay_amt;
+	
+	/** 
+	 * 间接预售成交金额（单位元）
+	 **/
+	public $indir_epre_pay_amt_in_yuan;
+	
+	/** 
+	 * 间接预售成交笔数
+	 **/
+	public $indir_epre_pay_cnt;
+	
+	/** 
+	 * 间接购物车数
+	 **/
+	public $indirect_cart_total;
 	
 	/** 
 	 * 间接成交金额
 	 **/
-	public $indir_alipay_inshop_amt;
+	public $indirect_transaction;
 	
 	/** 
-	 * 间接成交金额
+	 * 间接成交金额（单位元）
 	 **/
-	public $indir_alipay_inshop_amt_kuan;
+	public $indirect_transaction_in_yuan;
 	
 	/** 
 	 * 间接成交笔数
 	 **/
-	public $indir_alipay_inshop_num;
+	public $indirect_transaction_shipping;
 	
 	/** 
-	 * 间接成交笔数
+	 * 商品id
 	 **/
-	public $indir_alipay_inshop_num_kuan;
+	public $item_id;
 	
 	/** 
-	 * 间接加购量
+	 * 跳转链接（商品详情页）
 	 **/
-	public $indir_car_num;
+	public $linkurl;
 	
 	/** 
-	 * 间接加购量
+	 * 留资量
 	 **/
-	public $indir_car_num_kuan;
+	public $lz_cnt;
 	
 	/** 
-	 * 收藏加购成本
+	 * pc出价
 	 **/
-	public $inshop_item_col_car_num_cost;
+	public $pc_price;
 	
 	/** 
-	 * 收藏加购成本
+	 * 入会量
 	 **/
-	public $inshop_item_col_car_num_cost_kuan;
+	public $rh_cnt;
 	
 	/** 
-	 * 收藏量
-	 **/
-	public $inshop_item_col_num;
-	
-	/** 
-	 * 收藏量
-	 **/
-	public $inshop_item_col_num_kuan;
-	
-	/** 
-	 * 按天维度划分的日期
-	 **/
-	public $log_date;
-	
-	/** 
-	 * 新客成交金额贡献占比
-	 **/
-	public $no_lalipay_inshop_amt_proprtion;
-	
-	/** 
-	 * 新客成交金额贡献占比
-	 **/
-	public $no_lalipay_inshop_amt_proprtion_kuan;
-	
-	/** 
-	 * 预售成交笔数
-	 **/
-	public $prepay_inshop_amt;
-	
-	/** 
-	 * 预售成交笔数
-	 **/
-	public $prepay_inshop_amt_kuan;
-	
-	/** 
-	 * 预售成交金额
-	 **/
-	public $prepay_inshop_num;
-	
-	/** 
-	 * 预售成交金额
-	 **/
-	public $prepay_inshop_num_kuan;
-	
-	/** 
-	 * ROI
+	 * 投入产出比
 	 **/
 	public $roi;
 	
 	/** 
-	 * ROI
+	 * 自然流量曝光
 	 **/
-	public $roi_kuan;
+	public $search_impression;
 	
 	/** 
-	 * 派样成交金额
+	 * 自然流量转化金额
 	 **/
-	public $sample_alipay_amt;
+	public $search_transaction;
 	
 	/** 
-	 * 派样成交金额
+	 * 自然流量转化金额（单位元）
 	 **/
-	public $sample_alipay_amt_kuan;
+	public $search_transaction_in_yuan;
 	
 	/** 
-	 * 派样量
+	 * 时间
 	 **/
-	public $sample_alipay_num;
+	public $thedate;
 	
 	/** 
-	 * 派样量
+	 * 总成交笔数
 	 **/
-	public $sample_alipay_num_kuan;	
+	public $transaction_shipping_total;
+	
+	/** 
+	 * 总成交金额
+	 **/
+	public $transaction_total;
+	
+	/** 
+	 * 总成交金额（单位元）
+	 **/
+	public $transaction_total_in_yuan;
+	
+	/** 
+	 * 无线出价
+	 **/
+	public $wireless_price;
+	
+	/** 
+	 * 旺旺咨询量
+	 **/
+	public $ww_cnt;	
 }
 ?>

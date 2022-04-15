@@ -20,11 +20,6 @@ class AdgroupAddTopDto
 	/** 
 	 * 物料名称
 	 **/
-	public $material_name;
-	
-	/** 
-	 * 物料类型
-	 **/
-	public $material_type;	
+	public $material_name;	
 }
 ?>
