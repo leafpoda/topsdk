@@ -33,6 +33,11 @@ class Location
 	public $state;
 	
 	/** 
+	 * 
+	 **/
+	public $time_zone;
+	
+	/** 
 	 * 邮政编码
 	 **/
 	public $zip;	

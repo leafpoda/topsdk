@@ -38,6 +38,11 @@ class CampaignSolutionTopDto
 	public $marketing;
 	
 	/** 
+	 * 新达摩盘精选人群信息
+	 **/
+	public $new_dmp_template_crowd;
+	
+	/** 
 	 * 推广计划的计费类型，套餐包为order，持续推广为daily
 	 **/
 	public $promotion_model;	

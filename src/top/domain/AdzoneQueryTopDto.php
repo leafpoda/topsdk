@@ -8,8 +8,8 @@ class AdzoneQueryTopDto
 {
 	
 	/** 
-	 * 计划ID
+	 * 子推广主体类型(11:淘宝商品;31:淘宝店铺;92:自定义URL)
 	 **/
-	public $campaign_id;	
+	public $sub_promotion_type;	
 }
 ?>

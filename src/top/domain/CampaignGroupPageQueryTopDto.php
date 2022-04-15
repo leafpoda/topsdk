@@ -13,6 +13,11 @@ class CampaignGroupPageQueryTopDto
 	public $campaign_group_id_list;
 	
 	/** 
+	 * 1213为服务商计划组，1109为自定义计划组
+	 **/
+	public $market_scene_list;
+	
+	/** 
 	 * 当前页要显示数据的起始位置
 	 **/
 	public $offset;

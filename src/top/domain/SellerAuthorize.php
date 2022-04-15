@@ -18,7 +18,7 @@ class SellerAuthorize
 	public $item_cats;
 	
 	/** 
-	 * 被授权的新品类目列表
+	 * 商品类目结构
 	 **/
 	public $xinpin_item_cats;	
 }

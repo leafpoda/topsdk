@@ -36,6 +36,11 @@ class BuyerRefund
 	public $need_return_goods;
 	
 	/** 
+	 * 消费者买家id加密key
+	 **/
+	public $open_buyer_id;
+	
+	/** 
 	 * 退款创建时间
 	 **/
 	public $refund_create_time;

@@ -35,6 +35,11 @@ class ReportResTopDto
 	/** 
 	 * 用户id
 	 **/
-	public $member_id;	
+	public $member_id;
+	
+	/** 
+	 * 包含各种维度信息和报表数据指标的map
+	 **/
+	public $rpt_info;	
 }
 ?>
