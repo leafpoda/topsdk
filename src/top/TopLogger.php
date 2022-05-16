@@ -17,7 +17,7 @@ class TopLogger
 				trigger_error("no log file spcified.");
 			}
 			$logDir = dirname($this->conf["log_file"]);
-            if (!is_dir($logDir) && is_writable($logDir))
+                    if (!is_dir($logDir) && is_writable($logDir))
 			{
 				try {
 					mkdir($logDir, 0777, true);
@@ -25,9 +25,10 @@ class TopLogger
 					
 				}
 			}
-            if (file_exists($this->conf["log_file"]) && is_readable($this->conf["log_file"])) {
-                $this->fileHandle = fopen($this->conf["log_file"], "a");
-            }
+                    if (file_exists($this->conf["log_file"]) && is_readable($this->conf["log_file"]))
+                    {
+                        $this->fileHandle = fopen($this->conf["log_file"], "a");
+                    }
 		}
 		return $this->fileHandle;
 	}
@@ -44,9 +45,9 @@ class TopLogger
 		}
 		$logData = $logData. "\n";
 		try {
-            if (is_writable($this->getFileHandle())) {
-                fwrite($this->getFileHandle(), $logData);
-            }
+                    if (is_writable($this->getFileHandle())) {
+                        fwrite($this->getFileHandle(), $logData);
+                    }
 		} catch (Exception $e) {
 			
 		}
