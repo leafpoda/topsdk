@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 类目属性
+ * 属性值feature
  * @author auto create
  */
 class Feature

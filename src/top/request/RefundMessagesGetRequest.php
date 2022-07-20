@@ -3,7 +3,7 @@
  * TOP API: taobao.refund.messages.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.27
+ * @since 1.0, 2022.07.06
  */
 class RefundMessagesGetRequest
 {

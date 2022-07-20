@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 登录分销用户信息
+ * 登录用户信息
  * @author auto create
  */
 class LoginUser

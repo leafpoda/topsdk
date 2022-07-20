@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 关键词按竞价区间细分的数据
+ * 竞价区间分布数据
  * @author auto create
  */
 class InsightWordPriceDistributeDataDTO

@@ -3,7 +3,7 @@
  * TOP API: taobao.picture.get request
  * 
  * @author auto create
- * @since 1.0, 2019.01.21
+ * @since 1.0, 2022.05.25
  */
 class PictureGetRequest
 {

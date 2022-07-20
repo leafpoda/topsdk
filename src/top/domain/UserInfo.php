@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 图片空间的用户信息获取，包括订购容量等
+ * 用户使用图片空间的信息
  * @author auto create
  */
 class UserInfo

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 权限信息
+ * 权限列表
  * @author auto create
  */
 class Permission

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 查询分页结构
+ * 分页
  * @author auto create
  */
 class QueryPagination

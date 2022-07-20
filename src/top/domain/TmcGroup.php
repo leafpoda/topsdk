@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 消息通道的分组结构
+ * dasdasd
  * @author auto create
  */
 class TmcGroup
@@ -10,11 +10,6 @@ class TmcGroup
 	/** 
 	 * 分组名称
 	 **/
-	public $name;
-	
-	/** 
-	 * 用户列表
-	 **/
-	public $users;	
+	public $name;	
 }
 ?>

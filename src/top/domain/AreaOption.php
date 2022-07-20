@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 直通车可推广的地域
+ * 推广计划所有可设置的投放地域
  * @author auto create
  */
 class AreaOption

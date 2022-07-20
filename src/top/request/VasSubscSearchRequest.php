@@ -3,7 +3,7 @@
  * TOP API: taobao.vas.subsc.search request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2022.05.25
  */
 class VasSubscSearchRequest
 {
@@ -183,7 +183,6 @@ class VasSubscSearchRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->articleCode,"articleCode");
-		RequestCheckUtil::checkMaxValue($this->pageSize,200,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

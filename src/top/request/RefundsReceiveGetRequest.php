@@ -3,7 +3,7 @@
  * TOP API: taobao.refunds.receive.get request
  * 
  * @author auto create
- * @since 1.0, 2021.12.16
+ * @since 1.0, 2022.05.11
  */
 class RefundsReceiveGetRequest
 {
@@ -11,6 +11,11 @@ class RefundsReceiveGetRequest
 	 * 买家昵称
 	 **/
 	private $buyerNick;
+	
+	/** 
+	 * 买家OpenId
+	 **/
+	private $buyerOpenUid;
 	
 	/** 
 	 * 查询修改时间结束。格式: yyyy-MM-dd HH:mm:ss
@@ -68,6 +73,17 @@ class RefundsReceiveGetRequest
 	public function getBuyerNick()
 	{
 		return $this->buyerNick;
+	}
+
+	public function setBuyerOpenUid($buyerOpenUid)
+	{
+		$this->buyerOpenUid = $buyerOpenUid;
+		$this->apiParas["buyer_open_uid"] = $buyerOpenUid;
+	}
+
+	public function getBuyerOpenUid()
+	{
+		return $this->buyerOpenUid;
 	}
 
 	public function setEndModified($endModified)

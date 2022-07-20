@@ -3,7 +3,7 @@
  * TOP API: taobao.picture.pictures.get request
  * 
  * @author auto create
- * @since 1.0, 2019.01.21
+ * @since 1.0, 2022.05.31
  */
 class PicturePicturesGetRequest
 {
@@ -230,8 +230,6 @@ class PicturePicturesGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxValue($this->pageSize,1000,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

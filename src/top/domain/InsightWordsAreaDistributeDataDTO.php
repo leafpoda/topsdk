@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 关键词地域细分数据
+ * 地域细分数据
  * @author auto create
  */
 class InsightWordsAreaDistributeDataDTO

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 提示信息对象
+ * 提示信息
  * @author auto create
  */
 class TipInfo

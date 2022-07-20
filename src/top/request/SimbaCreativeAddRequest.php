@@ -3,10 +3,15 @@
  * TOP API: taobao.simba.creative.add request
  * 
  * @author auto create
- * @since 1.0, 2021.11.17
+ * @since 1.0, 2022.06.23
  */
 class SimbaCreativeAddRequest
 {
+	/** 
+	 * 广审批准文号
+	 **/
+	private $adExaminationCode;
+	
 	/** 
 	 * 推广组Id
 	 **/
@@ -29,6 +34,17 @@ class SimbaCreativeAddRequest
 	
 	private $apiParas = array();
 	
+	public function setAdExaminationCode($adExaminationCode)
+	{
+		$this->adExaminationCode = $adExaminationCode;
+		$this->apiParas["ad_examination_code"] = $adExaminationCode;
+	}
+
+	public function getAdExaminationCode()
+	{
+		return $this->adExaminationCode;
+	}
+
 	public function setAdgroupId($adgroupId)
 	{
 		$this->adgroupId = $adgroupId;

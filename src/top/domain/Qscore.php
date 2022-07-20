@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 质量得分类
+ * 类目出价和词的质量得分对象
  * @author auto create
  */
 class Qscore

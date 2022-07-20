@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.groups.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2022.05.24
  */
 class TmcGroupsGetRequest
 {
@@ -71,9 +71,6 @@ class TmcGroupsGetRequest
 	{
 		
 		RequestCheckUtil::checkMaxListSize($this->groupNames,20,"groupNames");
-		RequestCheckUtil::checkMinValue($this->pageNo,1,"pageNo");
-		RequestCheckUtil::checkMaxValue($this->pageSize,100,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

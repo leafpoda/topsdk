@@ -3,7 +3,7 @@
  * TOP API: taobao.itempropvalues.get request
  * 
  * @author auto create
- * @since 1.0, 2021.12.23
+ * @since 1.0, 2022.07.19
  */
 class ItempropvaluesGetRequest
 {
@@ -122,8 +122,6 @@ class ItempropvaluesGetRequest
 		RequestCheckUtil::checkNotNull($this->cid,"cid");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
 		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
-		RequestCheckUtil::checkMaxValue($this->type,2,"type");
-		RequestCheckUtil::checkMinValue($this->type,1,"type");
 	}
 	
 	public function putOtherTextParam($key, $value) {

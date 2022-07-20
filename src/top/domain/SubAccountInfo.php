@@ -8,11 +8,6 @@ class SubAccountInfo
 {
 	
 	/** 
-	 * openAutoReply
-	 **/
-	public $open_auto_reply;
-	
-	/** 
 	 * true
 	 **/
 	public $sub_dispatch_status;

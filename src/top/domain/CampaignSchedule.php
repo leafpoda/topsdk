@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 推广计划的分时折扣设置
+ * 修改后的推广计划分时折扣
  * @author auto create
  */
 class CampaignSchedule

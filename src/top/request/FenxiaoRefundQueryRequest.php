@@ -3,17 +3,17 @@
  * TOP API: taobao.fenxiao.refund.query request
  * 
  * @author auto create
- * @since 1.0, 2022.03.30
+ * @since 1.0, 2022.07.20
  */
 class FenxiaoRefundQueryRequest
 {
 	/** 
-	 * 代销：1 经销：2 寄售（猫超自营寄售）：5 平台寄售：6
+	 * 渠道市场编码，可批量指定。 当不指定时，按照配置的分销市场生效 渠道编码枚举：1-供销平台（淘宝）；2-供销平台（天猫）；3-供销平台（天猫超市）；5-供销平台（淘乡甜）；110001-供销平台（全球购）；110007-淘分销；200002-消费电子市场
 	 **/
 	private $channelCodes;
 	
 	/** 
-	 * 代销采购退款最迟修改时间。与start_date的最大时间间隔不能超过30天
+	 * 查询退款单的修改时间结束,格式如:yyyy-MM-dd HH:mm:ss
 	 **/
 	private $endDate;
 	
@@ -28,17 +28,22 @@ class FenxiaoRefundQueryRequest
 	private $pageSize;
 	
 	/** 
-	 * 是否查询下游买家的退款信息
+	 * 是否查询下游消费者的退款信息
 	 **/
 	private $querySellerRefund;
 	
 	/** 
-	 * 代销采购退款单最早修改时间
+	 * 退款流程类型：4：发货前退款；1：发货后退款不退货；2：发货后退款退货；3：售后退款；5：拒收；6：售后退货退款
+	 **/
+	private $refundFlowTypes;
+	
+	/** 
+	 * 查询退款单的修改时间开始,格式如:yyyy-MM-dd HH:mm:ss
 	 **/
 	private $startDate;
 	
 	/** 
-	 * 渠道code，可批量 老供销渠道：999
+	 * 查询的经营模式，当不指定时，默认查询代销订单 代销：1 经销：2 寄售（自营寄售）：5 平台寄售
 	 **/
 	private $tradeTypes;
 	
@@ -102,6 +107,17 @@ class FenxiaoRefundQueryRequest
 	public function getQuerySellerRefund()
 	{
 		return $this->querySellerRefund;
+	}
+
+	public function setRefundFlowTypes($refundFlowTypes)
+	{
+		$this->refundFlowTypes = $refundFlowTypes;
+		$this->apiParas["refund_flow_types"] = $refundFlowTypes;
+	}
+
+	public function getRefundFlowTypes()
+	{
+		return $this->refundFlowTypes;
 	}
 
 	public function setStartDate($startDate)
