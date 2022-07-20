@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.rtrpt.adgroup.get request
  * 
  * @author auto create
- * @since 1.0, 2018.11.08
+ * @since 1.0, 2022.07.19
  */
 class SimbaRtrptAdgroupGetRequest
 {

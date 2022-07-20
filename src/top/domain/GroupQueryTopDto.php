@@ -8,8 +8,18 @@ class GroupQueryTopDto
 {
 	
 	/** 
-	 * 模板ID
+	 * 单元id
 	 **/
-	public $template_id;	
+	public $group_id;
+	
+	/** 
+	 * 营销场景
+	 **/
+	public $market_scene;
+	
+	/** 
+	 * 页码
+	 **/
+	public $offset;	
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 推广计划的日限额
+ * 推广计划日限额
  * @author auto create
  */
 class CampaignBudget

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 描述一个词的所有相关词的对象
+ * 相关词列表，最多可传100个。
  * @author auto create
  */
 class InsightRelatedWords

@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.insight.catstopwordnew.get request
  * 
  * @author auto create
- * @since 1.0, 2019.11.08
+ * @since 1.0, 2022.05.31
  */
 class SimbaInsightCatstopwordnewGetRequest
 {
@@ -106,8 +106,6 @@ class SimbaInsightCatstopwordnewGetRequest
 		RequestCheckUtil::checkNotNull($this->dimension,"dimension");
 		RequestCheckUtil::checkNotNull($this->endDate,"endDate");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");
-		RequestCheckUtil::checkMaxValue($this->pageSize,20,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 		RequestCheckUtil::checkNotNull($this->startDate,"startDate");
 	}
 	

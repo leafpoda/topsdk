@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 表示类目的详细信息
+ * 类目详细信息
  * @author auto create
  */
 class InsightCategoryInfoDTO

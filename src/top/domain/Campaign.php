@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 推广计划
+ * 修改后的推广计划
  * @author auto create
  */
 class Campaign

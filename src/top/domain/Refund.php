@@ -38,6 +38,11 @@ class Refund
 	public $buyer_display_nick;
 	
 	/** 
+	 * 买家buyerId
+	 **/
+	public $buyer_id;
+	
+	/** 
 	 * 买家昵称
 	 **/
 	public $buyer_nick;

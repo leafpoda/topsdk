@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 消息通道的用户结构
+ * 开通的用户数据
  * @author auto create
  */
 class TmcUser

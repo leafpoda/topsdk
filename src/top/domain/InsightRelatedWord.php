@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 相关词信息
+ * 相关词信息列表
  * @author auto create
  */
 class InsightRelatedWord

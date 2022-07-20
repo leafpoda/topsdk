@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 创意修改记录，只记录最后一次修改
+ * 创意修改记录对象
  * @author auto create
  */
 class CreativeRecord
@@ -58,7 +58,7 @@ class CreativeRecord
 	public $old_title;
 	
 	/** 
-	 * 创意标题，最多20个汉字
+	 * 创意标题，最多30个汉字
 	 **/
 	public $title;	
 }

@@ -3,7 +3,7 @@
  * TOP API: taobao.picture.upload request
  * 
  * @author auto create
- * @since 1.0, 2019.01.21
+ * @since 1.0, 2022.06.07
  */
 class PictureUploadRequest
 {
@@ -137,10 +137,6 @@ class PictureUploadRequest
 		RequestCheckUtil::checkNotNull($this->imageInputTitle,"imageInputTitle");
 		RequestCheckUtil::checkNotNull($this->img,"img");
 		RequestCheckUtil::checkNotNull($this->pictureCategoryId,"pictureCategoryId");
-		RequestCheckUtil::checkMaxValue($this->pictureCategoryId,9223372036854775807,"pictureCategoryId");
-		RequestCheckUtil::checkMinValue($this->pictureCategoryId,0,"pictureCategoryId");
-		RequestCheckUtil::checkMaxValue($this->pictureId,9223372036854775807,"pictureId");
-		RequestCheckUtil::checkMinValue($this->pictureId,0,"pictureId");
 	}
 	
 	public function putOtherTextParam($key, $value) {

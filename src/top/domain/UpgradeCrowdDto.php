@@ -1,10 +1,10 @@
 <?php
 
 /**
- * 人群
+ * 新增定向人群
  * @author auto create
  */
-class UpgradeCrowdDTO
+class UpgradeCrowdDto
 {
 	
 	/** 
@@ -13,7 +13,7 @@ class UpgradeCrowdDTO
 	public $adgroup_id;
 	
 	/** 
-	 * 是否绑定定向
+	 * 是否绑定crowd
 	 **/
 	public $bind_crowd;
 	
@@ -28,27 +28,27 @@ class UpgradeCrowdDTO
 	public $crowd_desc;
 	
 	/** 
-	 * 人群名称
+	 * 人群名
 	 **/
 	public $crowd_name;
 	
 	/** 
-	 * 人群id，查询时返回的人群id
+	 * 主键
 	 **/
 	public $id;
 	
 	/** 
-	 * 系统自动生成
+	 * 出价
 	 **/
 	public $matrix_price;
 	
 	/** 
-	 * 人群状态，ONLINE在线，OFFLINE下线
+	 * 状态
 	 **/
 	public $status;
 	
 	/** 
-	 * 标签
+	 * 人群标签
 	 **/
 	public $target_label;	
 }

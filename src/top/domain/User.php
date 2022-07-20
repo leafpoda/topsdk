@@ -28,7 +28,7 @@ class User
 	public $auto_repost;
 	
 	/** 
-	 * 
+	 * 用户头像地址
 	 **/
 	public $avatar;
 	
@@ -63,12 +63,12 @@ class User
 	public $has_more_pic;
 	
 	/** 
-	 * 
+	 * 用户作为卖家是否开过店
 	 **/
 	public $has_shop;
 	
 	/** 
-	 * 
+	 * 表示用户是否具备修改商品减库存逻辑的权限（一共有拍下减库存和付款减库存两种逻辑） 值含义： 1）true：是 2）false：否。
 	 **/
 	public $has_sub_stock;
 	
@@ -78,12 +78,12 @@ class User
 	public $id_card;
 	
 	/** 
-	 * 
+	 * 用户是否是金牌卖家
 	 **/
 	public $is_golden_seller;
 	
 	/** 
-	 * 
+	 * 是否24小时闪电发货(实物类)	
 	 **/
 	public $is_lightning_consignment;
 	
@@ -108,7 +108,7 @@ class User
 	public $last_visit;
 	
 	/** 
-	 * 
+	 * 是否是无名良品用户，true or false
 	 **/
 	public $liangpin;
 	
@@ -118,7 +118,7 @@ class User
 	public $location;
 	
 	/** 
-	 * 
+	 * 是否订阅了淘宝天下杂志
 	 **/
 	public $magazine_subscribe;
 	
@@ -128,7 +128,7 @@ class User
 	public $manage_book;
 	
 	/** 
-	 * 
+	 * 联系人手机号码
 	 **/
 	public $mobile;
 	

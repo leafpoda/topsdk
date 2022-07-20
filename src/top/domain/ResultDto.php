@@ -1,20 +1,45 @@
 <?php
 
 /**
- * 返回结果对象
+ * 结果体
  * @author auto create
  */
 class ResultDto
 {
 	
 	/** 
-	 * message
+	 * 返回结果
+	 **/
+	public $adgroup_res_list;
+	
+	/** 
+	 * 结果总数
+	 **/
+	public $count;
+	
+	/** 
+	 * 返回消息
 	 **/
 	public $message;
 	
 	/** 
-	 * 调用是否成功,true-成功，false-失败
+	 * 返回状态码
 	 **/
-	public $success;	
+	public $result_code;
+	
+	/** 
+	 * 是否成功
+	 **/
+	public $success;
+	
+	/** 
+	 * 结果总数
+	 **/
+	public $total;
+	
+	/** 
+	 * 结果总数
+	 **/
+	public $total_count;	
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 关键词质量得分
+ * 词质量得分列表
  * @author auto create
  */
 class KeywordQscore

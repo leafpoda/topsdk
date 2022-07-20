@@ -23,6 +23,11 @@ class ReportResultTopDTO
 	public $avg_rank;
 	
 	/** 
+	 * 平均展现排名
+	 **/
+	public $avg_rank_str;
+	
+	/** 
 	 * 关键词ID
 	 **/
 	public $bidword_id;
@@ -73,9 +78,19 @@ class ReportResultTopDTO
 	public $cart_total_cost_in_yuan;
 	
 	/** 
+	 * 加购成本（单位元）
+	 **/
+	public $cart_total_cost_in_yuan_str;
+	
+	/** 
 	 * 加购率
 	 **/
 	public $cart_total_coverage;
+	
+	/** 
+	 * 加购率
+	 **/
+	public $cart_total_coverage_str;
 	
 	/** 
 	 * 点击量
@@ -93,6 +108,11 @@ class ReportResultTopDTO
 	public $click_shopping_amt_in_yuan;
 	
 	/** 
+	 * 购物金充值金额（单位元）
+	 **/
+	public $click_shopping_amt_in_yuan_str;
+	
+	/** 
 	 * 购物金充值笔数
 	 **/
 	public $click_shopping_num;
@@ -108,9 +128,19 @@ class ReportResultTopDTO
 	public $cost_in_yuan;
 	
 	/** 
+	 * 花费（单位元）
+	 **/
+	public $cost_in_yuan_str;
+	
+	/** 
 	 * 点击转化率
 	 **/
 	public $coverage;
+	
+	/** 
+	 * 点击转化率
+	 **/
+	public $coverage_str;
 	
 	/** 
 	 * 平均点击花费
@@ -123,6 +153,16 @@ class ReportResultTopDTO
 	public $cpc_in_yuan;
 	
 	/** 
+	 * 平均点击花费（单位元）
+	 **/
+	public $cpc_in_yuan_str;
+	
+	/** 
+	 * 平均点击花费
+	 **/
+	public $cpc_str;
+	
+	/** 
 	 * 千次展现花费
 	 **/
 	public $cpm;
@@ -133,9 +173,19 @@ class ReportResultTopDTO
 	public $cpm_in_yuan;
 	
 	/** 
+	 * 千次展现花费（单位元）
+	 **/
+	public $cpm_in_yuan_str;
+	
+	/** 
 	 * 点击率
 	 **/
 	public $ctr;
+	
+	/** 
+	 * 点击率
+	 **/
+	public $ctr_str;
 	
 	/** 
 	 * 直接预售成交金额
@@ -146,6 +196,11 @@ class ReportResultTopDTO
 	 * 直接预售成交金额（单位元）
 	 **/
 	public $dir_epre_pay_amt_in_yuan;
+	
+	/** 
+	 * 直接预售成交金额（单位元）
+	 **/
+	public $dir_epre_pay_amt_in_yuan_str;
 	
 	/** 
 	 * 直接预售成交笔数
@@ -168,6 +223,11 @@ class ReportResultTopDTO
 	public $direct_transaction_in_yuan;
 	
 	/** 
+	 * 直接成交金额（单位元）
+	 **/
+	public $direct_transaction_in_yuan_str;
+	
+	/** 
 	 * 直接成交笔数
 	 **/
 	public $direct_transaction_shipping;
@@ -178,6 +238,11 @@ class ReportResultTopDTO
 	public $direct_transaction_shipping_coverage;
 	
 	/** 
+	 * 直接点击转化率
+	 **/
+	public $direct_transaction_shipping_coverage_str;
+	
+	/** 
 	 * 总预售成交金额
 	 **/
 	public $epre_pay_amt;
@@ -186,6 +251,11 @@ class ReportResultTopDTO
 	 * 总预售成交金额（单位元）
 	 **/
 	public $epre_pay_amt_in_yuan;
+	
+	/** 
+	 * 总预售成交金额（单位元）
+	 **/
+	public $epre_pay_amt_in_yuan_str;
 	
 	/** 
 	 * 总预售成交笔数
@@ -208,9 +278,19 @@ class ReportResultTopDTO
 	public $fav_item_total_cost_in_yuan;
 	
 	/** 
+	 * 宝贝收藏成本（单位元）
+	 **/
+	public $fav_item_total_cost_in_yuan_str;
+	
+	/** 
 	 * 宝贝收藏率
 	 **/
 	public $fav_item_total_coverage;
+	
+	/** 
+	 * 宝贝收藏率
+	 **/
+	public $fav_item_total_coverage_str;
 	
 	/** 
 	 * 收藏店铺数
@@ -230,7 +310,17 @@ class ReportResultTopDTO
 	/** 
 	 * 特权订金金额（单位元）
 	 **/
+	public $hfh_dj_amt_in_str;
+	
+	/** 
+	 * 特权订金金额（单位元）
+	 **/
 	public $hfh_dj_amt_in_yuan;
+	
+	/** 
+	 * 特权订金金额（单位元）
+	 **/
+	public $hfh_dj_amt_in_yuan_str;
 	
 	/** 
 	 * 特权订金订单支付笔数
@@ -248,6 +338,11 @@ class ReportResultTopDTO
 	public $hfh_ykj_amt_in_yuan;
 	
 	/** 
+	 * 一口价金额（单位元）
+	 **/
+	public $hfh_ykj_amt_in_yuan_str;
+	
+	/** 
 	 * 一口价支付笔数
 	 **/
 	public $hfh_ykj_cnt;
@@ -261,6 +356,11 @@ class ReportResultTopDTO
 	 * 尾款金额（单位元）
 	 **/
 	public $hfh_ys_amt_in_yuan;
+	
+	/** 
+	 * 尾款金额（单位元）
+	 **/
+	public $hfh_ys_amt_in_yuan_str;
 	
 	/** 
 	 * 尾款支付笔数
@@ -288,6 +388,11 @@ class ReportResultTopDTO
 	public $indir_epre_pay_amt_in_yuan;
 	
 	/** 
+	 * 间接预售成交金额（单位元）
+	 **/
+	public $indir_epre_pay_amt_in_yuan_str;
+	
+	/** 
 	 * 间接预售成交笔数
 	 **/
 	public $indir_epre_pay_cnt;
@@ -306,6 +411,11 @@ class ReportResultTopDTO
 	 * 间接成交金额（单位元）
 	 **/
 	public $indirect_transaction_in_yuan;
+	
+	/** 
+	 * 间接成交金额（单位元）
+	 **/
+	public $indirect_transaction_in_yuan_str;
 	
 	/** 
 	 * 间接成交笔数
@@ -343,6 +453,11 @@ class ReportResultTopDTO
 	public $roi;
 	
 	/** 
+	 * 投入产出比
+	 **/
+	public $roi_str;
+	
+	/** 
 	 * 自然流量曝光
 	 **/
 	public $search_impression;
@@ -356,6 +471,11 @@ class ReportResultTopDTO
 	 * 自然流量转化金额（单位元）
 	 **/
 	public $search_transaction_in_yuan;
+	
+	/** 
+	 * 自然流量转化金额（单位元）
+	 **/
+	public $search_transaction_in_yuan_str;
 	
 	/** 
 	 * 时间
@@ -376,6 +496,11 @@ class ReportResultTopDTO
 	 * 总成交金额（单位元）
 	 **/
 	public $transaction_total_in_yuan;
+	
+	/** 
+	 * 总成交金额（单位元）
+	 **/
+	public $transaction_total_in_yuan_str;
 	
 	/** 
 	 * 无线出价

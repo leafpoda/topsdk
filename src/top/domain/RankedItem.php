@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 关键词排名推广商品信息
+ * 推广组信息列表
  * @author auto create
  */
 class RankedItem

@@ -8,7 +8,12 @@ class CreativeResTopDto
 {
 	
 	/** 
-	 * 创意审核状态, 审核通过：1，-16 待审核：-12，0，-1，-3，-4 审核拒绝：-2，-5 审核中：-999161
+	 * 资源位审核结果
+	 **/
+	public $adzone_audit_result_list;
+	
+	/** 
+	 * 创意审核状态, 审核通过：1，-16 待审核：-12，0，-1，-3，-4 审核拒绝：-2，-5  部分通过：-999161
 	 **/
 	public $audit_status;
 	
@@ -63,7 +68,7 @@ class CreativeResTopDto
 	public $image_path;
 	
 	/** 
-	 * 创意状态, 1表示在线，0表示下线即回收状态
+	 * 创意状态, 1表示在线，-1表示回收状态
 	 **/
 	public $online_status;
 	
@@ -86,6 +91,11 @@ class CreativeResTopDto
 	 * 创意开始时间
 	 **/
 	public $start_time;
+	
+	/** 
+	 * 创意审核状态展示， 审核通过P 审核拒绝R 待审核W 部分通过PP
+	 **/
+	public $status;
 	
 	/** 
 	 * 子主体类型，11商品 21橱窗 31店铺 92自定义url

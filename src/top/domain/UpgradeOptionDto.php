@@ -4,13 +4,8 @@
  * 选项
  * @author auto create
  */
-class UpgradeOptionDTO
+class UpgradeOptionDto
 {
-	
-	/** 
-	 * 选项id
-	 **/
-	public $id;
 	
 	/** 
 	 * 选项描述
@@ -25,11 +20,6 @@ class UpgradeOptionDTO
 	/** 
 	 * 选项值
 	 **/
-	public $option_value;
-	
-	/** 
-	 * 选项状态
-	 **/
-	public $status;	
+	public $option_value;	
 }
 ?>

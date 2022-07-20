@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 产品线
+ * 产品线列表。返回 ProductCat 包含的字段信息。
  * @author auto create
  */
 class ProductCat
@@ -10,27 +10,12 @@ class ProductCat
 	/** 
 	 * 产品代销采购价
 	 **/
-	public $cost_percent;
-	
-	/** 
-	 * 代销采购价百分比
-	 **/
 	public $cost_percent_agent;
-	
-	/** 
-	 * 经销采购价百分比
-	 **/
-	public $cost_percent_dealer;
 	
 	/** 
 	 * 产品经销采购价
 	 **/
-	public $cost_percent_dealer_yuan;
-	
-	/** 
-	 * 产品代销采购价
-	 **/
-	public $cost_percent_yuan;
+	public $cost_percent_dealer;
 	
 	/** 
 	 * 产品线ID
@@ -48,23 +33,13 @@ class ProductCat
 	public $product_num;
 	
 	/** 
-	 * 最高零食价百分比
+	 * 产品最高零售价
 	 **/
 	public $retail_high_percent;
 	
 	/** 
-	 * 产品最高零售价
-	 **/
-	public $retail_high_percent_yuan;
-	
-	/** 
-	 * 最低零售价百分比
-	 **/
-	public $retail_low_percent;
-	
-	/** 
 	 * 产品最低零售价
 	 **/
-	public $retail_low_percent_yuan;	
+	public $retail_low_percent;	
 }
 ?>

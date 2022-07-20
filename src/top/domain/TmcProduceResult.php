@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 消息批量发送结果
+ * 发送结果，与发送时的参数顺序一致。如果is_all_success为true时，不用校验result是否成功
  * @author auto create
  */
 class TmcProduceResult

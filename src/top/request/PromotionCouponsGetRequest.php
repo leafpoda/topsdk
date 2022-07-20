@@ -3,7 +3,7 @@
  * TOP API: taobao.promotion.coupons.get request
  * 
  * @author auto create
- * @since 1.0, 2018.11.10
+ * @since 1.0, 2022.05.25
  */
 class PromotionCouponsGetRequest
 {
@@ -102,9 +102,6 @@ class PromotionCouponsGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxValue($this->denominations,100,"denominations");
-		RequestCheckUtil::checkMinValue($this->denominations,3,"denominations");
-		RequestCheckUtil::checkMinValue($this->pageNo,1,"pageNo");
 	}
 	
 	public function putOtherTextParam($key, $value) {

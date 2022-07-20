@@ -1,11 +1,16 @@
 <?php
 
 /**
- * 创意
+ * 被删除的创意对象
  * @author auto create
  */
 class Creative
 {
+	
+	/** 
+	 * 广审批准文号
+	 **/
+	public $ad_examination_code;
 	
 	/** 
 	 * 推广组id
@@ -65,6 +70,16 @@ class Creative
 	/** 
 	 * 创意标题，最多20个汉字
 	 **/
-	public $title;	
+	public $title;
+	
+	/** 
+	 * 
+	 **/
+	public $video_id;
+	
+	/** 
+	 * 
+	 **/
+	public $video_url;	
 }
 ?>

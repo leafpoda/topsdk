@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 图片
+ * 图片信息列表
  * @author auto create
  */
 class Picture
@@ -23,16 +23,6 @@ class Picture
 	public $deleted;
 	
 	/** 
-	 * 上传时间
-	 **/
-	public $gmt_create;
-	
-	/** 
-	 * 修改时间
-	 **/
-	public $gmt_modified;
-	
-	/** 
 	 * 图片在后台处理之后的md5值当md5值为32位长度的字符串时为图片搬家后的文件md5验证码md5值为长整数时为图片替换后的时间戳
 	 **/
 	public $md5;
@@ -41,11 +31,6 @@ class Picture
 	 * 图片的修改时间
 	 **/
 	public $modified;
-	
-	/** 
-	 * 图片名称
-	 **/
-	public $name;
 	
 	/** 
 	 * 图片分类ID
@@ -78,23 +63,13 @@ class Picture
 	public $sizes;
 	
 	/** 
-	 * 图片状态,unfroze代表没有被冻结，froze代表被冻结,pass代表排查通过
+	 * 图片状态,0 未审核没冻结 1  冻结 2 审核通过
 	 **/
 	public $status;
 	
 	/** 
-	 * 是否删除
-	 **/
-	public $success;
-	
-	/** 
 	 * 图片标题
 	 **/
-	public $title;
-	
-	/** 
-	 * 卖家ID
-	 **/
-	public $uid;	
+	public $title;	
 }
 ?>

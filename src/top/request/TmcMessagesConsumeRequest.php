@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.messages.consume request
  * 
  * @author auto create
- * @since 1.0, 2018.10.23
+ * @since 1.0, 2022.07.20
  */
 class TmcMessagesConsumeRequest
 {
@@ -54,8 +54,6 @@ class TmcMessagesConsumeRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMaxValue($this->quantity,200,"quantity");
-		RequestCheckUtil::checkMinValue($this->quantity,10,"quantity");
 	}
 	
 	public function putOtherTextParam($key, $value) {
