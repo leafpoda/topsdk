@@ -33,6 +33,16 @@ class PromotionDetail
 	public $id;
 	
 	/** 
+	 * 若优惠项在主订单上，返回子订单的分摊信息
+	 **/
+	public $kd_child_discount_fee;
+	
+	/** 
+	 * 分摊优惠金额（免运费、限时打折时为空）,单位：元
+	 **/
+	public $kd_discount_fee;
+	
+	/** 
 	 * 优惠活动的描述
 	 **/
 	public $promotion_desc;

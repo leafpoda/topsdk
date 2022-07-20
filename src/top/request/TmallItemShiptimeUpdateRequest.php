@@ -3,7 +3,7 @@
  * TOP API: tmall.item.shiptime.update request
  * 
  * @author auto create
- * @since 1.0, 2021.11.23
+ * @since 1.0, 2022.07.20
  */
 class TmallItemShiptimeUpdateRequest
 {

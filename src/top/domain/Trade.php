@@ -13,9 +13,24 @@ class Trade
 	public $acookie_id;
 	
 	/** 
+	 * e
+	 **/
+	public $address_details;
+	
+	/** 
 	 * 卖家手工调整金额，精确到2位小数，单位：元。如：200.07，表示：200元7分。来源于订单价格修改，如果有多笔子订单的时候，这个为0，单笔的话则跟[order].adjust_fee一样
 	 **/
 	public $adjust_fee;
+	
+	/** 
+	 * test
+	 **/
+	public $agree_refund_checks;
+	
+	/** 
+	 * 地址aid字段
+	 **/
+	public $aid;
 	
 	/** 
 	 * 买家的支付宝id号，在UIC中有记录，买家支付宝的唯一标示，不因为买家更换Email账号而改变。
@@ -68,6 +83,11 @@ class Trade
 	public $arrive_interval;
 	
 	/** 
+	 * 送货上门标
+	 **/
+	public $asdp_ads;
+	
+	/** 
 	 * asdp业务身份
 	 **/
 	public $asdp_biz_type;
@@ -93,9 +113,64 @@ class Trade
 	public $available_confirm_fee;
 	
 	/** 
+	 * 区
+	 **/
+	public $biz_area;
+	
+	/** 
+	 * 城市
+	 **/
+	public $biz_city;
+	
+	/** 
 	 * 为tmall.daogoubao.cloudstore时表示云店链路
 	 **/
 	public $biz_code;
+	
+	/** 
+	 * 联系人
+	 **/
+	public $biz_contact_name;
+	
+	/** 
+	 * 国家
+	 **/
+	public $biz_country;
+	
+	/** 
+	 * 详细地址
+	 **/
+	public $biz_detailed_address;
+	
+	/** 
+	 * 行政区编码
+	 **/
+	public $biz_division_code;
+	
+	/** 
+	 * 移动手机号
+	 **/
+	public $biz_mobile_phone;
+	
+	/** 
+	 * 邮政编码
+	 **/
+	public $biz_post_code;
+	
+	/** 
+	 * 省份
+	 **/
+	public $biz_prov;
+	
+	/** 
+	 * 电话号码
+	 **/
+	public $biz_telephone;
+	
+	/** 
+	 * 业务地址信息
+	 **/
+	public $biz_type;
 	
 	/** 
 	 * 同城购订单source
@@ -121,6 +196,11 @@ class Trade
 	 * 买家货到付款服务费。精确到2位小数;单位:元。如:12.07，表示:12元7分
 	 **/
 	public $buyer_cod_fee;
+	
+	/** 
+	 * 买家展示昵称
+	 **/
+	public $buyer_display_nick;
 	
 	/** 
 	 * 买家邮件地址
@@ -166,6 +246,11 @@ class Trade
 	 * 买家是否已评价。可选值:true(已评价),false(未评价)。如买家只评价未打分，此字段仍返回false
 	 **/
 	public $buyer_rate;
+	
+	/** 
+	 * 鉴定二阶段发货打包标
+	 **/
+	public $call_expr;
 	
 	/** 
 	 * 买家可以通过此字段查询是否当前交易可以评论，can_rate=true可以评价，false则不能评价。
@@ -271,6 +356,11 @@ class Trade
 	 * doneeUid
 	 **/
 	public $donee_open_uid;
+	
+	/** 
+	 * 是否疫情登记的订单。0=未登记，1=已登记
+	 **/
+	public $drug_register;
 	
 	/** 
 	 * 居然之家同城站订单类型 deposit：预约到店，direct：直接购买，tail：尾款核销
@@ -388,6 +478,11 @@ class Trade
 	public $forbid_consign;
 	
 	/** 
+	 * 通用的是否预售
+	 **/
+	public $general_new_presell;
+	
+	/** 
 	 * 1-gifting订单
 	 **/
 	public $gifting;
@@ -396,6 +491,11 @@ class Trade
 	 * 1-coffee gifting订单
 	 **/
 	public $gifting_takeout;
+	
+	/** 
+	 * 分组中的订单列表
+	 **/
+	public $group_orders;
 	
 	/** 
 	 * 判断订单是否有买家留言，有买家留言返回true，否则返回false
@@ -466,6 +566,11 @@ class Trade
 	 * 苏宁预约安装，暂不安装
 	 **/
 	public $hold_install;
+	
+	/** 
+	 * 鉴定标
+	 **/
+	public $identify;
 	
 	/** 
 	 * 采购订单标识
@@ -631,6 +736,11 @@ class Trade
 	 * 预售单为true，否则false (云店订单专用)
 	 **/
 	public $new_presell;
+	
+	/** 
+	 * 无物流信息返回true，平台属性，业务不要依赖
+	 **/
+	public $no_shipping;
 	
 	/** 
 	 * 同城站类型
@@ -813,6 +923,11 @@ class Trade
 	public $oaid;
 	
 	/** 
+	 * 消费者催发货标识，lg表示消费者做过催发货
+	 **/
+	public $ob_tag;
+	
+	/** 
 	 * 门店预约自提订单标
 	 **/
 	public $obs;
@@ -821,6 +936,11 @@ class Trade
 	 * 天猫国际拦截
 	 **/
 	public $ofp_hold;
+	
+	/** 
+	 * 订单分组ID
+	 **/
+	public $og_id;
 	
 	/** 
 	 * 苏宁预约安装，用户安装时间
@@ -853,6 +973,11 @@ class Trade
 	public $omnichannel_param;
 	
 	/** 
+	 * 关联下单订单
+	 **/
+	public $order_follow_id;
+	
+	/** 
 	 * 天猫国际官网直供主订单关税税费
 	 **/
 	public $order_tax_fee;
@@ -876,6 +1001,11 @@ class Trade
 	 * 时间段
 	 **/
 	public $os_range;
+	
+	/** 
+	 * CRM系统中特有的ouid
+	 **/
+	public $ouid;
 	
 	/** 
 	 * 外部会员id
@@ -961,6 +1091,11 @@ class Trade
 	 * 使用淘金币的数量，以分为单位，和订单标propoint中间那一段一样，没有返回null
 	 **/
 	public $propoint;
+	
+	/** 
+	 * 是否是非物流订单
+	 **/
+	public $q_r_pay;
 	
 	/** 
 	 * 买家实际使用积分（扣除部分退款使用的积分），交易完成后生成（交易成功或关闭），交易未完成时该字段值为0。格式:100;单位:个
@@ -1093,6 +1228,11 @@ class Trade
 	public $seller_cod_fee;
 	
 	/** 
+	 * 卖家展示昵称
+	 **/
+	public $seller_display_nick;
+	
+	/** 
 	 * 卖家邮件地址
 	 **/
 	public $seller_email;
@@ -1203,6 +1343,11 @@ class Trade
 	public $sorted;
 	
 	/** 
+	 * 阶段收货地址标识字段
+	 **/
+	public $stage_address_type;
+	
+	/** 
 	 * 交易状态。可选值: * TRADE_NO_CREATE_PAY(没有创建支付宝交易) * WAIT_BUYER_PAY(等待买家付款) * SELLER_CONSIGNED_PART(卖家部分发货) * WAIT_SELLER_SEND_GOODS(等待卖家发货,即:买家已付款) * WAIT_BUYER_CONFIRM_GOODS(等待买家确认收货,即:卖家已发货) * TRADE_BUYER_SIGNED(买家已签收,货到付款专用) * TRADE_FINISHED(交易成功) * TRADE_CLOSED(付款以后用户退款成功，交易自动关闭) * TRADE_CLOSED_BY_TAOBAO(付款以前，卖家或买家主动关闭交易) * PAY_PENDING(国际信用卡支付付款确认中) * WAIT_PRE_AUTH_CONFIRM(0元购合约中)	* PAID_FORBID_CONSIGN(拼团中订单或者发货强管控的订单，已付款但禁止发货)
 	 **/
 	public $status;
@@ -1211,6 +1356,11 @@ class Trade
 	 * 分阶段付款的已付金额（万人团订单已付金额）
 	 **/
 	public $step_paid_fee;
+	
+	/** 
+	 * 分阶段支付详情
+	 **/
+	public $step_pay_details;
 	
 	/** 
 	 * 分阶段付款的订单状态（例如万人团订单等），目前有三返回状态FRONT_NOPAID_FINAL_NOPAID(定金未付尾款未付)，FRONT_PAID_FINAL_NOPAID(定金已付尾款未付)，FRONT_PAID_FINAL_PAID(定金和尾款都付)
@@ -1341,6 +1491,11 @@ class Trade
 	 * ua
 	 **/
 	public $ua;
+	
+	/** 
+	 * 是否是码上收订单
+	 **/
+	public $v_logistics_create;
 	
 	/** 
 	 * 网厅订单垂直表信息

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 系统自动生成
+ * 二维码对像
  * @author auto create
  */
 class QrcodeDO

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 活动数据结构
+ * 活动列表
  * @author auto create
  */
 class Activity

@@ -3,7 +3,7 @@
  * TOP API: taobao.ma.qrcode.common.create request
  * 
  * @author auto create
- * @since 1.0, 2020.07.02
+ * @since 1.0, 2022.05.24
  */
 class MaQrcodeCommonCreateRequest
 {
@@ -157,8 +157,6 @@ class MaQrcodeCommonCreateRequest
 		RequestCheckUtil::checkNotNull($this->name,"name");
 		RequestCheckUtil::checkMaxLength($this->name,32,"name");
 		RequestCheckUtil::checkNotNull($this->size,"size");
-		RequestCheckUtil::checkMaxValue($this->size,300,"size");
-		RequestCheckUtil::checkMinValue($this->size,60,"size");
 		RequestCheckUtil::checkNotNull($this->style,"style");
 		RequestCheckUtil::checkMaxLength($this->style,50,"style");
 		RequestCheckUtil::checkNotNull($this->type,"type");

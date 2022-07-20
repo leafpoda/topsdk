@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 类目下词的相信数据
+ * 类目下热门词详细数据
  * @author auto create
  */
 class InsightWordDataUnderCatDTO

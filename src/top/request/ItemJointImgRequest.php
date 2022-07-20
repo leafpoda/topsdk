@@ -3,7 +3,7 @@
  * TOP API: taobao.item.joint.img request
  * 
  * @author auto create
- * @since 1.0, 2019.11.08
+ * @since 1.0, 2022.05.31
  */
 class ItemJointImgRequest
 {
@@ -119,7 +119,6 @@ class ItemJointImgRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->numIid,"numIid");
-		RequestCheckUtil::checkMinValue($this->numIid,0,"numIid");
 		RequestCheckUtil::checkNotNull($this->picPath,"picPath");
 	}
 	

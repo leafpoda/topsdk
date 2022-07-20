@@ -3,7 +3,7 @@
  * TOP API: taobao.item.sku.delete request
  * 
  * @author auto create
- * @since 1.0, 2019.03.28
+ * @since 1.0, 2022.07.13
  */
 class ItemSkuDeleteRequest
 {

@@ -1,14 +1,14 @@
 <?php
 
 /**
- * 代销采购退款列表
+ * 退款列表
  * @author auto create
  */
 class RefundDetail
 {
 	
 	/** 
-	 * 下游买家的退款信息
+	 * 前台消费者订单对应的退款详情
 	 **/
 	public $buyer_refund;
 	
@@ -18,7 +18,7 @@ class RefundDetail
 	public $distributor_nick;
 	
 	/** 
-	 * 是否退货
+	 * 是否退货,如果是已发货退货退款/售后退货退款，就是true
 	 **/
 	public $is_return_goods;
 	
@@ -28,12 +28,12 @@ class RefundDetail
 	public $modified;
 	
 	/** 
-	 * 支付给供应商的金额
+	 * 支付给供应商的金额(元)，分销订单子单实付金额-退款金额
 	 **/
 	public $pay_sup_fee;
 	
 	/** 
-	 * 主采购单id
+	 * 分销主订单号
 	 **/
 	public $purchase_order_id;
 	
@@ -48,17 +48,24 @@ class RefundDetail
 	public $refund_desc;
 	
 	/** 
-	 * 退款的金额
+	 * 退款的金额(元)
 	 **/
 	public $refund_fee;
 	
 	/** 
-	 * 退款流程类型：
-4：发货前退款；
-1：发货后退款不退货；
-2：发货后退款退货
+	 * 退款流程类型：4：发货前退款；1：发货后退款不退货；2：发货后退款退货；3：售后退款；5：拒收；6：售后退货退款
 	 **/
 	public $refund_flow_type;
+	
+	/** 
+	 * 分销退款单号
+	 **/
+	public $refund_id;
+	
+	/** 
+	 * 退款明细项，记录退款涉及的订单
+	 **/
+	public $refund_items;
 	
 	/** 
 	 * 退款原因
@@ -66,21 +73,17 @@ class RefundDetail
 	public $refund_reason;
 	
 	/** 
-	 * 退款状态
-1：买家已经申请退款，等待卖家同意
-2：卖家已经同意退款，等待买家退货
-3：买家已经退货，等待卖家确认收货
-4：退款关闭
-5：退款成功
-6：卖家拒绝退款
-12：同意退款，待打款
-9：没有申请退款
-10：卖家拒绝确认收货
+	 * 退款状态1：分销商已经申请退款，等待供应商确认2：供应商已经同意退货，等待分销商退货3：分销商已经退货，等待供应商确认收货4：退款关闭5：退款成功  6：供应商拒绝退款12：供应商同意退款，待系统打款  9：没有申请退款 10：供应商拒绝确认收货,待分销商重新修改
 	 **/
 	public $refund_status;
 	
 	/** 
-	 * 子单id
+	 * 退款明细项，记录退款涉及的订单
+	 **/
+	public $return_logistics;
+	
+	/** 
+	 * 分销子订单号，如果是by子单发起退款，就会在退款主单上记录分销子订单号
 	 **/
 	public $sub_order_id;
 	

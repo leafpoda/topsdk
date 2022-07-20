@@ -3,7 +3,7 @@
  * TOP API: taobao.item.propimg.delete request
  * 
  * @author auto create
- * @since 1.0, 2019.04.03
+ * @since 1.0, 2022.05.24
  */
 class ItemPropimgDeleteRequest
 {
@@ -56,7 +56,6 @@ class ItemPropimgDeleteRequest
 		
 		RequestCheckUtil::checkNotNull($this->id,"id");
 		RequestCheckUtil::checkNotNull($this->numIid,"numIid");
-		RequestCheckUtil::checkMinValue($this->numIid,0,"numIid");
 	}
 	
 	public function putOtherTextParam($key, $value) {

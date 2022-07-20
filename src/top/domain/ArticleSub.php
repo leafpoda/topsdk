@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 应用订购信息
+ * 订购关系对象
  * @author auto create
  */
 class ArticleSub

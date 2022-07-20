@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 后端商品映射关系对象
+ * 后端商品映射列表
  * @author auto create
  */
 class ScItemMap

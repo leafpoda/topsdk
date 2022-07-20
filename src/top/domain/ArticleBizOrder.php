@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 应用订单信息
+ * 商品订单对象
  * @author auto create
  */
 class ArticleBizOrder
@@ -51,11 +51,6 @@ class ArticleBizOrder
 	 * 收费项目代码，从合作伙伴后台（my.open.taobao.com）-收费管理-收费项目列表 能够获得收费项目代码
 	 **/
 	public $item_code;
-	
-	/** 
-	 * 收费项目名称
-	 **/
-	public $item_name;
 	
 	/** 
 	 * 淘宝会员名

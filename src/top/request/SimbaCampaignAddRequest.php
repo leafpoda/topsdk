@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.campaign.add request
  * 
  * @author auto create
- * @since 1.0, 2019.04.28
+ * @since 1.0, 2022.07.13
  */
 class SimbaCampaignAddRequest
 {

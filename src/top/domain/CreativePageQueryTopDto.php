@@ -28,7 +28,7 @@ class CreativePageQueryTopDto
 	public $offset;
 	
 	/** 
-	 * 创意状态, 1表示在线 0表示下线即回收状态
+	 * 创意状态, 1表示在线 -1表示回收状态
 	 **/
 	public $online_status_list;
 	

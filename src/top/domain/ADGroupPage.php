@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 一页ADGroup列表
+ * 推广组分页对象
  * @author auto create
  */
 class ADGroupPage

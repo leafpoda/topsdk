@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 分销商等级
+ * 分销商等级信息
  * @author auto create
  */
 class FenxiaoGrade

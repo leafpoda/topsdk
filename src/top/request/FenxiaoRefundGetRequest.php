@@ -3,17 +3,22 @@
  * TOP API: taobao.fenxiao.refund.get request
  * 
  * @author auto create
- * @since 1.0, 2022.03.29
+ * @since 1.0, 2022.07.20
  */
 class FenxiaoRefundGetRequest
 {
 	/** 
-	 * 是否查询下游买家的退款信息
+	 * 是否查询下游消费者订单对应退款信息
 	 **/
 	private $querySellerRefund;
 	
 	/** 
-	 * 要查询的退款子单的id
+	 * 退款单id（分销子订单号和退款单id，两者至少必填一个，都填的情况下，以退款单id为准）
+	 **/
+	private $refundId;
+	
+	/** 
+	 * 要查询的退款对应的分销子订单号
 	 **/
 	private $subOrderId;
 	
@@ -28,6 +33,17 @@ class FenxiaoRefundGetRequest
 	public function getQuerySellerRefund()
 	{
 		return $this->querySellerRefund;
+	}
+
+	public function setRefundId($refundId)
+	{
+		$this->refundId = $refundId;
+		$this->apiParas["refund_id"] = $refundId;
+	}
+
+	public function getRefundId()
+	{
+		return $this->refundId;
 	}
 
 	public function setSubOrderId($subOrderId)
@@ -54,7 +70,6 @@ class FenxiaoRefundGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->subOrderId,"subOrderId");
 	}
 	
 	public function putOtherTextParam($key, $value) {

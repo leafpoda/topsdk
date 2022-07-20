@@ -3,7 +3,7 @@
  * TOP API: tmall.item.desc.modules.get request
  * 
  * @author auto create
- * @since 1.0, 2019.04.03
+ * @since 1.0, 2022.05.24
  */
 class TmallItemDescModulesGetRequest
 {

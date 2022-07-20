@@ -1,10 +1,10 @@
 <?php
 
 /**
- * 计划信息
+ * 计划列表
  * @author auto create
  */
-class CampaignDto
+class CampaignDTo
 {
 	
 	/** 
@@ -18,7 +18,7 @@ class CampaignDto
 	public $campaign_name;
 	
 	/** 
-	 * 单日预算 单位分
+	 * 日预算金额，单位分
 	 **/
 	public $day_budget;
 	
@@ -28,7 +28,7 @@ class CampaignDto
 	public $launch_area_list;
 	
 	/** 
-	 * 折扣列表
+	 * 折扣时间
 	 **/
 	public $launch_period_list;
 	
@@ -38,7 +38,7 @@ class CampaignDto
 	public $launch_time;
 	
 	/** 
-	 * PAUSE("投放暂停"),START("投放开始"),ERMINATE("投放停止"),ABNORMAL(投放异常"),WAIT("投放等待中"),DELETE("删除")
+	 * PAUSE("投放暂停"),START("投放开始"), TERMINATE("投放停止"),ABNORMAL(投放异常"),WAIT("投放等待中"),DELETE("删除")
 	 **/
 	public $status;	
 }

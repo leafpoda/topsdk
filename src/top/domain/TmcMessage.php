@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 消息通道的通用消息结构
+ * 消息列表
  * @author auto create
  */
 class TmcMessage

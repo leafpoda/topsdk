@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 店铺类目
+ * 店铺类目列表信息
  * @author auto create
  */
 class ShopCat

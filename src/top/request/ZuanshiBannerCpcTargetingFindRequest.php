@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.cpc.targeting.find request
  * 
  * @author auto create
- * @since 1.0, 2021.11.18
+ * @since 1.0, 2022.07.20
  */
 class ZuanshiBannerCpcTargetingFindRequest
 {

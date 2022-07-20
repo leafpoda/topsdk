@@ -38,9 +38,19 @@ class RefundMessage
 	public $owner_nick;
 	
 	/** 
+	 * 留言者openid
+	 **/
+	public $owner_open_uid;
+	
+	/** 
 	 * 留言者身份1代表买家，2代表卖家，3代表小二
 	 **/
 	public $owner_role;
+	
+	/** 
+	 * 留言者openuid
+	 **/
+	public $owner_uid;
 	
 	/** 
 	 * 凭证附件地址（图片）

@@ -28,6 +28,11 @@ class Order
 	public $assembly_rela;
 	
 	/** 
+	 * 优仓业务场景下 1（自动流转）/0（非自动流转）
+	 **/
+	public $auto_flow;
+	
+	/** 
 	 * 捆绑的子订单号，表示该子订单要和捆绑的子订单一起发货，用于卖家子订单捆绑发货
 	 **/
 	public $bind_oid;
@@ -56,6 +61,11 @@ class Order
 	 * 同城购门店id
 	 **/
 	public $brand_light_shop_store_id;
+	
+	/** 
+	 * 买家展示昵称
+	 **/
+	public $buyer_display_nick;
 	
 	/** 
 	 * 买家昵称
@@ -218,6 +228,11 @@ class Order
 	public $dispatch_time;
 	
 	/** 
+	 * 订单是有代发订单，为空表示该订单暂无代发单据，distribute-该子订单有已分配代发单据，cancel-订单的代发单据都已取消，
+	 **/
+	public $distribute_status;
+	
+	/** 
 	 * 分摊之后的实付金额
 	 **/
 	public $divide_order_fee;
@@ -278,6 +293,16 @@ class Order
 	public $et_verified_shop_name;
 	
 	/** 
+	 * 购物金核销子订单本金分摊金额（单位为分）
+	 **/
+	public $expand_card_basic_price_used_suborder;
+	
+	/** 
+	 * 购物金核销子订单权益金分摊金额（单位为分）
+	 **/
+	public $expand_card_expand_price_used_suborder;
+	
+	/** 
 	 * 透出的额外信息
 	 **/
 	public $extend_info;
@@ -301,6 +326,11 @@ class Order
 	 * 花呗分期期数
 	 **/
 	public $fqg_num;
+	
+	/** 
+	 * 是否含有赠品
+	 **/
+	public $has_gift;
 	
 	/** 
 	 * 云店是否扣拥
@@ -341,6 +371,11 @@ class Order
 	 * 是否商家承担手续费
 	 **/
 	public $is_fqg_s_fee;
+	
+	/** 
+	 * 是否是赠品订单
+	 **/
+	public $is_free_gift;
 	
 	/** 
 	 * 是否是考拉商品订单
@@ -386,6 +421,11 @@ class Order
 	 * 服务所属的交易订单号。如果服务为一年包换，则item_oid这笔订单享受改服务的保护
 	 **/
 	public $item_oid;
+	
+	/** 
+	 * 预售订单立减金额
+	 **/
+	public $lijian;
 	
 	/** 
 	 * 子订单发货的快递公司名称
@@ -623,6 +663,11 @@ class Order
 	public $s_tariff_fee;
 	
 	/** 
+	 * 卖家展示昵称
+	 **/
+	public $seller_display_nick;
+	
+	/** 
 	 * 卖家昵称
 	 **/
 	public $seller_nick;
@@ -786,6 +831,11 @@ class Order
 	 * 应付金额（商品价格 * 商品数量 + 手工调整金额 - 子订单级订单优惠金额）。精确到2位小数;单位:元。如:200.07，表示:200元7分
 	 **/
 	public $total_fee;
+	
+	/** 
+	 * 订单履约类型
+	 **/
+	public $trade_fulfillment_type;
 	
 	/** 
 	 * 交易类型

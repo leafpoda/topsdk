@@ -7,24 +7,9 @@
  */
 class OnebpDkxAccountAccountQueryRequest
 {
-	/** 
-	 * 请求体
-	 **/
-	private $apiServiceContext;
 	
 	private $apiParas = array();
 	
-	public function setApiServiceContext($apiServiceContext)
-	{
-		$this->apiServiceContext = $apiServiceContext;
-		$this->apiParas["api_service_context"] = $apiServiceContext;
-	}
-
-	public function getApiServiceContext()
-	{
-		return $this->apiServiceContext;
-	}
-
 	public function getApiMethodName()
 	{
 		return "taobao.onebp.dkx.account.account.query";
@@ -38,7 +23,6 @@ class OnebpDkxAccountAccountQueryRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->apiServiceContext,"apiServiceContext");
 	}
 	
 	public function putOtherTextParam($key, $value) {

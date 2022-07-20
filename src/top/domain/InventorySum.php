@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 商品库存对象
+ * 商品总体库存信息
  * @author auto create
  */
 class InventorySum

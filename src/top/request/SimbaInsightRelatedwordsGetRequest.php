@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.insight.relatedwords.get request
  * 
  * @author auto create
- * @since 1.0, 2019.11.08
+ * @since 1.0, 2022.05.23
  */
 class SimbaInsightRelatedwordsGetRequest
 {
@@ -57,8 +57,6 @@ class SimbaInsightRelatedwordsGetRequest
 		RequestCheckUtil::checkNotNull($this->bidwordList,"bidwordList");
 		RequestCheckUtil::checkMaxListSize($this->bidwordList,100,"bidwordList");
 		RequestCheckUtil::checkNotNull($this->number,"number");
-		RequestCheckUtil::checkMaxValue($this->number,100,"number");
-		RequestCheckUtil::checkMinValue($this->number,1,"number");
 	}
 	
 	public function putOtherTextParam($key, $value) {

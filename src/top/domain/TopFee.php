@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 运费模板中运费信息对象
+ * 运费模板中运费详细信息对象，包含默认运费和指定地区运费
  * @author auto create
  */
 class TopFee

@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroup.add request
  * 
  * @author auto create
- * @since 1.0, 2018.09.11
+ * @since 1.0, 2022.07.19
  */
 class SimbaAdgroupAddRequest
 {
@@ -120,7 +120,6 @@ class SimbaAdgroupAddRequest
 		
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 		RequestCheckUtil::checkNotNull($this->defaultPrice,"defaultPrice");
-		RequestCheckUtil::checkMinValue($this->defaultPrice,5,"defaultPrice");
 		RequestCheckUtil::checkNotNull($this->imgUrl,"imgUrl");
 		RequestCheckUtil::checkNotNull($this->itemId,"itemId");
 		RequestCheckUtil::checkNotNull($this->title,"title");

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 优惠券数据结构
+ * 优惠券列表
  * @author auto create
  */
 class Coupon

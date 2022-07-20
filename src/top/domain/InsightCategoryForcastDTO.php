@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 词的预测类目对应的结果对象
+ * 词的相关类目列表
  * @author auto create
  */
 class InsightCategoryForcastDTO

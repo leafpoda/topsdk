@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.insight.catsinfo.get request
  * 
  * @author auto create
- * @since 1.0, 2020.12.17
+ * @since 1.0, 2022.05.25
  */
 class SimbaInsightCatsinfoGetRequest
 {

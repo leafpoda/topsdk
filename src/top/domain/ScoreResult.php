@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 服务平台评价流水对象
+ * 评价流水记录
  * @author auto create
  */
 class ScoreResult

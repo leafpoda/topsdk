@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 商品详情模块
+ * 运营定义的该商品所属类目的类目级别模块信息列表，列表顺序即为模块顺序。
  * @author auto create
  */
 class ItemDescModule

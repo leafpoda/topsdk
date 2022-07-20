@@ -3,7 +3,7 @@
  * TOP API: taobao.item.sku.add request
  * 
  * @author auto create
- * @since 1.0, 2019.03.28
+ * @since 1.0, 2022.07.19
  */
 class ItemSkuAddRequest
 {
@@ -151,11 +151,9 @@ class ItemSkuAddRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->numIid,"numIid");
-		RequestCheckUtil::checkMinValue($this->numIid,0,"numIid");
 		RequestCheckUtil::checkNotNull($this->price,"price");
 		RequestCheckUtil::checkNotNull($this->properties,"properties");
 		RequestCheckUtil::checkNotNull($this->quantity,"quantity");
-		RequestCheckUtil::checkMinValue($this->quantity,0,"quantity");
 	}
 	
 	public function putOtherTextParam($key, $value) {

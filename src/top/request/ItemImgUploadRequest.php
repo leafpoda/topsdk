@@ -3,7 +3,7 @@
  * TOP API: taobao.item.img.upload request
  * 
  * @author auto create
- * @since 1.0, 2020.04.20
+ * @since 1.0, 2022.05.31
  */
 class ItemImgUploadRequest
 {
@@ -119,7 +119,6 @@ class ItemImgUploadRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->numIid,"numIid");
-		RequestCheckUtil::checkMinValue($this->numIid,0,"numIid");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -13,7 +13,9 @@ class ItemCat
 	public $cid;
 	
 	/** 
-	 * Feature对象列表目前已有的属性：若Attr_key为 udsaleprop，attr_value为1 则允许卖家在改类目新增自定义销售属性,不然为不允许
+	 * Feature对象列表
+目前已有的属性：
+若Attr_key为 udsaleprop，attr_value为1 则允许卖家在改类目新增自定义销售属性,不然为不允许
 	 **/
 	public $features;
 	

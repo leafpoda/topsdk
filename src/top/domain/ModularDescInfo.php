@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 商品描述模块化信息，包含类目级别的模块信息以及用户自定义模块约束等其他信息
+ * 返回描述模块信息
  * @author auto create
  */
 class ModularDescInfo

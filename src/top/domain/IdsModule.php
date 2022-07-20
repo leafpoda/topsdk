@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 用于保存宝贝描述规范化模块信息
+ * 宝贝描述规范化可使用打标模块的锚点信息
  * @author auto create
  */
 class IdsModule

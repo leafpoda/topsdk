@@ -8,6 +8,11 @@ class LogisticsInfo
 {
 	
 	/** 
+	 * 货品BarCode
+	 **/
+	public $bar_code;
+	
+	/** 
 	 * 组合商品编码code
 	 **/
 	public $combine_item_code;
@@ -21,6 +26,11 @@ class LogisticsInfo
 	 * 发货类型CN=菜鸟发货，SC的商家仓发货
 	 **/
 	public $consign_type;
+	
+	/** 
+	 * 择配信息
+	 **/
+	public $delivery_cps;
 	
 	/** 
 	 * 货品仓储code

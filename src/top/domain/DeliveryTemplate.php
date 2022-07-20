@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 运费模板对象
+ * 运费模板列表
  * @author auto create
  */
 class DeliveryTemplate

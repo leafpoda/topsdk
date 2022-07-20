@@ -3,7 +3,7 @@
  * TOP API: taobao.shopcats.list.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2022.05.24
  */
 class ShopcatsListGetRequest
 {

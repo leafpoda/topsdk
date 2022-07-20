@@ -13,7 +13,7 @@ class FenxiaoProductQuantityUpdateRequest
 	private $productId;
 	
 	/** 
-	 * sku属性值，产品有sku时填写，多个sku用,分隔。为空时默认该产品无sku，则只修改产品的库存。
+	 * sku属性值，产品有sku时填写，多个sku用,分隔。为空时默认该产品无sku，则只修改产品的库存。请参照taobao.fenxiao.products.get接口返回的properties设置入参
 	 **/
 	private $properties;
 	

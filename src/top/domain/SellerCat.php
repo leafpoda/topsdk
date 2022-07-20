@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 店铺内卖家自定义类目
+ * 卖家自定义类目
  * @author auto create
  */
 class SellerCat
@@ -11,16 +11,6 @@ class SellerCat
 	 * 卖家自定义类目编号
 	 **/
 	public $cid;
-	
-	/** 
-	 * 创建时间。格式：yyyy-MM-dd HH:mm:ss
-	 **/
-	public $created;
-	
-	/** 
-	 * 修改时间。格式：yyyy-MM-dd HH:mm:ss
-	 **/
-	public $modified;
 	
 	/** 
 	 * 卖家自定义类目名称

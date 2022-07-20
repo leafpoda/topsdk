@@ -3,7 +3,7 @@
  * TOP API: taobao.item.anchor.get request
  * 
  * @author auto create
- * @since 1.0, 2019.03.27
+ * @since 1.0, 2022.05.20
  */
 class ItemAnchorGetRequest
 {

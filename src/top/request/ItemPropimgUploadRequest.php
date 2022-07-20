@@ -3,7 +3,7 @@
  * TOP API: taobao.item.propimg.upload request
  * 
  * @author auto create
- * @since 1.0, 2019.04.10
+ * @since 1.0, 2022.05.31
  */
 class ItemPropimgUploadRequest
 {
@@ -103,7 +103,6 @@ class ItemPropimgUploadRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->numIid,"numIid");
-		RequestCheckUtil::checkMinValue($this->numIid,0,"numIid");
 		RequestCheckUtil::checkNotNull($this->properties,"properties");
 	}
 	

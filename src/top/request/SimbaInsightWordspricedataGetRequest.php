@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.insight.wordspricedata.get request
  * 
  * @author auto create
- * @since 1.0, 2021.06.09
+ * @since 1.0, 2022.05.24
  */
 class SimbaInsightWordspricedataGetRequest
 {

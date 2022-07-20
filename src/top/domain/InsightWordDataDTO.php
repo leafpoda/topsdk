@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 关键词大盘数据结果对象
+ * 关键词大盘数据列表
  * @author auto create
  */
 class InsightWordDataDTO

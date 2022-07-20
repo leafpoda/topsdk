@@ -3,7 +3,7 @@
  * TOP API: taobao.delivery.template.get request
  * 
  * @author auto create
- * @since 1.0, 2018.11.10
+ * @since 1.0, 2022.05.31
  */
 class DeliveryTemplateGetRequest
 {
