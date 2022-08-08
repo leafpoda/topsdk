@@ -1,18 +1,18 @@
 <?php
 /**
- * TOP API: taobao.fenxiao.grades.get request
+ * TOP API: taobao.onebp.display.account.get request
  * 
  * @author auto create
- * @since 1.0, 2022.08.08
+ * @since 1.0, 2022.06.01
  */
-class FenxiaoGradesGetRequest
+class OnebpDisplayAccountGetRequest
 {
 	
 	private $apiParas = array();
 	
 	public function getApiMethodName()
 	{
-		return "taobao.fenxiao.grades.get";
+		return "taobao.onebp.display.account.get";
 	}
 	
 	public function getApiParas()

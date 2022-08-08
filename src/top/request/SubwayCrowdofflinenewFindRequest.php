@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.crowdofflinenew.find request
  * 
  * @author auto create
- * @since 1.0, 2022.04.21
+ * @since 1.0, 2022.07.27
  */
 class SubwayCrowdofflinenewFindRequest
 {

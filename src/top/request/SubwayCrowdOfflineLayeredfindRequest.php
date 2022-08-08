@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.crowd.offline.layeredfind request
  * 
  * @author auto create
- * @since 1.0, 2022.02.22
+ * @since 1.0, 2022.07.27
  */
 class SubwayCrowdOfflineLayeredfindRequest
 {
