@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.dealer.requisitionorder.get request
  * 
  * @author auto create
- * @since 1.0, 2021.10.18
+ * @since 1.0, 2022.07.29
  */
 class FenxiaoDealerRequisitionorderGetRequest
 {

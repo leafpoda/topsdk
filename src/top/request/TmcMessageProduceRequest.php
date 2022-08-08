@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.message.produce request
  * 
  * @author auto create
- * @since 1.0, 2020.09.08
+ * @since 1.0, 2022.07.25
  */
 class TmcMessageProduceRequest
 {
@@ -13,9 +13,19 @@ class TmcMessageProduceRequest
 	private $content;
 	
 	/** 
+	 * 延时参数 时间戳 预期发送时间
+	 **/
+	private $delayMillis;
+	
+	/** 
 	 * 消息的扩增属性，用json格式表示
 	 **/
 	private $exContent;
+	
+	/** 
+	 * 提前过期 相对时间差 毫秒
+	 **/
+	private $expiresMillis;
 	
 	/** 
 	 * 回传的文件内容，目前仅支持jpg,png,bmp,gif,pdf类型的文件，文件最大1M。只有消息中有byte[]类型的数据时，才需要传此字段; 否则不需要传此字段。
@@ -70,6 +80,17 @@ class TmcMessageProduceRequest
 		return $this->content;
 	}
 
+	public function setDelayMillis($delayMillis)
+	{
+		$this->delayMillis = $delayMillis;
+		$this->apiParas["delay_millis"] = $delayMillis;
+	}
+
+	public function getDelayMillis()
+	{
+		return $this->delayMillis;
+	}
+
 	public function setExContent($exContent)
 	{
 		$this->exContent = $exContent;
@@ -79,6 +100,17 @@ class TmcMessageProduceRequest
 	public function getExContent()
 	{
 		return $this->exContent;
+	}
+
+	public function setExpiresMillis($expiresMillis)
+	{
+		$this->expiresMillis = $expiresMillis;
+		$this->apiParas["expires_millis"] = $expiresMillis;
+	}
+
+	public function getExpiresMillis()
+	{
+		return $this->expiresMillis;
 	}
 
 	public function setMediaContent($mediaContent)
