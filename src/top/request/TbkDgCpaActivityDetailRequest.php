@@ -3,7 +3,7 @@
  * TOP API: taobao.tbk.dg.cpa.activity.detail request
  * 
  * @author auto create
- * @since 1.0, 2022.06.09
+ * @since 1.0, 2023.01.09
  */
 class TbkDgCpaActivityDetailRequest
 {
@@ -31,6 +31,16 @@ class TbkDgCpaActivityDetailRequest
 	 * 明细类型，1：预估明细，2：结算明细
 	 **/
 	private $queryType;
+	
+	/** 
+	 * 指定数据批次号(时间戳)
+	 **/
+	private $runtime;
+	
+	/** 
+	 * 下一页开始查询的记录主键id
+	 **/
+	private $startId;
 	
 	private $apiParas = array();
 	
@@ -87,6 +97,28 @@ class TbkDgCpaActivityDetailRequest
 	public function getQueryType()
 	{
 		return $this->queryType;
+	}
+
+	public function setRuntime($runtime)
+	{
+		$this->runtime = $runtime;
+		$this->apiParas["runtime"] = $runtime;
+	}
+
+	public function getRuntime()
+	{
+		return $this->runtime;
+	}
+
+	public function setStartId($startId)
+	{
+		$this->startId = $startId;
+		$this->apiParas["start_id"] = $startId;
+	}
+
+	public function getStartId()
+	{
+		return $this->startId;
 	}
 
 	public function getApiMethodName()

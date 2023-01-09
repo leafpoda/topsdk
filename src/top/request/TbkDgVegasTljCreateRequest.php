@@ -3,7 +3,7 @@
  * TOP API: taobao.tbk.dg.vegas.tlj.create request
  * 
  * @author auto create
- * @since 1.0, 2021.11.24
+ * @since 1.0, 2022.08.04
  */
 class TbkDgVegasTljCreateRequest
 {
@@ -18,7 +18,7 @@ class TbkDgVegasTljCreateRequest
 	private $campaignType;
 	
 	/** 
-	 * 宝贝ID
+	 * 宝贝ID或营销ID
 	 **/
 	private $itemId;
 	

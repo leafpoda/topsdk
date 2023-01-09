@@ -3,17 +3,22 @@
  * TOP API: taobao.tbk.item.info.get request
  * 
  * @author auto create
- * @since 1.0, 2015.09.06
+ * @since 1.0, 2022.08.31
  */
 class TbkItemInfoGetRequest
 {
 	/** 
-	 * 需返回的字段列表
+	 * 1-动态ID转链场景，2-消费者比价场景，3-商品库导购场景（不填默认为1）
 	 **/
-	private $fields;
+	private $bizSceneId;
 	
 	/** 
-	 * 商品ID串，用,分割，从taobao.tbk.item.get接口获取num_iid字段，最大40个
+	 * ip地址，影响邮费获取，如果不传或者传入不准确，邮费无法精准提供
+	 **/
+	private $ip;
+	
+	/** 
+	 * 商品ID串，用,分割，最大40个
 	 **/
 	private $numIids;
 	
@@ -22,17 +27,33 @@ class TbkItemInfoGetRequest
 	 **/
 	private $platform;
 	
+	/** 
+	 * 1-自购省，2-推广赚（代理模式专属ID，代理模式必填，非代理模式不用填写该字段）
+	 **/
+	private $promotionType;
+	
 	private $apiParas = array();
 	
-	public function setFields($fields)
+	public function setBizSceneId($bizSceneId)
 	{
-		$this->fields = $fields;
-		$this->apiParas["fields"] = $fields;
+		$this->bizSceneId = $bizSceneId;
+		$this->apiParas["biz_scene_id"] = $bizSceneId;
 	}
 
-	public function getFields()
+	public function getBizSceneId()
 	{
-		return $this->fields;
+		return $this->bizSceneId;
+	}
+
+	public function setIp($ip)
+	{
+		$this->ip = $ip;
+		$this->apiParas["ip"] = $ip;
+	}
+
+	public function getIp()
+	{
+		return $this->ip;
 	}
 
 	public function setNumIids($numIids)
@@ -57,6 +78,17 @@ class TbkItemInfoGetRequest
 		return $this->platform;
 	}
 
+	public function setPromotionType($promotionType)
+	{
+		$this->promotionType = $promotionType;
+		$this->apiParas["promotion_type"] = $promotionType;
+	}
+
+	public function getPromotionType()
+	{
+		return $this->promotionType;
+	}
+
 	public function getApiMethodName()
 	{
 		return "taobao.tbk.item.info.get";
@@ -70,7 +102,6 @@ class TbkItemInfoGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->fields,"fields");
 		RequestCheckUtil::checkNotNull($this->numIids,"numIids");
 	}
 	

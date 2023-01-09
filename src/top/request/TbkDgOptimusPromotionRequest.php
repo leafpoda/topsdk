@@ -3,7 +3,7 @@
  * TOP API: taobao.tbk.dg.optimus.promotion request
  * 
  * @author auto create
- * @since 1.0, 2022.06.09
+ * @since 1.0, 2022.06.20
  */
 class TbkDgOptimusPromotionRequest
 {
@@ -23,7 +23,7 @@ class TbkDgOptimusPromotionRequest
 	private $pageSize;
 	
 	/** 
-	 * 官方提供的权益物料Id。有价券-37104、大额店铺券-37116，更多权益物料id敬请期待！
+	 * 官方提供的权益物料Id。有价券-37104、大额店铺券-37116、天猫店铺券-62191、券券补-61809 更多权益物料id敬请期待！
 	 **/
 	private $promotionId;
 	

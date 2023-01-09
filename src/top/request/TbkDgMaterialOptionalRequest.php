@@ -3,7 +3,7 @@
  * TOP API: taobao.tbk.dg.material.optional request
  * 
  * @author auto create
- * @since 1.0, 2022.06.02
+ * @since 1.0, 2022.09.20
  */
 class TbkDgMaterialOptionalRequest
 {
@@ -11,6 +11,11 @@ class TbkDgMaterialOptionalRequest
 	 * mm_xxx_xxx_12345678三段式的最后一段数字
 	 **/
 	private $adzoneId;
+	
+	/** 
+	 * 1-动态ID转链场景，2-消费者比价场景（不填默认为1）
+	 **/
+	private $bizSceneId;
 	
 	/** 
 	 * 商品筛选-后台类目ID。用,分割，最大10个，该ID可以通过taobao.itemcats.get接口获取到
@@ -158,6 +163,11 @@ class TbkDgMaterialOptionalRequest
 	private $platform;
 	
 	/** 
+	 * 1-自购省，2-推广赚（代理模式专属ID，代理模式必填，非代理模式不用填写该字段）
+	 **/
+	private $promotionType;
+	
+	/** 
 	 * 商品筛选-查询词
 	 **/
 	private $q;
@@ -223,6 +233,17 @@ class TbkDgMaterialOptionalRequest
 	public function getAdzoneId()
 	{
 		return $this->adzoneId;
+	}
+
+	public function setBizSceneId($bizSceneId)
+	{
+		$this->bizSceneId = $bizSceneId;
+		$this->apiParas["biz_scene_id"] = $bizSceneId;
+	}
+
+	public function getBizSceneId()
+	{
+		return $this->bizSceneId;
 	}
 
 	public function setCat($cat)
@@ -542,6 +563,17 @@ class TbkDgMaterialOptionalRequest
 	public function getPlatform()
 	{
 		return $this->platform;
+	}
+
+	public function setPromotionType($promotionType)
+	{
+		$this->promotionType = $promotionType;
+		$this->apiParas["promotion_type"] = $promotionType;
+	}
+
+	public function getPromotionType()
+	{
+		return $this->promotionType;
 	}
 
 	public function setQ($q)

@@ -3,7 +3,7 @@
  * TOP API: taobao.tbk.dg.vegas.send.status request
  * 
  * @author auto create
- * @since 1.0, 2022.06.09
+ * @since 1.0, 2023.01.09
  */
 class TbkDgVegasSendStatusRequest
 {

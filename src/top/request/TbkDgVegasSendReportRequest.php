@@ -3,12 +3,12 @@
  * TOP API: taobao.tbk.dg.vegas.send.report request
  * 
  * @author auto create
- * @since 1.0, 2021.11.24
+ * @since 1.0, 2022.12.13
  */
 class TbkDgVegasSendReportRequest
 {
 	/** 
-	 * 红包活动id：1462
+	 * 已下线，后续不需要填写
 	 **/
 	private $activityId;
 	
@@ -102,7 +102,6 @@ class TbkDgVegasSendReportRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->activityId,"activityId");
 		RequestCheckUtil::checkNotNull($this->bizDate,"bizDate");
 	}
 	

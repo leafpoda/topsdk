@@ -3,7 +3,7 @@
  * TOP API: taobao.tbk.dg.cpa.activity.report request
  * 
  * @author auto create
- * @since 1.0, 2022.05.24
+ * @since 1.0, 2022.10.21
  */
 class TbkDgCpaActivityReportRequest
 {
