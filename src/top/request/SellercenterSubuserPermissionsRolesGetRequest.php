@@ -3,7 +3,7 @@
  * TOP API: taobao.sellercenter.subuser.permissions.roles.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2022.09.20
  */
 class SellercenterSubuserPermissionsRolesGetRequest
 {

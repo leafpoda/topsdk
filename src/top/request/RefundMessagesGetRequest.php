@@ -3,7 +3,7 @@
  * TOP API: taobao.refund.messages.get request
  * 
  * @author auto create
- * @since 1.0, 2022.07.06
+ * @since 1.0, 2022.08.26
  */
 class RefundMessagesGetRequest
 {
@@ -104,11 +104,7 @@ class RefundMessagesGetRequest
 		
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
 		RequestCheckUtil::checkMaxListSize($this->fields,100,"fields");
-		RequestCheckUtil::checkMinValue($this->pageNo,1,"pageNo");
-		RequestCheckUtil::checkMaxValue($this->pageSize,100,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 		RequestCheckUtil::checkNotNull($this->refundId,"refundId");
-		RequestCheckUtil::checkMinValue($this->refundId,1,"refundId");
 	}
 	
 	public function putOtherTextParam($key, $value) {

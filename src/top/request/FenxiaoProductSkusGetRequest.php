@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.skus.get request
  * 
  * @author auto create
- * @since 1.0, 2022.07.29
+ * @since 1.0, 2023.04.26
  */
 class FenxiaoProductSkusGetRequest
 {

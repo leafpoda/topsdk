@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.adgroupsbycampaignid.get request
  * 
  * @author auto create
- * @since 1.0, 2019.08.29
+ * @since 1.0, 2022.09.19
  */
 class SimbaAdgroupsbycampaignidGetRequest
 {
@@ -87,10 +87,7 @@ class SimbaAdgroupsbycampaignidGetRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->pageNo,"pageNo");
-		RequestCheckUtil::checkMinValue($this->pageNo,1,"pageNo");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");
-		RequestCheckUtil::checkMaxValue($this->pageSize,200,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -3,7 +3,7 @@
  * TOP API: taobao.user.seller.get request
  * 
  * @author auto create
- * @since 1.0, 2022.03.22
+ * @since 1.0, 2022.09.14
  */
 class UserSellerGetRequest
 {

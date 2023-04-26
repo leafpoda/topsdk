@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.sku.add request
  * 
  * @author auto create
- * @since 1.0, 2018.07.26
+ * @since 1.0, 2023.04.26
  */
 class FenxiaoProductSkuAddRequest
 {
@@ -136,8 +136,6 @@ class FenxiaoProductSkuAddRequest
 		
 		RequestCheckUtil::checkNotNull($this->productId,"productId");
 		RequestCheckUtil::checkNotNull($this->properties,"properties");
-		RequestCheckUtil::checkMaxValue($this->quantity,1000000,"quantity");
-		RequestCheckUtil::checkMinValue($this->quantity,0,"quantity");
 		RequestCheckUtil::checkNotNull($this->standardPrice,"standardPrice");
 	}
 	

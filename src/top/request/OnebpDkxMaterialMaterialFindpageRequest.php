@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.material.material.findpage request
  * 
  * @author auto create
- * @since 1.0, 2021.11.25
+ * @since 1.0, 2022.08.29
  */
 class OnebpDkxMaterialMaterialFindpageRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.bidword.pricetools request
  * 
  * @author auto create
- * @since 1.0, 2021.11.23
+ * @since 1.0, 2022.09.19
  */
 class SimbaBidwordPricetoolsRequest
 {

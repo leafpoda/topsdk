@@ -3,7 +3,7 @@
  * TOP API: taobao.refunds.apply.get request
  * 
  * @author auto create
- * @since 1.0, 2022.07.13
+ * @since 1.0, 2022.12.19
  */
 class RefundsApplyGetRequest
 {
@@ -139,9 +139,6 @@ external_trade(统一外部交易)
 		
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
 		RequestCheckUtil::checkMaxListSize($this->fields,20,"fields");
-		RequestCheckUtil::checkMinValue($this->pageNo,1,"pageNo");
-		RequestCheckUtil::checkMaxValue($this->pageSize,100,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

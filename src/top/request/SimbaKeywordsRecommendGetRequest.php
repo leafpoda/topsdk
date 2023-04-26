@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.keywords.recommend.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2022.08.26
  */
 class SimbaKeywordsRecommendGetRequest
 {
@@ -136,10 +136,7 @@ class SimbaKeywordsRecommendGetRequest
 		
 		RequestCheckUtil::checkNotNull($this->adgroupId,"adgroupId");
 		RequestCheckUtil::checkNotNull($this->pageNo,"pageNo");
-		RequestCheckUtil::checkMinValue($this->pageNo,1,"pageNo");
 		RequestCheckUtil::checkNotNull($this->pageSize,"pageSize");
-		RequestCheckUtil::checkMaxValue($this->pageSize,200,"pageSize");
-		RequestCheckUtil::checkMinValue($this->pageSize,1,"pageSize");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -3,7 +3,7 @@
  * TOP API: taobao.promotion.limitdiscount.detail.get request
  * 
  * @author auto create
- * @since 1.0, 2018.11.10
+ * @since 1.0, 2022.09.20
  */
 class PromotionLimitdiscountDetailGetRequest
 {

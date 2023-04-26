@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.serchcrowd.price.batch.update request
  * 
  * @author auto create
- * @since 1.0, 2021.11.23
+ * @since 1.0, 2022.09.19
  */
 class SimbaSerchcrowdPriceBatchUpdateRequest
 {

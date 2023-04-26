@@ -3,7 +3,7 @@
  * TOP API: taobao.items.inventory.get request
  * 
  * @author auto create
- * @since 1.0, 2020.07.21
+ * @since 1.0, 2022.09.19
  */
 class ItemsInventoryGetRequest
 {
@@ -256,9 +256,7 @@ approve_status,num_iid,title,nick,type,cid,pic_url,num,props,valid_thru, list_ti
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMinValue($this->cid,0,"cid");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
-		RequestCheckUtil::checkMaxValue($this->pageNo,101,"pageNo");
 	}
 	
 	public function putOtherTextParam($key, $value) {

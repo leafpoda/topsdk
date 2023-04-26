@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.creatives.get request
  * 
  * @author auto create
- * @since 1.0, 2022.06.23
+ * @since 1.0, 2022.09.19
  */
 class SimbaCreativesGetRequest
 {

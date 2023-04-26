@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.keywords.pricevon.set request
  * 
  * @author auto create
- * @since 1.0, 2019.08.29
+ * @since 1.0, 2022.09.08
  */
 class SimbaKeywordsPricevonSetRequest
 {

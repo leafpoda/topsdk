@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.campaign.platform.update request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2022.09.05
  */
 class SimbaCampaignPlatformUpdateRequest
 {
@@ -120,8 +120,6 @@ class SimbaCampaignPlatformUpdateRequest
 		
 		RequestCheckUtil::checkNotNull($this->campaignId,"campaignId");
 		RequestCheckUtil::checkMaxListSize($this->nonsearchChannels,10,"nonsearchChannels");
-		RequestCheckUtil::checkMaxValue($this->outsideDiscount,200,"outsideDiscount");
-		RequestCheckUtil::checkMinValue($this->outsideDiscount,1,"outsideDiscount");
 		RequestCheckUtil::checkNotNull($this->searchChannels,"searchChannels");
 		RequestCheckUtil::checkMaxListSize($this->searchChannels,10,"searchChannels");
 	}

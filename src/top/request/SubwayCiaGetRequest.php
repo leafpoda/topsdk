@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.cia.get request
  * 
  * @author auto create
- * @since 1.0, 2021.05.06
+ * @since 1.0, 2022.09.19
  */
 class SubwayCiaGetRequest
 {

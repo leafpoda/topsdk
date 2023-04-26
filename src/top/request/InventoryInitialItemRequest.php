@@ -3,7 +3,7 @@
  * TOP API: taobao.inventory.initial.item request
  * 
  * @author auto create
- * @since 1.0, 2021.01.13
+ * @since 1.0, 2022.09.20
  */
 class InventoryInitialItemRequest
 {

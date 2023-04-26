@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.keywordsbykeywordids.get request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2022.09.14
  */
 class SimbaKeywordsbykeywordidsGetRequest
 {

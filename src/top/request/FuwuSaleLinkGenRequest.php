@@ -3,7 +3,7 @@
  * TOP API: taobao.fuwu.sale.link.gen request
  * 
  * @author auto create
- * @since 1.0, 2020.09.28
+ * @since 1.0, 2022.09.19
  */
 class FuwuSaleLinkGenRequest
 {

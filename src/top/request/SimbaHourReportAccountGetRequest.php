@@ -3,7 +3,7 @@
  * TOP API: taobao.simba.hour.report.account.get request
  * 
  * @author auto create
- * @since 1.0, 2022.05.25
+ * @since 1.0, 2023.04.26
  */
 class SimbaHourReportAccountGetRequest
 {

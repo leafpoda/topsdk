@@ -3,7 +3,7 @@
  * TOP API: taobao.items.onsale.get request
  * 
  * @author auto create
- * @since 1.0, 2020.08.11
+ * @since 1.0, 2022.09.19
  */
 class ItemsOnsaleGetRequest
 {
@@ -278,7 +278,6 @@ class ItemsOnsaleGetRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkMinValue($this->cid,0,"cid");
 		RequestCheckUtil::checkNotNull($this->fields,"fields");
 	}
 	
