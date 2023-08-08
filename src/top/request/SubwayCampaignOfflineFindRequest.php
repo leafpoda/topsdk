@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.campaign.offline.find request
  * 
  * @author auto create
- * @since 1.0, 2022.04.21
+ * @since 1.0, 2023.01.04
  */
 class SubwayCampaignOfflineFindRequest
 {
@@ -13,7 +13,7 @@ class SubwayCampaignOfflineFindRequest
 	private $campaignIdEqual;
 	
 	/** 
-	 * 计划类型（直通车搜索-无线/pc：0；智能推广计划：8；销量明星计划：16；口碑L店计划：17；新享一键推广计划-独立结算账户(策略中心)：21；超级直播-一键推广计划（策略中心：订单模式、计划不复用：22；大快消一键推广计划（策略中心）：23；超级直播-持续推广计划（策略中心:计划模式、可复用、类似单品）：24；合约广告、流量卡计划：31；极速推计划：37；AI智投：38；）
+	 * 计划类型（直通车搜索-无线/pc：0；智能推广计划：8；销量明星计划：16；口碑L店计划：17；新享一键推广计划-独立结算账户(策略中心)：21；大快消一键推广计划（策略中心）：23；合约广告、流量卡计划：31；极速推计划：37；）
 	 **/
 	private $campaignTypeNotIn;
 	

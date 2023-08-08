@@ -3,7 +3,7 @@
  * TOP API: taobao.skus.quantity.update request
  * 
  * @author auto create
- * @since 1.0, 2020.10.27
+ * @since 1.0, 2022.08.05
  */
 class SkusQuantityUpdateRequest
 {

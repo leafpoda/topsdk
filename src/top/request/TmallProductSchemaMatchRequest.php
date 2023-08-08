@@ -3,7 +3,7 @@
  * TOP API: tmall.product.schema.match request
  * 
  * @author auto create
- * @since 1.0, 2021.11.23
+ * @since 1.0, 2023.04.19
  */
 class TmallProductSchemaMatchRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.user.permit request
  * 
  * @author auto create
- * @since 1.0, 2018.12.22
+ * @since 1.0, 2022.04.26
  */
 class TmcUserPermitRequest
 {

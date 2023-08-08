@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.campaign.campaign.add request
  * 
  * @author auto create
- * @since 1.0, 2023.04.26
+ * @since 1.0, 2023.08.08
  */
 class OnebpDkxCampaignCampaignAddRequest
 {

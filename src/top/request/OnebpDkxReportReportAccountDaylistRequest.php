@@ -3,15 +3,10 @@
  * TOP API: taobao.onebp.dkx.report.report.account.daylist request
  * 
  * @author auto create
- * @since 1.0, 2022.03.28
+ * @since 1.0, 2022.09.19
  */
 class OnebpDkxReportReportAccountDaylistRequest
 {
-	/** 
-	 * 请求体
-	 **/
-	private $apiServiceContext;
-	
 	/** 
 	 * 报表查询参数
 	 **/
@@ -19,17 +14,6 @@ class OnebpDkxReportReportAccountDaylistRequest
 	
 	private $apiParas = array();
 	
-	public function setApiServiceContext($apiServiceContext)
-	{
-		$this->apiServiceContext = $apiServiceContext;
-		$this->apiParas["api_service_context"] = $apiServiceContext;
-	}
-
-	public function getApiServiceContext()
-	{
-		return $this->apiServiceContext;
-	}
-
 	public function setReportQuery($reportQuery)
 	{
 		$this->reportQuery = $reportQuery;
@@ -54,7 +38,6 @@ class OnebpDkxReportReportAccountDaylistRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->apiServiceContext,"apiServiceContext");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.solution.solution.add request
  * 
  * @author auto create
- * @since 1.0, 2022.02.28
+ * @since 1.0, 2022.09.20
  */
 class OnebpDisplaySolutionSolutionAddRequest
 {

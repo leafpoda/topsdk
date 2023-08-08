@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.campaign.delete request
  * 
  * @author auto create
- * @since 1.0, 2021.12.02
+ * @since 1.0, 2022.09.20
  */
 class OnebpDisplayCampaignDeleteRequest
 {

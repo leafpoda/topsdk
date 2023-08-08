@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.crowd.price.update request
  * 
  * @author auto create
- * @since 1.0, 2021.12.21
+ * @since 1.0, 2022.09.19
  */
 class OnebpDisplayCrowdPriceUpdateRequest
 {

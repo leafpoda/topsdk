@@ -3,7 +3,7 @@
  * TOP API: alibaba.item.publish.schema.get request
  * 
  * @author auto create
- * @since 1.0, 2021.03.15
+ * @since 1.0, 2022.09.19
  */
 class AlibabaItemPublishSchemaGetRequest
 {

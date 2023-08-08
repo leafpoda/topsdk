@@ -3,7 +3,7 @@
  * TOP API: taobao.item.update.listing.tmall request
  * 
  * @author auto create
- * @since 1.0, 2018.08.06
+ * @since 1.0, 2022.09.19
  */
 class ItemUpdateListingTmallRequest
 {
@@ -55,9 +55,7 @@ class ItemUpdateListingTmallRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->num,"num");
-		RequestCheckUtil::checkMinValue($this->num,0,"num");
 		RequestCheckUtil::checkNotNull($this->numIid,"numIid");
-		RequestCheckUtil::checkMinValue($this->numIid,0,"numIid");
 	}
 	
 	public function putOtherTextParam($key, $value) {

@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.account.account.query request
  * 
  * @author auto create
- * @since 1.0, 2022.01.14
+ * @since 1.0, 2022.09.27
  */
 class OnebpDkxAccountAccountQueryRequest
 {

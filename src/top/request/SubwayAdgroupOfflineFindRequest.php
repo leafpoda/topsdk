@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.adgroup.offline.find request
  * 
  * @author auto create
- * @since 1.0, 2022.07.27
+ * @since 1.0, 2022.10.27
  */
 class SubwayAdgroupOfflineFindRequest
 {

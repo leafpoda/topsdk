@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.reprot.find.domain.rpt.list request
  * 
  * @author auto create
- * @since 1.0, 2022.02.09
+ * @since 1.0, 2022.09.19
  */
 class OnebpDisplayReprotFindDomainRptListRequest
 {

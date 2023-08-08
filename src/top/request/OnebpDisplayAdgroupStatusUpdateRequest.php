@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.adgroup.status.update request
  * 
  * @author auto create
- * @since 1.0, 2022.02.17
+ * @since 1.0, 2022.09.19
  */
 class OnebpDisplayAdgroupStatusUpdateRequest
 {

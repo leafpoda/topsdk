@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.crowd.find.by.type request
  * 
  * @author auto create
- * @since 1.0, 2022.01.19
+ * @since 1.0, 2022.12.15
  */
 class OnebpDisplayCrowdFindByTypeRequest
 {

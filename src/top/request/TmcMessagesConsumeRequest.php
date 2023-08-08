@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.messages.consume request
  * 
  * @author auto create
- * @since 1.0, 2022.08.08
+ * @since 1.0, 2023.08.08
  */
 class TmcMessagesConsumeRequest
 {

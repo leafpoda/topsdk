@@ -3,7 +3,7 @@
  * TOP API: tmall.item.simpleschema.add request
  * 
  * @author auto create
- * @since 1.0, 2022.07.20
+ * @since 1.0, 2022.10.11
  */
 class TmallItemSimpleschemaAddRequest
 {

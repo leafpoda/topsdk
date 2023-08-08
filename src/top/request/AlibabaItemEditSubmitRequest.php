@@ -3,7 +3,7 @@
  * TOP API: alibaba.item.edit.submit request
  * 
  * @author auto create
- * @since 1.0, 2021.07.13
+ * @since 1.0, 2022.09.19
  */
 class AlibabaItemEditSubmitRequest
 {

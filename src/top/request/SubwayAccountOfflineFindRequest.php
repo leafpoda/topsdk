@@ -3,7 +3,7 @@
  * TOP API: taobao.subway.account.offline.find request
  * 
  * @author auto create
- * @since 1.0, 2022.07.27
+ * @since 1.0, 2023.01.04
  */
 class SubwayAccountOfflineFindRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.dkx.report.report.campaign.daylist request
  * 
  * @author auto create
- * @since 1.0, 2022.03.28
+ * @since 1.0, 2022.09.19
  */
 class OnebpDkxReportReportCampaignDaylistRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.group.add request
  * 
  * @author auto create
- * @since 1.0, 2018.12.22
+ * @since 1.0, 2022.09.17
  */
 class TmcGroupAddRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: tmall.item.combine.get request
  * 
  * @author auto create
- * @since 1.0, 2023.04.26
+ * @since 1.0, 2023.06.25
  */
 class TmallItemCombineGetRequest
 {

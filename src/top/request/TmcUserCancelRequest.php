@@ -3,7 +3,7 @@
  * TOP API: taobao.tmc.user.cancel request
  * 
  * @author auto create
- * @since 1.0, 2018.07.25
+ * @since 1.0, 2023.08.08
  */
 class TmcUserCancelRequest
 {

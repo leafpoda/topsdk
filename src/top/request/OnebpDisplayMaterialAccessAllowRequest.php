@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.material.access.allow request
  * 
  * @author auto create
- * @since 1.0, 2021.12.08
+ * @since 1.0, 2022.09.19
  */
 class OnebpDisplayMaterialAccessAllowRequest
 {

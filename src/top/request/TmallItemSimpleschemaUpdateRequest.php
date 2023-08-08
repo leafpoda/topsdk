@@ -3,7 +3,7 @@
  * TOP API: tmall.item.simpleschema.update request
  * 
  * @author auto create
- * @since 1.0, 2022.07.20
+ * @since 1.0, 2023.06.25
  */
 class TmallItemSimpleschemaUpdateRequest
 {

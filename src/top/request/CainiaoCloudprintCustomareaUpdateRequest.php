@@ -3,7 +3,7 @@
  * TOP API: cainiao.cloudprint.customarea.update request
  * 
  * @author auto create
- * @since 1.0, 2021.11.24
+ * @since 1.0, 2023.08.08
  */
 class CainiaoCloudprintCustomareaUpdateRequest
 {

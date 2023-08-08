@@ -3,7 +3,7 @@
  * TOP API: taobao.onebp.display.account.get request
  * 
  * @author auto create
- * @since 1.0, 2022.06.01
+ * @since 1.0, 2022.09.19
  */
 class OnebpDisplayAccountGetRequest
 {

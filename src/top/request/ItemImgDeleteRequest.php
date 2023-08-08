@@ -3,7 +3,7 @@
  * TOP API: taobao.item.img.delete request
  * 
  * @author auto create
- * @since 1.0, 2019.03.29
+ * @since 1.0, 2023.03.28
  */
 class ItemImgDeleteRequest
 {
@@ -71,9 +71,7 @@ class ItemImgDeleteRequest
 	{
 		
 		RequestCheckUtil::checkNotNull($this->id,"id");
-		RequestCheckUtil::checkMinValue($this->id,1,"id");
 		RequestCheckUtil::checkNotNull($this->numIid,"numIid");
-		RequestCheckUtil::checkMinValue($this->numIid,1,"numIid");
 	}
 	
 	public function putOtherTextParam($key, $value) {
