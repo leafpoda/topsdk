@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.bidword.findlist request
  * 
  * @author auto create
- * @since 1.0, 2023.08.03
+ * @since 1.0, 2023.08.23
  */
 class UniversalbpBidwordFindlistRequest
 {

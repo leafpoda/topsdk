@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.report.async.create.download.task request
  * 
  * @author auto create
- * @since 1.0, 2023.07.19
+ * @since 1.0, 2023.08.09
  */
 class UniversalbpReportAsyncCreateDownloadTaskRequest
 {

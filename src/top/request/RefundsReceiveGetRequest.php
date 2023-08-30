@@ -3,7 +3,7 @@
  * TOP API: taobao.refunds.receive.get request
  * 
  * @author auto create
- * @since 1.0, 2022.12.19
+ * @since 1.0, 2023.08.28
  */
 class RefundsReceiveGetRequest
 {
@@ -23,7 +23,7 @@ class RefundsReceiveGetRequest
 	private $endModified;
 	
 	/** 
-	 * 需要返回的字段。目前支持有：refund_id, tid, title, buyer_nick, seller_nick, total_fee, status, created, refund_fee, oid, good_status, company_name, sid, payment, reason, desc, has_good_return, modified, order_status,refund_phase
+	 * 需要返回的字段。目前支持有：refund_id, tid, title, buyer_nick, seller_nick, total_fee, status, created, refund_fee, oid, good_status, company_name, sid, payment, reason, desc, has_good_return, modified, order_status,refund_phase,dispute_type
 	 **/
 	private $fields;
 	
@@ -48,7 +48,7 @@ class RefundsReceiveGetRequest
 	private $startModified;
 	
 	/** 
-	 * 退款状态，默认查询所有退款状态的数据，除了默认值外每次只能查询一种状态。WAIT_SELLER_AGREE(买家已经申请退款，等待卖家同意) WAIT_BUYER_RETURN_GOODS(卖家已经同意退款，等待买家退货) WAIT_SELLER_CONFIRM_GOODS(买家已经退货，等待卖家确认收货) SELLER_REFUSE_BUYER(卖家拒绝退款) CLOSED(退款关闭) SUCCESS(退款成功)
+	 * 退款状态，默认查询所有退款状态的数据，除了默认值外每次只能查询一种状态。WAIT_SELLER_AGREE(买家已经申请退款，等待卖家同意) WAIT_BUYER_RETURN_GOODS(卖家已经同意退款，等待买家退货) WAIT_SELLER_CONFIRM_GOODS(买家已经退货，等待卖家确认收货) SELLER_REFUSE_BUYER(卖家拒绝退款) CLOSED(退款关闭) SUCCESS(退款成功)WAIT_BUYER_CONFIRM_EXCHANGE_SELLER_SEND_GOODS(等待买家确认换货卖家发货商品)EXCHANGE_TRANSFORM_TO_REFUND(换货关闭转退款)WAIT_SELLER_CONSIGN_GOODS(商家确认收货等待商家发货)
 	 **/
 	private $status;
 	

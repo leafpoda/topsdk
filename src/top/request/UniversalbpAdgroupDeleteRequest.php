@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.adgroup.delete request
  * 
  * @author auto create
- * @since 1.0, 2023.07.19
+ * @since 1.0, 2023.08.18
  */
 class UniversalbpAdgroupDeleteRequest
 {

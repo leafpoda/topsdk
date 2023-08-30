@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.report.query.crowd request
  * 
  * @author auto create
- * @since 1.0, 2023.08.07
+ * @since 1.0, 2023.08.23
  */
 class UniversalbpReportQueryCrowdRequest
 {

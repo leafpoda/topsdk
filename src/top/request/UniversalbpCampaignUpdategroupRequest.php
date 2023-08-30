@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.campaign.updategroup request
  * 
  * @author auto create
- * @since 1.0, 2023.07.19
+ * @since 1.0, 2023.08.23
  */
 class UniversalbpCampaignUpdategroupRequest
 {
