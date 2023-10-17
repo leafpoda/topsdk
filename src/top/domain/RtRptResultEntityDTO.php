@@ -143,6 +143,11 @@ class RtRptResultEntityDTO
 	public $thedate;
 	
 	/** 
+	 * 流量类型 1: PC站内, 2: PC站外 , 4: 无线站内, 5: 无线站外
+	 **/
+	public $traffictype;
+	
+	/** 
 	 * 总成交笔数
 	 **/
 	public $transactionshippingtotal;

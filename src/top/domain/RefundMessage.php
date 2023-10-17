@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 退款留言
+ * 退款信息。包含id和created
  * @author auto create
  */
 class RefundMessage
@@ -48,12 +48,7 @@ class RefundMessage
 	public $owner_role;
 	
 	/** 
-	 * 留言者openuid
-	 **/
-	public $owner_uid;
-	
-	/** 
-	 * 凭证附件地址（图片）
+	 * 图片链接
 	 **/
 	public $pic_urls;
 	

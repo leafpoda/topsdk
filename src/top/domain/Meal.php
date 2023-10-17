@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 搭配套餐类。
+ * 搭配套餐列表。
  * @author auto create
  */
 class Meal

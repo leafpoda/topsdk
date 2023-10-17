@@ -35,6 +35,11 @@ class CrowdRefVo
 	/** 
 	 * 出价
 	 **/
-	public $price;	
+	public $price;
+	
+	/** 
+	 * 横向管理
+	 **/
+	public $show_tag_list;	
 }
 ?>

@@ -8,11 +8,6 @@ class MaterialResultTopDto
 {
 	
 	/** 
-	 * accountId
-	 **/
-	public $account_id;
-	
-	/** 
 	 * bidCount
 	 **/
 	public $bid_count;

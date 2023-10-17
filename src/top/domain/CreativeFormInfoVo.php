@@ -8,14 +8,34 @@ class CreativeFormInfoVo
 {
 	
 	/** 
+	 * 底部文案
+	 **/
+	public $content;
+	
+	/** 
 	 * 创意添加途径,video:视频创意,creativeCool:创意库,local:图片,template:模板创意
 	 **/
 	public $creative_add_operators;
 	
 	/** 
+	 * 当前计划下的创意数量
+	 **/
+	public $current_creative_num;
+	
+	/** 
 	 * 前端用 文案2
 	 **/
 	public $desc_info;
+	
+	/** 
+	 * 创意图标
+	 **/
+	public $icon;
+	
+	/** 
+	 * 数量上限
+	 **/
+	public $num_limit;
 	
 	/** 
 	 * 模板id，场景推广使用，创建创意时候写到创意上面

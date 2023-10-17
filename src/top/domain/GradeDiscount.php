@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 等级折扣数据结构
+ * 等级折扣列表
  * @author auto create
  */
 class GradeDiscount

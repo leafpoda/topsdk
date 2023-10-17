@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 采购申请/经销采购单中的商品明细
+ * 产品明细
  * @author auto create
  */
 class DealerOrderDetail
@@ -18,7 +18,7 @@ class DealerOrderDetail
 	public $dealer_order_id;
 	
 	/** 
-	 * 属性列表，key-value形式。
+	 * 属性信息列表，key-value形式。如attr_key为storeCode，attr_value则为仓库编码。
 	 **/
 	public $features;
 	

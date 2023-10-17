@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 折扣信息
+ * 折扣数据结构
  * @author auto create
  */
 class Discount

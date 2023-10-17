@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Item(商品)结构
+ * 搜索到的商品列表，具体字段根据设定的fields决定，不包括desc字段
  * @author auto create
  */
 class Item
@@ -18,12 +18,12 @@ class Item
 	public $approve_status;
 	
 	/** 
-	 * 返点比例
+	 * 商品的积分返点比例。如:5,表示:返点比例0.5%
 	 **/
 	public $auction_point;
 	
 	/** 
-	 * 代充商品类型。只有少数类目下的商品可以标记上此字段，具体哪些类目可以上传可以通过taobao.itemcat.features.get获得。在代充商品的类目下，不传表示不标记商品类型（交易搜索中就不能通过标记搜到相关的交易了）。可选类型：time_card(点卡软件代充)fee_card(话费软件代充)
+	 * 代充商品类型。在代充商品的类目下，不传表示不标记商品类型（交易搜索中就不能通过标记搜到相关的交易了）。可选类型： no_mark(不做类型标记) time_card(点卡软件代充) fee_card(话费软件代充)
 	 **/
 	public $auto_fill;
 	
@@ -63,7 +63,7 @@ class Item
 	public $cod_postage_id;
 	
 	/** 
-	 * 属性值的备注，格式：pid:vid:备注信息1;pid2:vid2:备注信息2;
+	 * 属性值的备注.格式:pid:vid:备注信息1;pid2:vid2:备注信息2;
 	 **/
 	public $cpv_memo;
 	
@@ -93,7 +93,7 @@ class Item
 	public $delivery_time;
 	
 	/** 
-	 * 商品描述, 字数要大于5个字节，小于25000个字节
+	 * 商品描述, 字数要大于5个字符，小于25000个字符
 	 **/
 	public $desc;
 	
@@ -126,6 +126,11 @@ class Item
 	 * 宝贝特征值，只有在Top支持的特征值才能保存到宝贝上
 	 **/
 	public $features;
+	
+	/** 
+	 * 商品首次上架时间
+	 **/
+	public $first_starts_time;
 	
 	/** 
 	 * 食品安全信息，包括：生产许可证编号、产品标准号、厂名、厂址等
@@ -178,7 +183,7 @@ class Item
 	public $has_warranty;
 	
 	/** 
-	 * 商品id(注意：iid近期即将废弃，请用num_iid参数)
+	 * 商品iid
 	 **/
 	public $iid;
 	
@@ -198,12 +203,12 @@ class Item
 	public $input_custom_cpv;
 	
 	/** 
-	 * 用户自行输入的类目属性ID串。结构：&quot;pid1,pid2,pid3&quot;，如：&quot;20000&quot;（表示品牌） 注：通常一个类目下用户可输入的关键属性不超过1个。
+	 * 用户自行输入的类目属性ID串。结构："pid1,pid2,pid3"，如："20000"（表示品牌） 注：通常一个类目下用户可输入的关键属性不超过1个。
 	 **/
 	public $input_pids;
 	
 	/** 
-	 * 用户自行输入的子属性名和属性值，结构:&quot;父属性值;一级子属性名;一级子属性值;二级子属性名;自定义输入值,....&quot;,如：&ldquo;耐克;耐克系列;科比系列;科比系列;2K5&rdquo;，input_str需要与input_pids一一对应，注：通常一个类目下用户可输入的关键属性不超过1个。所有属性别名加起来不能超过 3999字节。
+	 * 用户自行输入的子属性名和属性值，结构:"父属性值;一级子属性名;一级子属性值;二级子属性名;自定义输入值,....",如：“耐克;耐克系列;科比系列;科比系列;2K5”，input_str需要与input_pids一一对应，注：通常一个类目下用户可输入的关键属性不超过1个。所有属性别名加起来不能超过 3999字节。
 	 **/
 	public $input_str;
 	
@@ -268,7 +273,7 @@ class Item
 	public $item_imgs;
 	
 	/** 
-	 * itemRectangleImgs
+	 * 3:4商品主图
 	 **/
 	public $item_rectangle_imgs;
 	
@@ -353,7 +358,7 @@ class Item
 	public $one_station;
 	
 	/** 
-	 * 商家外部编码(可与商家外部系统对接)
+	 * 商家外部编码(可与商家外部系统对接)。需要授权才能获取。
 	 **/
 	public $outer_id;
 	
@@ -408,7 +413,7 @@ class Item
 	public $prop_imgs;
 	
 	/** 
-	 * 属性值别名
+	 * 属性值别名,比如颜色的自定义名称
 	 **/
 	public $property_alias;
 	
@@ -418,7 +423,7 @@ class Item
 	public $props;
 	
 	/** 
-	 * 商品属性名称。标识着props内容里面的pid和vid所对应的名称。格式为：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2&hellip;&hellip;(<strong>注：</strong><font color="red">属性名称中的冒号&quot;:&quot;被转换为：&quot;#cln#&quot;;  分号&quot;;&quot;被转换为：&quot;#scln#&quot;</font>)
+	 * 商品属性名称。标识着props内容里面的pid和vid所对应的名称。格式为：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2……(<strong>注：</strong><font color="red">属性名称中的冒号":"被转换为："#cln#";  分号";"被转换为："#scln#"</font>)
 	 **/
 	public $props_name;
 	
@@ -428,7 +433,7 @@ class Item
 	public $qualification;
 	
 	/** 
-	 * 商品所属卖家的信用等级数，1表示1心，2表示2心&hellip;&hellip;，只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回
+	 * 商品所属卖家的信用等级数，1表示1心，2表示2心……，只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回
 	 **/
 	public $score;
 	
@@ -453,7 +458,7 @@ class Item
 	public $seller_cids;
 	
 	/** 
-	 * Sku列表。fields中只设置sku可以返回Sku结构体中所有字段，如果设置为sku.sku_id、sku.properties、sku.quantity等形式就只会返回相应的字段
+	 * <a href="http://open.taobao.com/dev/index.php/Sku">Sku</a>列表。fields中只设置sku可以返回Sku结构体中所有字段，如果设置为sku.sku_id、sku.properties、sku.quantity等形式就只会返回相应的字段
 	 **/
 	public $skus;
 	
@@ -498,7 +503,7 @@ class Item
 	public $type;
 	
 	/** 
-	 * 有效期,7或者14（默认是14天）
+	 * 有效期,7或者14（默认是7天）
 	 **/
 	public $valid_thru;
 	
@@ -523,7 +528,7 @@ class Item
 	public $violation;
 	
 	/** 
-	 * 商品30天交易量，只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回
+	 * 对应搜索商品列表页的最近成交量,只有调用商品搜索:taobao.items.get和taobao.items.search的时候才能返回
 	 **/
 	public $volume;
 	

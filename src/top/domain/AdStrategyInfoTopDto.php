@@ -23,16 +23,6 @@ class AdStrategyInfoTopDto
 	public $crowd_mode;
 	
 	/** 
-	 * 达摩盘人群列表
-	 **/
-	public $init_dmp_crowd_id_list;
-	
-	/** 
-	 * 模板列表
-	 **/
-	public $init_template_id_list;
-	
-	/** 
 	 * 商品列表，小于等于10个
 	 **/
 	public $item_ids;

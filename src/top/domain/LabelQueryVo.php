@@ -8,6 +8,11 @@ class LabelQueryVo
 {
 	
 	/** 
+	 * 单元id
+	 **/
+	public $adgroup_id;
+	
+	/** 
 	 * 计划id
 	 **/
 	public $campaign_id;

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 推荐词
+ * 推荐词分页对象列表
  * @author auto create
  */
 class RecommendWord

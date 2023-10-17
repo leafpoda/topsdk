@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.crowd.findrecommendcrowd request
  * 
  * @author auto create
- * @since 1.0, 2023.08.04
+ * @since 1.0, 2023.09.20
  */
 class UniversalbpCrowdFindrecommendcrowdRequest
 {

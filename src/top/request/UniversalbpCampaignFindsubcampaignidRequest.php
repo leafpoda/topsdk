@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.campaign.findsubcampaignid request
  * 
  * @author auto create
- * @since 1.0, 2023.08.18
+ * @since 1.0, 2023.10.17
  */
 class UniversalbpCampaignFindsubcampaignidRequest
 {

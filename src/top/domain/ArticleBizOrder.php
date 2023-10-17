@@ -58,6 +58,11 @@ class ArticleBizOrder
 	public $nick;
 	
 	/** 
+	 * 业务订单状态
+	 **/
+	public $order_biz_status;
+	
+	/** 
 	 * 订购周期  1表示年 ，2表示月，3表示天。
 	 **/
 	public $order_cycle;

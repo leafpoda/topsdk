@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 宝贝详情页面信息
+ * 返回宝贝模板对象。包含模板id，模板name，还有模板的类别（0表示外店，1表示内店）
  * @author auto create
  */
 class ItemTemplate

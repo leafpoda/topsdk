@@ -1,30 +1,20 @@
 <?php
 
 /**
- * reasonDTOs
+ * 可以协商的退款原因列表
  * @author auto create
  */
 class Reason
 {
 	
 	/** 
-	 * 原因id
+	 * 退款原因ID
 	 **/
-	public $audit_reason_id;
+	public $reason_id;
 	
 	/** 
-	 * 原因名称
+	 * 退款原因文案
 	 **/
-	public $audit_reason_name;
-	
-	/** 
-	 * 原因对应的链接
-	 **/
-	public $flaw_urls;
-	
-	/** 
-	 * 截图
-	 **/
-	public $redirect_url;	
+	public $reason_text;	
 }
 ?>

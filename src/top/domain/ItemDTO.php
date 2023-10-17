@@ -1,40 +1,60 @@
 <?php
 
 /**
- * 商品列表
+ * 数组
  * @author auto create
  */
 class ItemDto
 {
 	
 	/** 
-	 * 不可以使用的原因
+	 * 时间
 	 **/
-	public $access_allowed_info;
+	public $created_at;
 	
 	/** 
-	 * 商品主图
+	 * 视频时长，单位秒
 	 **/
-	public $img_url;
+	public $duration;
 	
 	/** 
-	 * 是否可以使用，false不可以进行广告投放
+	 * 高度
 	 **/
-	public $is_access_allowed;
+	public $height;
 	
 	/** 
-	 * 商品id
+	 * id
 	 **/
-	public $item_id;
+	public $id;
 	
 	/** 
-	 * 商品落地页
+	 * name
 	 **/
-	public $link_url;
+	public $name;
 	
 	/** 
-	 * 商品标题
+	 * 视频封面
 	 **/
-	public $title;	
+	public $poster;
+	
+	/** 
+	 * 淘宝视频id
+	 **/
+	public $tb_video_id;
+	
+	/** 
+	 * 0 图片，3 视频
+	 **/
+	public $type;
+	
+	/** 
+	 * 链接
+	 **/
+	public $url;
+	
+	/** 
+	 * 宽度
+	 **/
+	public $width;	
 }
 ?>

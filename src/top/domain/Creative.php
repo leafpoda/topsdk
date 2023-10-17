@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 创意
+ * 创意对象列表
  * @author auto create
  */
 class Creative
@@ -73,12 +73,12 @@ class Creative
 	public $title;
 	
 	/** 
-	 * 
+	 * 视频id
 	 **/
 	public $video_id;
 	
 	/** 
-	 * 
+	 * 视频url
 	 **/
 	public $video_url;	
 }

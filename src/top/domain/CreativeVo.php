@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 结果集
+ * 批量结果集
  * @author auto create
  */
 class CreativeVo

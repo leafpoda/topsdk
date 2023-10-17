@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 用户信用
+ * 卖家信用
  * @author auto create
  */
 class UserCredit

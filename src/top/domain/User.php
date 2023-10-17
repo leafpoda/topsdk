@@ -8,19 +8,9 @@ class User
 {
 	
 	/** 
-	 * 支付宝账户
-	 **/
-	public $alipay_account;
-	
-	/** 
 	 * 有无绑定。可选值:bind(绑定),notbind(未绑定)
 	 **/
 	public $alipay_bind;
-	
-	/** 
-	 * 支付宝ID
-	 **/
-	public $alipay_no;
 	
 	/** 
 	 * 是否受限制。可选值:limited(受限制),unlimited(不受限)
@@ -33,29 +23,9 @@ class User
 	public $avatar;
 	
 	/** 
-	 * 生日
-	 **/
-	public $birthday;
-	
-	/** 
-	 * 买家信用
-	 **/
-	public $buyer_credit;
-	
-	/** 
 	 * 是否参加消保
 	 **/
 	public $consumer_protection;
-	
-	/** 
-	 * 用户注册时间。格式:yyyy-MM-dd HH:mm:ss
-	 **/
-	public $created;
-	
-	/** 
-	 * 
-	 **/
-	public $email;
 	
 	/** 
 	 * 是否购买多图服务。可选值:true(是),false(否)
@@ -73,17 +43,12 @@ class User
 	public $has_sub_stock;
 	
 	/** 
-	 * 
-	 **/
-	public $id_card;
-	
-	/** 
 	 * 用户是否是金牌卖家
 	 **/
 	public $is_golden_seller;
 	
 	/** 
-	 * 是否24小时闪电发货(实物类)	
+	 * 是否24小时闪电发货(实物类)
 	 **/
 	public $is_lightning_consignment;
 	
@@ -103,34 +68,14 @@ class User
 	public $item_img_size;
 	
 	/** 
-	 * 最近登陆时间。格式:yyyy-MM-dd HH:mm:ss
-	 **/
-	public $last_visit;
-	
-	/** 
 	 * 是否是无名良品用户，true or false
 	 **/
 	public $liangpin;
 	
 	/** 
-	 * 用户当前居住地公开信息。如：location.city获取其中的city数据
-	 **/
-	public $location;
-	
-	/** 
 	 * 是否订阅了淘宝天下杂志
 	 **/
 	public $magazine_subscribe;
-	
-	/** 
-	 * 是否可以经营图书 ，true or false
-	 **/
-	public $manage_book;
-	
-	/** 
-	 * 联系人手机号码
-	 **/
-	public $mobile;
 	
 	/** 
 	 * 用户昵称
@@ -141,11 +86,6 @@ class User
 	 * 用户是否为网游用户，属于隐私信息，需要登陆才能查看自己的。 目前仅供taobao.user.get使用
 	 **/
 	public $online_gaming;
-	
-	/** 
-	 * 用户openId
-	 **/
-	public $open_uid;
 	
 	/** 
 	 * 有无实名认证。可选值:authentication(实名认证),not authentication(没有认证)
@@ -173,11 +113,6 @@ class User
 	public $sex;
 	
 	/** 
-	 * 用户是否签署消保协议（因为加入基本消保的用户未必签署了消保协议）
-	 **/
-	public $sign_consumer_protection;
-	
-	/** 
 	 * 卖家是否签署食品卖家承诺协议
 	 **/
 	public $sign_food_seller_promise;
@@ -193,11 +128,6 @@ class User
 	public $type;
 	
 	/** 
-	 * 用户字符串ID
-	 **/
-	public $uid;
-	
-	/** 
 	 * 用户数字ID
 	 **/
 	public $user_id;
@@ -210,11 +140,6 @@ class User
 	/** 
 	 * 用户的全站vip信息，可取值如下：c(普通会员),asso_vip(荣誉会员)，vip1,vip2,vip3,vip4,vip5,vip6(六个等级的正式vip会员)，共8种取值，其中asso_vip是由vip会员衰退而成，与主站上的vip0对应。
 	 **/
-	public $vip_info;
-	
-	/** 
-	 * 用户等级身份：20 apass；10 超级会员；0 普通会员
-	 **/
-	public $vip_level;	
+	public $vip_info;	
 }
 ?>

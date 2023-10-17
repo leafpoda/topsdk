@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 创意关联关系
+ * list
  * @author auto create
  */
 class CreativeRefCommandVo

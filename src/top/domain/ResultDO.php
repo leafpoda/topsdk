@@ -8,17 +8,17 @@ class ResultDO
 {
 	
 	/** 
-	 * 01
+	 * 错误码集合
 	 **/
-	public $error_code;
+	public $error_codes;
 	
 	/** 
-	 * 网络延时
+	 * 实际返回对象
 	 **/
-	public $error_msg;
+	public $model;
 	
 	/** 
-	 * 成功、失败
+	 * 调用是否成功
 	 **/
 	public $success;	
 }

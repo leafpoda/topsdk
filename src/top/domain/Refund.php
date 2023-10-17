@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 退款详情
+ * 搜索到的退款信息列表
  * @author auto create
  */
 class Refund
@@ -23,7 +23,7 @@ class Refund
 	public $alipay_no;
 	
 	/** 
-	 * 退款扩展属性
+	 * attribute
 	 **/
 	public $attribute;
 	
@@ -48,9 +48,14 @@ class Refund
 	public $buyer_nick;
 	
 	/** 
-	 * 买家账号的OpenUID
+	 * 买家openUid
 	 **/
 	public $buyer_open_uid;
+	
+	/** 
+	 * 组合品信息
+	 **/
+	public $combine_item_info;
 	
 	/** 
 	 * 物流公司名称
@@ -63,7 +68,7 @@ class Refund
 	public $created;
 	
 	/** 
-	 * 不需客服介入1;需要客服介入2;客服已经介入3;客服初审完成 4;客服主管复审失败5;客服处理完成6;
+	 * 不需客服介入1;需要客服介入2;客服已经介入3;客服初审完成4;客服主管复审失败5;客服处理完成6;系统撤销(B2B使用)，维权撤销(集市使用) 7;支持买家 8;支持卖家 9;举证中 10;开放申诉 11;
 	 **/
 	public $cs_status;
 	
@@ -71,6 +76,16 @@ class Refund
 	 * 退款说明
 	 **/
 	public $desc;
+	
+	/** 
+	 * 退款类型，可选值REFUND(仅退款),REFUND_AND_RETURN(退货退款),TMALL_EXCHANGE(天猫换货),TAOBAO_EXCHANGE(淘宝换货),REPAIR(维修),RESHIPPING(补寄),OTHERS(其他)
+	 **/
+	public $dispute_type;
+	
+	/** 
+	 * 完结时间。格式:yyyy-MM-dd HH:mm:ss
+	 **/
+	public $end_time;
 	
 	/** 
 	 * 退货时间。格式:yyyy-MM-dd HH:mm:ss
@@ -98,7 +113,7 @@ class Refund
 	public $modified;
 	
 	/** 
-	 * 商品购买数量
+	 * 商品数量
 	 **/
 	public $num;
 	
@@ -118,12 +133,12 @@ class Refund
 	public $operation_contraint;
 	
 	/** 
-	 * 退款对应的订单交易状态。可选值TRADE_NO_CREATE_PAY(没有创建支付宝交易) WAIT_BUYER_PAY(等待买家付款) WAIT_SELLER_SEND_GOODS(等待卖家发货,即:买家已付款) WAIT_BUYER_CONFIRM_GOODS(等待买家确认收货,即:卖家已发货) TRADE_BUYER_SIGNED(买家已签收,货到付款专用) TRADE_FINISHED(交易成功) TRADE_CLOSED(交易关闭) TRADE_CLOSED_BY_TAOBAO(交易被淘宝关闭) ALL_WAIT_PAY(包含：WAIT_BUYER_PAY、TRADE_NO_CREATE_PAY) ALL_CLOSED(包含：TRADE_CLOSED、TRADE_CLOSED_BY_TAOBAO) 取自&quot;http://open.taobao.com/dev/index.php/%E4%BA%A4%E6%98%93%E7%8A%B6%E6%80%81&quot;
+	 * 退款对应的订单交易状态。可选值TRADE_NO_CREATE_PAY(没有创建支付宝交易) WAIT_BUYER_PAY(等待买家付款) WAIT_SELLER_SEND_GOODS(等待卖家发货,即:买家已付款) WAIT_BUYER_CONFIRM_GOODS(等待买家确认收货,即:卖家已发货) TRADE_BUYER_SIGNED(买家已签收,货到付款专用) TRADE_FINISHED(交易成功) TRADE_CLOSED(交易关闭) TRADE_CLOSED_BY_TAOBAO(交易被淘宝关闭) ALL_WAIT_PAY(包含：WAIT_BUYER_PAY、TRADE_NO_CREATE_PAY) ALL_CLOSED(包含：TRADE_CLOSED、TRADE_CLOSED_BY_TAOBAO) 取自"http://open.taobao.com/dev/index.php/%E4%BA%A4%E6%98%93%E7%8A%B6%E6%80%81"
 	 **/
 	public $order_status;
 	
 	/** 
-	 * ouid
+	 * crm改造新增ouid返回
 	 **/
 	public $ouid;
 	
@@ -158,7 +173,7 @@ class Refund
 	public $refund_id;
 	
 	/** 
-	 * 退款阶段，可选值：onsale/aftersale
+	 * 退款阶段，可选值：onsale(售中)/aftersale(售后)
 	 **/
 	public $refund_phase;
 	

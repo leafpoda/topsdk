@@ -18,11 +18,6 @@ class CampaignVo
 	public $bid_unit;
 	
 	/** 
-	 * 业务身份,枚举信息同'account.get.can.use.bizcode'服务返回结果
-	 **/
-	public $biz_code;
-	
-	/** 
 	 * 品牌过滤
 	 **/
 	public $brand_filter_list;
@@ -31,6 +26,11 @@ class CampaignVo
 	 * 周期预算周期天数
 	 **/
 	public $budget_period;
+	
+	/** 
+	 * 业务身份,枚举信息同'account.get.can.use.bizcode'服务返回结果
+	 **/
+	public $campaign_biz_code;
 	
 	/** 
 	 * 计划组id

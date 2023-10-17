@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 批量成功结果集
+ * 创意关联关系
  * @author auto create
  */
 class CreativeRefResultVo

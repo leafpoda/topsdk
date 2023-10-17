@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 推广计划的投放平台
+ * 修改后的推广计划投放平台设置
  * @author auto create
  */
 class CampaignPlatform
@@ -18,7 +18,7 @@ class CampaignPlatform
 	public $create_time;
 	
 	/** 
-	 * 已经废弃了
+	 * 已经废弃
 	 **/
 	public $mobile_discount;
 	
@@ -33,17 +33,17 @@ class CampaignPlatform
 	public $nick;
 	
 	/** 
-	 * 非搜索投放频道代码数组，频道代码必须是直通车非搜索类频道列表中的值。2、站内定向；4、站外定向；8、无线站内定向；10、无线站外定向
+	 * 非搜索投放频道代码数组，频道代码必须是直通车非搜索类频道列表中的值。？
 	 **/
 	public $nonsearch_channels;
 	
 	/** 
-	 * 已经废弃了
+	 * 已经废弃
 	 **/
 	public $outside_discount;
 	
 	/** 
-	 * 搜索投放频道代码数组，频道代码必须是直通车搜索类频道列表中的值。1：淘宝站内搜索，7、无线站内搜索；9:无线站外搜索
+	 * 搜索投放频道代码数组，频道代码必须是直通车搜索类频道列表中的值。
 	 **/
 	public $search_channels;	
 }

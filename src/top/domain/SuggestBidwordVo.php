@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 批量结果集
+ * 关键词建议条目集合
  * @author auto create
  */
 class SuggestBidwordVo

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 限时打折详情
+ * 限时打折对应的商品详情列表。
  * @author auto create
  */
 class LimitDiscountDetail

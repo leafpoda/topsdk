@@ -15,6 +15,11 @@ class AdzoneResTopDto
 	/** 
 	 * 资源位名称
 	 **/
-	public $adzone_name;	
+	public $adzone_name;
+	
+	/** 
+	 * 资源位支持的优化目标描述
+	 **/
+	public $support_market_aim_des;	
 }
 ?>

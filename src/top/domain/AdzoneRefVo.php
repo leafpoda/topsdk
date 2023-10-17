@@ -38,6 +38,21 @@ class AdzoneRefVo
 	public $discount;
 	
 	/** 
+	 * 资源位支持的最高溢价
+	 **/
+	public $max_discount;
+	
+	/** 
+	 * 资源位支持的最低溢价
+	 **/
+	public $min_discount;
+	
+	/** 
+	 * 操作按钮列表
+	 **/
+	public $operation_list;
+	
+	/** 
 	 * 状态,start:投放,pause:暂停
 	 **/
 	public $status;	

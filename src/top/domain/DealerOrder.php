@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 采购申请/经销采购单
+ * 采购申请/经销采购单结果列表
  * @author auto create
  */
 class DealerOrder
@@ -58,7 +58,7 @@ class DealerOrder
 	public $dist_memo;
 	
 	/** 
-	 * 属性信息列表，key-value形式。
+	 * 属性列表，key-value形式。
 	 **/
 	public $features;
 	

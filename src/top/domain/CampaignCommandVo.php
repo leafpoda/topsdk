@@ -153,7 +153,7 @@ class CampaignCommandVo
 	public $launch_area_str_list;
 	
 	/** 
-	 * 投放折扣时段设置
+	 * 投放折扣时段设置，一周7天都需要填
 	 **/
 	public $launch_period_list;
 	

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 子账号职务信息
+ * 职务信息
  * @author auto create
  */
 class Duty

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 子账号角色
+ * 子账号被赋予的角色信息(Role)列表。列表中的角色对象只有role_id，role_name，permissions信息
  * @author auto create
  */
 class Role

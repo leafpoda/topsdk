@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Sku结构
+ * sku
  * @author auto create
  */
 class Sku
@@ -73,7 +73,7 @@ class Sku
 	public $properties;
 	
 	/** 
-	 * sku所对应的销售属性的中文名字串，格式如：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2&hellip;&hellip;
+	 * sku所对应的销售属性的中文名字串，格式如：pid1:vid1:pid_name1:vid_name1;pid2:vid2:pid_name2:vid_name2……
 	 **/
 	public $properties_name;
 	
@@ -108,7 +108,7 @@ class Sku
 	public $spec_id;
 	
 	/** 
-	 * sku状态。 normal:正常 ；delete:删除,淘宝天猫此字段无效
+	 * sku状态。 normal:正常 ；delete:删除
 	 **/
 	public $status;
 	

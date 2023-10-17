@@ -1,30 +1,25 @@
 <?php
 
 /**
- * result
+ * 出参对象
  * @author auto create
  */
 class ResultSet
 {
 	
 	/** 
-	 * error
-	 **/
-	public $error;
-	
-	/** 
-	 * errorCode
+	 * 错误码，没有表示无异常
 	 **/
 	public $error_code;
 	
 	/** 
-	 * errorMsg
+	 * 错误信息
 	 **/
 	public $error_msg;
 	
 	/** 
-	 * firstResult
+	 * 数组对象
 	 **/
-	public $first_result;	
+	public $result_list;	
 }
 ?>

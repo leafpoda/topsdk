@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 推广计划的投放地域
+ * 推广计划的投放地域配置
  * @author auto create
  */
 class CampaignArea

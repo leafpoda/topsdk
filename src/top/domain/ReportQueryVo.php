@@ -78,6 +78,16 @@ class ReportQueryVo
 	public $query_field_in_list;
 	
 	/** 
+	 * 报表类型
+	 **/
+	public $rpt_type;
+	
+	/** 
+	 * 来源
+	 **/
+	public $source;
+	
+	/** 
 	 * 汇总类型 sum-汇总,hour-分时,day-分天,week-分周,month-分月
 	 **/
 	public $split_type;

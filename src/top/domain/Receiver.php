@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 接收者
+ * 收货人信息
  * @author auto create
  */
 class Receiver

@@ -23,6 +23,11 @@ class WordPackageVo
 	public $campaign_id;
 	
 	/** 
+	 * 报表数据
+	 **/
+	public $report_info;
+	
+	/** 
 	 * 词包状态,1:在线,0:下线
 	 **/
 	public $status;

@@ -28,6 +28,11 @@ class CombineSubItemDO
 	public $outer_iid;
 	
 	/** 
+	 * 123
+	 **/
+	public $outer_sku_id;
+	
+	/** 
 	 * 数量
 	 **/
 	public $quantity;

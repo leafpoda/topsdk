@@ -25,6 +25,11 @@ class SolutionAddTopDto
 	/** 
 	 * 新建物料信息列表(主体为商品时支持传入最多10个，主体为店铺和自定义时，仅需传入1个)
 	 **/
-	public $material_list;	
+	public $material_list;
+	
+	/** 
+	 * 智能调价开关打开
+	 **/
+	public $ocpc_open;	
 }
 ?>

@@ -43,6 +43,11 @@ class CampaignModifyTopDto
 	public $launch_time;
 	
 	/** 
+	 * 智能调价开关打开
+	 **/
+	public $ocpc_open;
+	
+	/** 
 	 * 计划状态(0:暂停,1:开始,0:结束)
 	 **/
 	public $status;	

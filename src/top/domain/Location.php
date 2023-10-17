@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 用户地址
+ * 商品所在地
  * @author auto create
  */
 class Location
@@ -31,11 +31,6 @@ class Location
 	 * 所在省份（中文名称）
 	 **/
 	public $state;
-	
-	/** 
-	 * 
-	 **/
-	public $time_zone;
 	
 	/** 
 	 * 邮政编码

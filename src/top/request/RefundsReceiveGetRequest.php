@@ -3,7 +3,7 @@
  * TOP API: taobao.refunds.receive.get request
  * 
  * @author auto create
- * @since 1.0, 2023.08.28
+ * @since 1.0, 2023.10.12
  */
 class RefundsReceiveGetRequest
 {
@@ -23,7 +23,7 @@ class RefundsReceiveGetRequest
 	private $endModified;
 	
 	/** 
-	 * 需要返回的字段。目前支持有：refund_id, tid, title, buyer_nick, seller_nick, total_fee, status, created, refund_fee, oid, good_status, company_name, sid, payment, reason, desc, has_good_return, modified, order_status,refund_phase,dispute_type
+	 * 需要返回的字段。目前支持有：refund_id, tid, title, buyer_nick, seller_nick, total_fee, status, created, refund_fee, oid, good_status, company_name, sid, payment, reason, desc, has_good_return, modified, order_status,refund_phase,dispute_type,end_time
 	 **/
 	private $fields;
 	

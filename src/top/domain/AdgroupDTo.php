@@ -1,16 +1,11 @@
 <?php
 
 /**
- * 返回数据结果
+ * 单元信息
  * @author auto create
  */
-class AdgroupDTo
+class AdgroupDto
 {
-	
-	/** 
-	 * 单元id
-	 **/
-	public $adgroup_id;
 	
 	/** 
 	 * 单元名称
@@ -18,23 +13,28 @@ class AdgroupDTo
 	public $adgroup_name;
 	
 	/** 
-	 * 计划ID
+	 * 资源类位表
+	 **/
+	public $adzone_list;
+	
+	/** 
+	 * 计划id
 	 **/
 	public $campaign_id;
 	
 	/** 
-	 * 智能出价信息
+	 * 定向人群
+	 **/
+	public $crowd_list;
+	
+	/** 
+	 * 智能调价
 	 **/
 	public $intelligent_bid;
 	
 	/** 
 	 * 商品id
 	 **/
-	public $item_id;
-	
-	/** 
-	 * 状态
-	 **/
-	public $status;	
+	public $item_id;	
 }
 ?>

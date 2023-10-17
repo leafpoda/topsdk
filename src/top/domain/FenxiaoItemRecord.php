@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 分销商品下载记录
+ * 下载记录对象
  * @author auto create
  */
 class FenxiaoItemRecord

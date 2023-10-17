@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 一页推荐词列表
+ * 推荐词分页对象，当输入的页码大于最大数值时，将返回最大的page_no值，并且结果中的数据列表为空值
  * @author auto create
  */
 class RecommendWordPage

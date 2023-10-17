@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 宝贝主图视频数据结构
+ * 宝贝主图视频的数据信息，包括：视频ID，视频缩略图URL，视频时长，视频状态等信息。
  * @author auto create
  */
 class MpicVideo

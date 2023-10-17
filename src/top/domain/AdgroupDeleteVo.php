@@ -15,6 +15,11 @@ class AdgroupDeleteVo
 	/** 
 	 * 计划id
 	 **/
-	public $campaign_id;	
+	public $campaign_id;
+	
+	/** 
+	 * 物料id
+	 **/
+	public $material_id;	
 }
 ?>

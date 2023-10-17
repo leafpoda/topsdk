@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 子账号所拥有的权限对象(直接赋予的权限和通过角色赋予的权限的总和对象)
+ * 子账号被所拥有的权限
  * @author auto create
  */
 class SubUserPermission

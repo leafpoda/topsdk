@@ -1,10 +1,10 @@
 <?php
 
 /**
- * 出价
+ * Label出价溢价信息
  * @author auto create
  */
-class PriceVo
+class PriceVO
 {
 	
 	/** 

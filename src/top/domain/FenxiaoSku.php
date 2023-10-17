@@ -1,14 +1,14 @@
 <?php
 
 /**
- * 分销产品SKU
+ * sku信息
  * @author auto create
  */
 class FenxiaoSku
 {
 	
 	/** 
-	 * 关联的前端商品skuid
+	 * 关联的前端宝贝对应的skuid
 	 **/
 	public $auction_sku_id;
 	

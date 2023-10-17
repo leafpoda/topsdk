@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.crowd.findlist request
  * 
  * @author auto create
- * @since 1.0, 2023.08.04
+ * @since 1.0, 2023.09.15
  */
 class UniversalbpCrowdFindlistRequest
 {

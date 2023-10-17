@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 退款超时
+ * 退款超时结构RefundRemindTimeout
  * @author auto create
  */
 class RefundRemindTimeout
