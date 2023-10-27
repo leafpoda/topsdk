@@ -4,7 +4,7 @@
  * 报表查询
  * @author auto create
  */
-class ReportQueryTopDto
+class ReportQueryTopDTO
 {
 	
 	/** 
@@ -28,6 +28,16 @@ class ReportQueryTopDto
 	public $creative_package_id_list;
 	
 	/** 
+	 * 效果转化归因周期,支持1,3,7,15,30
+	 **/
+	public $effect;
+	
+	/** 
+	 * 转换的效果的归因维度，click还是impression
+	 **/
+	public $effect_type;
+	
+	/** 
 	 * 小时为时间粒度时，需要查询的结束小时数
 	 **/
 	public $end_hour;
@@ -36,6 +46,36 @@ class ReportQueryTopDto
 	 * 天为时间粒度时，需要查询的结束时间
 	 **/
 	public $end_time;
+	
+	/** 
+	 * 查询维度是创意/资源位/定向的时候生效，true表示group by的时候要带上计划组id
+	 **/
+	public $group_by_campaign_group_id;
+	
+	/** 
+	 * 查询维度是创意/资源位/定向时候生效，true表示group by的时候要带上计划id
+	 **/
+	public $group_by_campaign_id;
+	
+	/** 
+	 * 小时为时间粒度时生效，true表明该实体维度数据group by的时候要带上小时id，false或者不传则表明该实体维度在查询的天数内跨小时聚合
+	 **/
+	public $group_by_hour_id;
+	
+	/** 
+	 * 天为时间粒度时生效，true表明该实体维度数据group by的时候要带上日期数据，false或者不传则表明该实体维度跨天聚合
+	 **/
+	public $group_by_log_date;
+	
+	/** 
+	 * 查询维度是创意/资源位/定向的时候生效，true表示group by的时候要带上主体id
+	 **/
+	public $group_by_promotion_entity_id;
+	
+	/** 
+	 * 小时为时间粒度时，需要查询的具体日期，不传默认是今天
+	 **/
+	public $log_date;
 	
 	/** 
 	 * 当前页要显示数据的起始位置

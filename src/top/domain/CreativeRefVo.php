@@ -153,6 +153,11 @@ class CreativeRefVo
 	public $preview_list;
 	
 	/** 
+	 * 报表数据
+	 **/
+	public $report_info;
+	
+	/** 
 	 * 创意来源,1:本地上传,2:BannerMaker,3:CreativeCenter,4:LuBan,5:直播广场,6:活动招商,7:海棠,8:原生创意
 	 **/
 	public $source;

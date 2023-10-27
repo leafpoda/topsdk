@@ -28,6 +28,11 @@ class WordPackageStrategyVo
 	public $online_status;
 	
 	/** 
+	 * 词包策略的报表数据
+	 **/
+	public $report_info;
+	
+	/** 
 	 * 词包策略,0:流量智选,1:好词优选,2:捡漏,2:卖点词包,3:类目优选
 	 **/
 	public $strategy_id;

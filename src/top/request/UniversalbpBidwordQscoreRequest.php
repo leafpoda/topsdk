@@ -1,16 +1,16 @@
 <?php
 /**
- * TOP API: taobao.universalbp.adgroup.horizontal.findpage request
+ * TOP API: taobao.universalbp.bidword.qscore request
  * 
  * @author auto create
- * @since 1.0, 2023.10.18
+ * @since 1.0, 2023.10.26
  */
-class UniversalbpAdgroupHorizontalFindpageRequest
+class UniversalbpBidwordQscoreRequest
 {
 	/** 
-	 * adgroupQueryVO
+	 * qscoreRealQueryVO
 	 **/
-	private $adgroupQueryVO;
+	private $qscoreRealQueryVO;
 	
 	/** 
 	 * topServiceContext
@@ -19,15 +19,15 @@ class UniversalbpAdgroupHorizontalFindpageRequest
 	
 	private $apiParas = array();
 	
-	public function setAdgroupQueryVO($adgroupQueryVO)
+	public function setQscoreRealQueryVO($qscoreRealQueryVO)
 	{
-		$this->adgroupQueryVO = $adgroupQueryVO;
-		$this->apiParas["adgroup_query_v_o"] = $adgroupQueryVO;
+		$this->qscoreRealQueryVO = $qscoreRealQueryVO;
+		$this->apiParas["qscore_real_query_v_o"] = $qscoreRealQueryVO;
 	}
 
-	public function getAdgroupQueryVO()
+	public function getQscoreRealQueryVO()
 	{
-		return $this->adgroupQueryVO;
+		return $this->qscoreRealQueryVO;
 	}
 
 	public function setTopServiceContext($topServiceContext)
@@ -43,7 +43,7 @@ class UniversalbpAdgroupHorizontalFindpageRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.universalbp.adgroup.horizontal.findpage";
+		return "taobao.universalbp.bidword.qscore";
 	}
 	
 	public function getApiParas()

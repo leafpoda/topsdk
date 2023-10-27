@@ -8,7 +8,7 @@ class ItemDto
 {
 	
 	/** 
-	 * 时间
+	 * 创建时间
 	 **/
 	public $created_at;
 	
@@ -16,6 +16,11 @@ class ItemDto
 	 * 视频时长，单位秒
 	 **/
 	public $duration;
+	
+	/** 
+	 * 文件格式
+	 **/
+	public $file_type;
 	
 	/** 
 	 * 高度
@@ -28,6 +33,11 @@ class ItemDto
 	public $id;
 	
 	/** 
+	 * 文件长度
+	 **/
+	public $length;
+	
+	/** 
 	 * name
 	 **/
 	public $name;
@@ -38,6 +48,11 @@ class ItemDto
 	public $poster;
 	
 	/** 
+	 * 标签
+	 **/
+	public $tags;
+	
+	/** 
 	 * 淘宝视频id
 	 **/
 	public $tb_video_id;
@@ -46,6 +61,11 @@ class ItemDto
 	 * 0 图片，3 视频
 	 **/
 	public $type;
+	
+	/** 
+	 * 更新时间
+	 **/
+	public $updated_at;
 	
 	/** 
 	 * 链接

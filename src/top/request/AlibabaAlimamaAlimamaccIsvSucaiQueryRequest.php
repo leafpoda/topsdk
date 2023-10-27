@@ -3,10 +3,15 @@
  * TOP API: alibaba.alimama.alimamacc.isv.sucai.query request
  * 
  * @author auto create
- * @since 1.0, 2023.07.12
+ * @since 1.0, 2023.10.27
  */
 class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 {
+	/** 
+	 * 素材id
+	 **/
+	private $id;
+	
 	/** 
 	 * 素材名称
 	 **/
@@ -23,9 +28,24 @@ class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 	private $perPage;
 	
 	/** 
+	 * 比例，支持格式 1280/700 或 1 
+	 **/
+	private $ratio;
+	
+	/** 
 	 * 尺寸，x 分隔
 	 **/
 	private $size;
+	
+	/** 
+	 * 素材来源 0 表示用户本地上传，
+	 **/
+	private $source;
+	
+	/** 
+	 * tagId，多个tagId 使用英文逗号分隔
+	 **/
+	private $tagIds;
 	
 	/** 
 	 * 素材类型
@@ -34,6 +54,17 @@ class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 	
 	private $apiParas = array();
 	
+	public function setId($id)
+	{
+		$this->id = $id;
+		$this->apiParas["id"] = $id;
+	}
+
+	public function getId()
+	{
+		return $this->id;
+	}
+
 	public function setName($name)
 	{
 		$this->name = $name;
@@ -67,6 +98,17 @@ class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 		return $this->perPage;
 	}
 
+	public function setRatio($ratio)
+	{
+		$this->ratio = $ratio;
+		$this->apiParas["ratio"] = $ratio;
+	}
+
+	public function getRatio()
+	{
+		return $this->ratio;
+	}
+
 	public function setSize($size)
 	{
 		$this->size = $size;
@@ -76,6 +118,28 @@ class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 	public function getSize()
 	{
 		return $this->size;
+	}
+
+	public function setSource($source)
+	{
+		$this->source = $source;
+		$this->apiParas["source"] = $source;
+	}
+
+	public function getSource()
+	{
+		return $this->source;
+	}
+
+	public function setTagIds($tagIds)
+	{
+		$this->tagIds = $tagIds;
+		$this->apiParas["tag_ids"] = $tagIds;
+	}
+
+	public function getTagIds()
+	{
+		return $this->tagIds;
 	}
 
 	public function setType($type)

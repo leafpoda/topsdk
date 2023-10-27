@@ -113,6 +113,11 @@ class Refund
 	public $modified;
 	
 	/** 
+	 * 修改后的商品SKU信息，当前真实购买的SKU信息
+	 **/
+	public $new_sku;
+	
+	/** 
 	 * 商品数量
 	 **/
 	public $num;

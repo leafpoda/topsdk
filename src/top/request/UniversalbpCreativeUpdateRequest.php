@@ -1,16 +1,16 @@
 <?php
 /**
- * TOP API: taobao.universalbp.adgroup.horizontal.findpage request
+ * TOP API: taobao.universalbp.creative.update request
  * 
  * @author auto create
- * @since 1.0, 2023.10.18
+ * @since 1.0, 2023.10.26
  */
-class UniversalbpAdgroupHorizontalFindpageRequest
+class UniversalbpCreativeUpdateRequest
 {
 	/** 
-	 * adgroupQueryVO
+	 * list
 	 **/
-	private $adgroupQueryVO;
+	private $dataList;
 	
 	/** 
 	 * topServiceContext
@@ -19,15 +19,15 @@ class UniversalbpAdgroupHorizontalFindpageRequest
 	
 	private $apiParas = array();
 	
-	public function setAdgroupQueryVO($adgroupQueryVO)
+	public function setDataList($dataList)
 	{
-		$this->adgroupQueryVO = $adgroupQueryVO;
-		$this->apiParas["adgroup_query_v_o"] = $adgroupQueryVO;
+		$this->dataList = $dataList;
+		$this->apiParas["data_list"] = $dataList;
 	}
 
-	public function getAdgroupQueryVO()
+	public function getDataList()
 	{
-		return $this->adgroupQueryVO;
+		return $this->dataList;
 	}
 
 	public function setTopServiceContext($topServiceContext)
@@ -43,7 +43,7 @@ class UniversalbpAdgroupHorizontalFindpageRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.universalbp.adgroup.horizontal.findpage";
+		return "taobao.universalbp.creative.update";
 	}
 	
 	public function getApiParas()

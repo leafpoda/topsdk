@@ -1,10 +1,10 @@
 <?php
 
 /**
- * 人群
+ * qscoreRealQueryVO
  * @author auto create
  */
-class UpgradeCrowdDTO
+class QscoreRealQueryVo
 {
 	
 	/** 
@@ -13,13 +13,13 @@ class UpgradeCrowdDTO
 	public $adgroup_id;
 	
 	/** 
-	 * 计划id
+	 * 词id集合
 	 **/
-	public $campaign_id;
+	public $bidword_id_list;
 	
 	/** 
-	 * 人群id，查询时返回的人群id
+	 * 计划id
 	 **/
-	public $id;	
+	public $campaign_id;	
 }
 ?>

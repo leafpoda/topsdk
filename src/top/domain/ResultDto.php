@@ -1,30 +1,45 @@
 <?php
 
 /**
- * 查询结果
+ * 结果体
  * @author auto create
  */
-class ResultDTO
+class ResultDto
 {
 	
 	/** 
-	 * 错误码
+	 * 返回结果
 	 **/
-	public $error_code;
+	public $adgroup_res_list;
 	
 	/** 
-	 * 错误信息
+	 * 结果总数
 	 **/
-	public $error_message;
+	public $count;
 	
 	/** 
-	 * 库存数量
+	 * 返回消息
 	 **/
-	public $module;
+	public $message;
+	
+	/** 
+	 * 返回状态码
+	 **/
+	public $result_code;
 	
 	/** 
 	 * 是否成功
 	 **/
-	public $success;	
+	public $success;
+	
+	/** 
+	 * 结果总数
+	 **/
+	public $total;
+	
+	/** 
+	 * 结果总数
+	 **/
+	public $total_count;	
 }
 ?>

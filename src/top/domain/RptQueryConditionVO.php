@@ -1,14 +1,14 @@
 <?php
 
 /**
- * 查询条件列表;场景1、实体列表中只需填充汇总报表数据，此时条件列表传一个即可；场景2、实体列表中需同时查询两天的数据做对比，此时条件列表内传两天各自的查询条件；
+ * 报表查询条件
  * @author auto create
  */
-class RptQueryConditionVO
+class RptQueryConditionVo
 {
 	
 	/** 
-	 * 流量来源(资源位包id),可为空
+	 * 流量来源（资源位包id）
 	 **/
 	public $adzone_pkg_id_list;
 	
@@ -28,7 +28,7 @@ class RptQueryConditionVO
 	public $start_time;
 	
 	/** 
-	 * 归因口径
+	 * 归因类型
 	 **/
 	public $unify_type;	
 }

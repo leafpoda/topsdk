@@ -233,7 +233,7 @@ class Item
 	public $is_ex;
 	
 	/** 
-	 * 非分销商品：0，代销：1，经销：2
+	 * 普通商品:0;代销商品:1;经销商品:2;供销产品:3
 	 **/
 	public $is_fenxiao;
 	
@@ -273,7 +273,7 @@ class Item
 	public $item_imgs;
 	
 	/** 
-	 * 3:4商品主图
+	 * 3:4主图
 	 **/
 	public $item_rectangle_imgs;
 	
