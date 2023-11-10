@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 类目下热门词详细数据
+ * 关键词在类目下的数据
  * @author auto create
  */
 class InsightWordDataUnderCatDTO

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 定向人群对象
+ * 子人群
  * @author auto create
  */
 class SubCrowd

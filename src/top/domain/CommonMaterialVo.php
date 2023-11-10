@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 主体类型对应的物料信息
+ * 物料信息
  * @author auto create
  */
 class CommonMaterialVo

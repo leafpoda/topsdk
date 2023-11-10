@@ -18,9 +18,24 @@ class MaterialShareResultTopDTO
 	public $fail_reason;
 	
 	/** 
-	 * 图片ID
+	 * 推送后新生成的图片ID
 	 **/
 	public $image_id;
+	
+	/** 
+	 * 推送的原图片id
+	 **/
+	public $original_image_id;
+	
+	/** 
+	 * 推送的原视频id
+	 **/
+	public $original_video_id;
+	
+	/** 
+	 * 推送是否成功
+	 **/
+	public $success;
 	
 	/** 
 	 * 要推送到的广告主ID
@@ -33,7 +48,7 @@ class MaterialShareResultTopDTO
 	public $type;
 	
 	/** 
-	 * 视频ID
+	 * 推送后新生成的视频ID
 	 **/
 	public $video_id;	
 }

@@ -13,6 +13,11 @@ class TopPartData
 	public $count;
 	
 	/** 
+	 * 批量成功结果集
+	 **/
+	public $crowd_ref_update_result_v_o_list;
+	
+	/** 
 	 * 失败数量
 	 **/
 	public $error_count;
@@ -20,11 +25,6 @@ class TopPartData
 	/** 
 	 * 失败结果集
 	 **/
-	public $error_details;
-	
-	/** 
-	 * 批量成功结果集
-	 **/
-	public $solution_add_result_v_o_list;	
+	public $error_details;	
 }
 ?>

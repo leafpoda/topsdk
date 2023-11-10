@@ -30,6 +30,11 @@ class ReportTaskFilterTopDTO
 	/** 
 	 * 归因逻辑，1：点击效果，0：展示效果
 	 **/
-	public $effect_type;	
+	public $effect_type;
+	
+	/** 
+	 * 按照素材过滤，素材id从adgroup查询接口获取，素材组合报表只支持根据标题素材id筛选
+	 **/
+	public $material_id;	
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 后台商品
+ * 后端商品
  * @author auto create
  */
 class ScItem

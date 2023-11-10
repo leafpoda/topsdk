@@ -28,6 +28,11 @@ class ReportTopDTO
 	public $adgroup_id;
 	
 	/** 
+	 * 计划名称
+	 **/
+	public $adgroup_name;
+	
+	/** 
 	 * 广告主id
 	 **/
 	public $advertiser_id;
@@ -51,6 +56,11 @@ class ReportTopDTO
 	 * 计划组id
 	 **/
 	public $campaign_id;
+	
+	/** 
+	 * 计划组名称
+	 **/
+	public $campaign_name;
 	
 	/** 
 	 * 点击量
@@ -86,6 +96,11 @@ class ReportTopDTO
 	 * 创意id
 	 **/
 	public $creative_id;
+	
+	/** 
+	 * 日期
+	 **/
+	public $day;
 	
 	/** 
 	 * 深度进店量
@@ -183,9 +198,9 @@ class ReportTopDTO
 	public $finish_play_rate;
 	
 	/** 
-	 * 小时，0-23
+	 * 图片素材id，素材组合报表返回
 	 **/
-	public $hour;
+	public $image_material_id;
 	
 	/** 
 	 * 落地页内按钮点击次数（腾讯）
@@ -246,6 +261,11 @@ class ReportTopDTO
 	 * 直播间观看次数
 	 **/
 	public $live_watch_nums;
+	
+	/** 
+	 * 素材id，基础素材报表返回
+	 **/
+	public $material_id;
 	
 	/** 
 	 * 页面到达量
@@ -348,6 +368,11 @@ class ReportTopDTO
 	public $take_order_volume;
 	
 	/** 
+	 * 标题素材id，素材组合报表返回
+	 **/
+	public $title_material_id;
+	
+	/** 
 	 * 成交订单金额，单位分
 	 **/
 	public $transaction_amount;
@@ -356,6 +381,11 @@ class ReportTopDTO
 	 * 成交订单量
 	 **/
 	public $transaction_volume;
+	
+	/** 
+	 * 视频素材id，素材组合报表返回
+	 **/
+	public $video_material_id;
 	
 	/** 
 	 * 回访成本

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 商品图片结构
+ * ItemImg结构
  * @author auto create
  */
 class ItemImg

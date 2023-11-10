@@ -8,8 +8,8 @@ class LandingPageTopDTO
 {
 	
 	/** 
-	 * 落地页url
+	 * 自定义deeplink，需要UDBP开通白名单功能才能使用
 	 **/
-	public $landing_page;	
+	public $dp_link_url;	
 }
 ?>

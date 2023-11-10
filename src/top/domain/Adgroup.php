@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 被删除的推广组
+ * 被修改的推广组
  * @author auto create
  */
 class ADGroup

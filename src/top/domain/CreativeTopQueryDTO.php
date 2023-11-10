@@ -23,6 +23,11 @@ class CreativeTopQueryDTO
 	public $campaign_id;
 	
 	/** 
+	 * 创建时间小于等于endDate的数据. 格式:yyyy-MM-dd   查询最长跨度为三个月
+	 **/
+	public $end_time;
+	
+	/** 
 	 * 创意id
 	 **/
 	public $ids;
@@ -35,6 +40,11 @@ class CreativeTopQueryDTO
 	/** 
 	 * 每页多少条
 	 **/
-	public $page_size;	
+	public $page_size;
+	
+	/** 
+	 * 创建时间大于等于startDate的数据  格式:yyyy-MM-dd   查询最长跨度为三个月
+	 **/
+	public $start_time;	
 }
 ?>

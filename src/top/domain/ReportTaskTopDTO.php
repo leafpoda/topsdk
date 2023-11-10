@@ -25,6 +25,11 @@ class ReportTaskTopDTO
 	/** 
 	 * 报表任务参数
 	 **/
-	public $params;	
+	public $params;
+	
+	/** 
+	 * 平台版本，9999：升级版API（仅巨量2.0API需传入）
+	 **/
+	public $version;	
 }
 ?>

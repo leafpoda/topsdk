@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 定向
+ * 定向，未特殊标明的不传字段的值表示不限
  * @author auto create
  */
 class AdgroupTargetTopDTO
@@ -23,12 +23,12 @@ class AdgroupTargetTopDTO
 	public $gender;
 	
 	/** 
-	 * 过滤已转化用户，0(默认)：不限；1：广告组2：广告计划；3：本账户；4：公司主体；5：APP
+	 * 过滤已转化用户，0(默认)：不限；2：同计划广告；3：同账户广告
 	 **/
 	public $hide_if_converted;
 	
 	/** 
-	 * 网络，-1：不限，0：Wi-Fi，1：移动网络，2：2G，3：3G，4：4G
+	 * 网络，-1：不限，0：Wi-Fi，2：2G，3：3G，4：4G
 	 **/
 	public $network;	
 }

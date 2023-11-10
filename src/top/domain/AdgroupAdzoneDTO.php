@@ -8,7 +8,7 @@ class AdgroupAdzoneDTO
 {
 	
 	/** 
-	 * 资源位类型，1：优选广告，2：媒体指定位置
+	 * 资源位类型，2：媒体指定位置，4：通投智选
 	 **/
 	public $type;
 	

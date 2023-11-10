@@ -25,6 +25,11 @@ class CampaignTopQueryDTO
 	/** 
 	 * 每页多少条
 	 **/
-	public $page_size;	
+	public $page_size;
+	
+	/** 
+	 * 平台版本，9999：升级版API（仅巨量2.0API需传入）
+	 **/
+	public $version;	
 }
 ?>

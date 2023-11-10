@@ -8,7 +8,7 @@ class InterestCategorieDTO
 {
 	
 	/** 
-	 * 行为类目
+	 * 行文类目
 	 **/
 	public $interest_categories;
 	

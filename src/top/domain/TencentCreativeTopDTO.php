@@ -38,6 +38,11 @@ class TencentCreativeTopDTO
 	public $description;
 	
 	/** 
+	 * 自定义deeplink，需要UDBP开通白名单功能才能使用
+	 **/
+	public $dp_link_url;
+	
+	/** 
 	 * 落地页链接
 	 **/
 	public $landing_page;

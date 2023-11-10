@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 属性图片结构
+ * 商品属性图片结构
  * @author auto create
  */
 class PropImg

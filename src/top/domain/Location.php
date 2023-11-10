@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 商品所在地
+ * 用户地址
  * @author auto create
  */
 class Location

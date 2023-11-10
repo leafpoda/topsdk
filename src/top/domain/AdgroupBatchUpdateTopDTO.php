@@ -13,13 +13,13 @@ class AdgroupBatchUpdateTopDTO
 	public $advertiser_id;
 	
 	/** 
-	 * 计划ids
+	 * 预算
 	 **/
-	public $ids;
+	public $budget;
 	
 	/** 
-	 * 付费出价
+	 * 计划ids
 	 **/
-	public $pricing;	
+	public $ids;	
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 腾讯特有参数
+ * 腾讯特有参数，腾讯程序化创意创建步骤：1、创建campaign 2、创建带有adgroup参数的creative
  * @author auto create
  */
 class TencentCreativeGroupTopDTO
@@ -11,6 +11,11 @@ class TencentCreativeGroupTopDTO
 	 * 品牌名称
 	 **/
 	public $ad_source;
+	
+	/** 
+	 * 计划信息，用于程序化创意的创建
+	 **/
+	public $adgroup;
 	
 	/** 
 	 * 是否自动生成应用直达链接:0，1
@@ -28,7 +33,7 @@ class TencentCreativeGroupTopDTO
 	public $content_type;
 	
 	/** 
-	 * 倒计时组件 
+	 * 倒计时组件
 	 **/
 	public $countdown;
 	
@@ -38,9 +43,14 @@ class TencentCreativeGroupTopDTO
 	public $description_options;
 	
 	/** 
-	 * 创意规格模板：1：竖版视频，2：横版视频，3：大图横图，6：大图竖图，9：常规多图，10：卡片广告_横版大图，11：卡片广告_横版视频，12：常规大图，13：banner图，17：4:3视频
+	 * 自定义deeplink，需要UDBP开通白名单功能才能使用
 	 **/
-	public $format;
+	public $dp_link_url;
+	
+	/** 
+	 * 商品id
+	 **/
+	public $item_id;
 	
 	/** 
 	 * 落地页链接

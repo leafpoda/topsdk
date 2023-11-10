@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 定向对象列表
+ * 按类型更新,需先根据crowdType查询出定向再修改；如果像访客定向添加了自主店铺和种子店铺，修改时只传了一个则另一个被删除
  * @author auto create
  */
 class Crowd
@@ -28,7 +28,7 @@ class Crowd
 	public $crowd_value;
 	
 	/** 
-	 * 交叉出价
+	 * 交叉出价,必须填完整的所有资源位的交叉出价信息
 	 **/
 	public $matrix_prices;
 	
@@ -53,7 +53,7 @@ class Crowd
 	public $shop_scale_id_list;
 	
 	/** 
-	 * 定向人群对象
+	 * 子人群
 	 **/
 	public $sub_crowds;	
 }
