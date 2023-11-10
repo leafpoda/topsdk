@@ -3,7 +3,7 @@
  * TOP API: taobao.unidesk.rta.report.hourly.get request
  * 
  * @author auto create
- * @since 1.0, 2023.02.01
+ * @since 1.0, 2023.10.26
  */
 class UnideskRtaReportHourlyGetRequest
 {

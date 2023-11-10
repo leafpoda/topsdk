@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.import.from.auction request
  * 
  * @author auto create
- * @since 1.0, 2023.10.27
+ * @since 1.0, 2023.11.10
  */
 class FenxiaoProductImportFromAuctionRequest
 {

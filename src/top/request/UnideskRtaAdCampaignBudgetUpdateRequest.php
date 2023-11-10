@@ -3,7 +3,7 @@
  * TOP API: taobao.unidesk.rta.ad.campaign.budget.update request
  * 
  * @author auto create
- * @since 1.0, 2022.12.05
+ * @since 1.0, 2023.05.30
  */
 class UnideskRtaAdCampaignBudgetUpdateRequest
 {

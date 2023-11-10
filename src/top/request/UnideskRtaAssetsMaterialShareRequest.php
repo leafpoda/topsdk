@@ -3,7 +3,7 @@
  * TOP API: taobao.unidesk.rta.assets.material.share request
  * 
  * @author auto create
- * @since 1.0, 2022.12.05
+ * @since 1.0, 2023.09.11
  */
 class UnideskRtaAssetsMaterialShareRequest
 {

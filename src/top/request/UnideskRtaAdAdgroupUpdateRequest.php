@@ -3,14 +3,19 @@
  * TOP API: taobao.unidesk.rta.ad.adgroup.update request
  * 
  * @author auto create
- * @since 1.0, 2022.12.05
+ * @since 1.0, 2023.11.03
  */
 class UnideskRtaAdAdgroupUpdateRequest
 {
 	/** 
-	 * 入参
+	 * 入参，以下字段不修改可不传
 	 **/
 	private $adgroupTopDto;
+	
+	/** 
+	 * 请求id，用于幂等唯一key，建议填写
+	 **/
+	private $requestId;
 	
 	private $apiParas = array();
 	
@@ -23,6 +28,17 @@ class UnideskRtaAdAdgroupUpdateRequest
 	public function getAdgroupTopDto()
 	{
 		return $this->adgroupTopDto;
+	}
+
+	public function setRequestId($requestId)
+	{
+		$this->requestId = $requestId;
+		$this->apiParas["request_id"] = $requestId;
+	}
+
+	public function getRequestId()
+	{
+		return $this->requestId;
 	}
 
 	public function getApiMethodName()

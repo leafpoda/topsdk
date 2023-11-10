@@ -3,7 +3,7 @@
  * TOP API: taobao.unidesk.rta.ad.adgroup.get request
  * 
  * @author auto create
- * @since 1.0, 2023.03.23
+ * @since 1.0, 2023.11.02
  */
 class UnideskRtaAdAdgroupGetRequest
 {

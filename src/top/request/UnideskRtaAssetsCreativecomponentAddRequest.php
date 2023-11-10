@@ -3,7 +3,7 @@
  * TOP API: taobao.unidesk.rta.assets.creativecomponent.add request
  * 
  * @author auto create
- * @since 1.0, 2023.02.14
+ * @since 1.0, 2023.06.05
  */
 class UnideskRtaAssetsCreativecomponentAddRequest
 {

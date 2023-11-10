@@ -3,7 +3,7 @@
  * TOP API: taobao.unidesk.rta.assets.landingpage.get request
  * 
  * @author auto create
- * @since 1.0, 2023.02.02
+ * @since 1.0, 2023.05.17
  */
 class UnideskRtaAssetsLandingpageGetRequest
 {

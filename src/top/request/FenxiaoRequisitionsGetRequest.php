@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.requisitions.get request
  * 
  * @author auto create
- * @since 1.0, 2023.10.27
+ * @since 1.0, 2023.11.10
  */
 class FenxiaoRequisitionsGetRequest
 {

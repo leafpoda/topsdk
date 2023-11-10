@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.productcat.delete request
  * 
  * @author auto create
- * @since 1.0, 2023.10.27
+ * @since 1.0, 2023.11.10
  */
 class FenxiaoProductcatDeleteRequest
 {
