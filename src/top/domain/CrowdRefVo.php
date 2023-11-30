@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 批量结果集
+ * 人群关系实体
  * @author auto create
  */
 class CrowdRefVo
@@ -35,11 +35,6 @@ class CrowdRefVo
 	/** 
 	 * 出价
 	 **/
-	public $price;
-	
-	/** 
-	 * 横向管理
-	 **/
-	public $show_tag_list;	
+	public $price;	
 }
 ?>

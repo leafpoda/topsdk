@@ -1,14 +1,14 @@
 <?php
 
 /**
- * 投放折扣时段设置，一周7天都需要填
+ * 投放折扣时段设置
  * @author auto create
  */
 class CampaignLaunchPeriodCommandVo
 {
 	
 	/** 
-	 * 本周的第x天,必须填1到7
+	 * 本周的第x天
 	 **/
 	public $day_of_week;
 	

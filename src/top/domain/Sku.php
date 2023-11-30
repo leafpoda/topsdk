@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Sku列表
+ * Sku
  * @author auto create
  */
 class Sku

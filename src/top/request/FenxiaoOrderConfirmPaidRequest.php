@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.order.confirm.paid request
  * 
  * @author auto create
- * @since 1.0, 2023.11.10
+ * @since 1.0, 2023.11.30
  */
 class FenxiaoOrderConfirmPaidRequest
 {

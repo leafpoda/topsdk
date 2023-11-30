@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 已选资源位
+ * 资源包集合
  * @author auto create
  */
 class AdzoneVo

@@ -13,6 +13,16 @@ class VideoFileDTO
 	public $duration;
 	
 	/** 
+	 * 素材id
+	 **/
+	public $material_id;
+	
+	/** 
+	 * 达人视频id
+	 **/
+	public $talent_item_id;
+	
+	/** 
 	 * 视频播放链接
 	 **/
 	public $url;

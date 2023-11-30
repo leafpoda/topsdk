@@ -23,6 +23,11 @@ class SuggestWordPackageVo
 	public $multi_factor;
 	
 	/** 
+	 * 1:在线,0:下线
+	 **/
+	public $online_status;
+	
+	/** 
 	 * 相关性,1:差,2:中,3:好
 	 **/
 	public $relevance_type;
@@ -31,6 +36,11 @@ class SuggestWordPackageVo
 	 * 关键词举例
 	 **/
 	public $simple_word_list;
+	
+	/** 
+	 * 词包策略信息
+	 **/
+	public $strategy_list;
 	
 	/** 
 	 * 主题词

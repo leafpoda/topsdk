@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.crowd.batchmodify request
  * 
  * @author auto create
- * @since 1.0, 2023.07.18
+ * @since 1.0, 2023.11.20
  */
 class UniversalbpCrowdBatchmodifyRequest
 {

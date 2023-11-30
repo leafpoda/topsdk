@@ -13,11 +13,6 @@ class AdgroupDirectCategoryDTO
 	public $children;
 	
 	/** 
-	 * 扩展数量字段（如粉丝数量）
-	 **/
-	public $ext_num;
-	
-	/** 
 	 * 类目ID
 	 **/
 	public $id;

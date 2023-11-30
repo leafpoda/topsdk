@@ -33,11 +33,6 @@ class OptionVo
 	public $option_value;
 	
 	/** 
-	 * 额外的属性参数
-	 **/
-	public $properties;
-	
-	/** 
 	 * 选项id，(用于关键词推广静态标签生成人群)如基础属性人群标签组合
 	 **/
 	public $tag_id;	

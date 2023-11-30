@@ -30,6 +30,11 @@ class BidwordSuggestQueryVo
 	/** 
 	 * 类型,kr_overall:综合推荐,kr_flow:精准引流,kr_category:类目优质词,kr_industry:行业机会词,kr_mta:助攻词,kr_search:搜索词联想,kr_byword:以词推词,kr_bycrowd:以人群词,new_default:新建流程默认推词
 	 **/
-	public $type;	
+	public $type;
+	
+	/** 
+	 * 词
+	 **/
+	public $word;	
 }
 ?>

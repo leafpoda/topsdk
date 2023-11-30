@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 批量结果集
+ * 资源包关联关系
  * @author auto create
  */
 class AdzoneRefVo
@@ -38,19 +38,9 @@ class AdzoneRefVo
 	public $discount;
 	
 	/** 
-	 * 资源位支持的最高溢价
+	 * 建议溢价
 	 **/
-	public $max_discount;
-	
-	/** 
-	 * 资源位支持的最低溢价
-	 **/
-	public $min_discount;
-	
-	/** 
-	 * 操作按钮列表
-	 **/
-	public $operation_list;
+	public $fit_discount;
 	
 	/** 
 	 * 状态,start:投放,pause:暂停

@@ -13,13 +13,18 @@ class AdgroupCategoryQueryDTO
 	public $advertiser_id;
 	
 	/** 
-	 * 类目id
+	 * 行为天数，1：7天，2：15天，3：30天，4：60天，5：90天，6：180天，7：365天
 	 **/
-	public $category_id;
+	public $days;
 	
 	/** 
-	 * 行为场景，1：关注，2：评论，3：点赞，4：分享
+	 * 行为场景，1：电商行为场景，2：咨询行为场景，3：app行为场景
 	 **/
-	public $scene;	
+	public $scene;
+	
+	/** 
+	 * 请求类型 1=行为类目词（scene、days必填） 2=兴趣类目词（无scene、days），3=网红粉丝类目（仅快手）
+	 **/
+	public $type;	
 }
 ?>

@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.wordpackage.suggestdefaultlist request
  * 
  * @author auto create
- * @since 1.0, 2023.08.04
+ * @since 1.0, 2023.11.28
  */
 class UniversalbpWordpackageSuggestdefaultlistRequest
 {

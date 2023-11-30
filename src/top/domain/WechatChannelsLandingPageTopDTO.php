@@ -13,7 +13,7 @@ class WechatChannelsLandingPageTopDTO
 	public $button_text;
 	
 	/** 
-	 * 中部图片id
+	 * 中部图片
 	 **/
 	public $mid_img_id;
 	

@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.label.findlist request
  * 
  * @author auto create
- * @since 1.0, 2023.09.20
+ * @since 1.0, 2023.11.28
  */
 class UniversalbpLabelFindlistRequest
 {

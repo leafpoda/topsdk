@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.banner.upgrade.crowd.delete request
  * 
  * @author auto create
- * @since 1.0, 2023.11.10
+ * @since 1.0, 2023.11.30
  */
 class ZuanshiBannerUpgradeCrowdDeleteRequest
 {

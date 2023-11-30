@@ -13,7 +13,7 @@ class KuaishouAdgroupTargetTopDTO
 	public $fans_star;
 	
 	/** 
-	 * 智能定向,0:关闭 1:开启。默认为关闭
+	 * 智能定向 0:关闭 1:开启  默认关闭
 	 **/
 	public $intelli_target_switch;	
 }

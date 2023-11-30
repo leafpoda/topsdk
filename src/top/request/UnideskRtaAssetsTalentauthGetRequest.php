@@ -3,7 +3,7 @@
  * TOP API: taobao.unidesk.rta.assets.talentauth.get request
  * 
  * @author auto create
- * @since 1.0, 2023.06.27
+ * @since 1.0, 2023.11.30
  */
 class UnideskRtaAssetsTalentauthGetRequest
 {

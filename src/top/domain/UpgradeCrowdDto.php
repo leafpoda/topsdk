@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 人群
+ * 人群列表
  * @author auto create
  */
 class UpgradeCrowdDTO
@@ -18,8 +18,33 @@ class UpgradeCrowdDTO
 	public $campaign_id;
 	
 	/** 
-	 * 人群id，查询时返回的人群id
+	 * 人群描述
 	 **/
-	public $id;	
+	public $crowd_desc;
+	
+	/** 
+	 * 人群名称
+	 **/
+	public $crowd_name;
+	
+	/** 
+	 * 人群id
+	 **/
+	public $id;
+	
+	/** 
+	 * 交叉出价
+	 **/
+	public $matrix_price_list;
+	
+	/** 
+	 * 人群状态
+	 **/
+	public $status;
+	
+	/** 
+	 * 标签
+	 **/
+	public $target_label;	
 }
 ?>

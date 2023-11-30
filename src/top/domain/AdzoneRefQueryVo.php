@@ -20,6 +20,11 @@ class AdzoneRefQueryVo
 	/** 
 	 * 页面大小
 	 **/
-	public $page_size;	
+	public $page_size;
+	
+	/** 
+	 * 报表数据查询条件
+	 **/
+	public $rpt_query;	
 }
 ?>

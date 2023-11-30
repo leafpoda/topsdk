@@ -1,21 +1,21 @@
 <?php
 
 /**
- * 起量参数
+ * 起量数据
  * @author auto create
  */
 class AdgroupRaiseTopDTO
 {
 	
 	/** 
-	 * 计划id 只支持字节2.0
+	 * 计划id
 	 **/
-	public $adgroup_id;
+	public $adgrou_id;
 	
 	/** 
-	 * 广告主id
+	 * 广告主ID
 	 **/
-	public $advertise_id;
+	public $advertiser_id;
 	
 	/** 
 	 * 起量信息

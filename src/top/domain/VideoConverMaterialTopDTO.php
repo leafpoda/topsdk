@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 视频封面
+ * 视频封面，素材类型为视频时必填
  * @author auto create
  */
 class VideoConverMaterialTopDTO

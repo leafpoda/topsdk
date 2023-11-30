@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.bidword.suggestkrlist request
  * 
  * @author auto create
- * @since 1.0, 2023.10.30
+ * @since 1.0, 2023.11.20
  */
 class UniversalbpBidwordSuggestkrlistRequest
 {

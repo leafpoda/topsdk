@@ -13,13 +13,13 @@ class CampaignBatchUpdateTopDTO
 	public $advertiser_id;
 	
 	/** 
-	 * 预算
-	 **/
-	public $budget;
-	
-	/** 
 	 * 计划组ids
 	 **/
-	public $ids;	
+	public $ids;
+	
+	/** 
+	 * 状态，-1：删除，0：暂停，1：启用
+	 **/
+	public $status;	
 }
 ?>

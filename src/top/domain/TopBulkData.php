@@ -15,6 +15,6 @@ class TopBulkData
 	/** 
 	 * 批量结果集
 	 **/
-	public $crowd_ref_update_result_v_o_list;	
+	public $diagnose_highlight_v_o_list;	
 }
 ?>

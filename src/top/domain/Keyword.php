@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 关键词列表
+ * 取得的关键词列表
  * @author auto create
  */
 class Keyword
@@ -28,12 +28,12 @@ class Keyword
 	public $campaign_id;
 	
 	/** 
-	 * 关键词创建时间
+	 * 创建时间
 	 **/
 	public $create_time;
 	
 	/** 
-	 * 当前恒为false；
+	 * 是否使用推广组默认出价，恒为false
 	 **/
 	public $is_default_price;
 	
@@ -48,7 +48,7 @@ class Keyword
 	public $keyword_id;
 	
 	/** 
-	 * 匹配模式： 1精确匹配，4广泛匹配
+	 * 匹配模式
 	 **/
 	public $match_scope;
 	
@@ -58,7 +58,7 @@ class Keyword
 	public $max_mobile_price;
 	
 	/** 
-	 * 关键词计算机出价，单位为分，不能小于5
+	 * 关键词出价，单位为分，不能小于5
 	 **/
 	public $max_price;
 	

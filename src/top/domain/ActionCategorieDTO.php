@@ -23,6 +23,11 @@ class ActionCategorieDTO
 	public $action_scene;
 	
 	/** 
+	 * 行为强度，0：不限；1：高强度
+	 **/
+	public $action_strength;
+	
+	/** 
 	 * 关键词
 	 **/
 	public $keywords;	

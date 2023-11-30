@@ -18,7 +18,7 @@ class VerticalWechatLandingPageTopDTO
 	public $desc;
 	
 	/** 
-	 * 悬浮组件的图片id  	
+	 * 悬浮组件的图片id
 	 **/
 	public $float_img_id;
 	

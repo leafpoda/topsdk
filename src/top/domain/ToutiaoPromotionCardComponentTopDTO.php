@@ -1,35 +1,35 @@
 <?php
 
 /**
- * 组件详细信息-图片磁贴
+ * 组件详细信息-推广卡片-头条
  * @author auto create
  */
 class ToutiaoPromotionCardComponentTopDTO
 {
 	
 	/** 
-	 * 出现时间，单位s。 当show_time为自定义时必传，小于等于59，大于等于10。 当show_time为系统默认时，可不传，默认为10
+	 * 行动号召。内容长度要求：2 ≤ x ≤6。一个中文长度为1
 	 **/
-	public $duration;
+	public $button_text;
 	
 	/** 
-	 * 投放结束时间。格式: "2020-12-01"
+	 * 是否开启智能优选，1-开启、0-不开启
 	 **/
-	public $end_time;
+	public $enable_personal_action;
 	
 	/** 
-	 * 图片id 尺寸<=540*276px ，大小<2M
+	 * 图片文件
 	 **/
 	public $img_id;
 	
 	/** 
-	 * 出现时间类型。1 系统默认，2自定义。不传代表系统默认
+	 * 推广卖点。最多选择10个推广卖点 ，内容长度要求：6 ≤ x ≤9 。一个中文长度为1
 	 **/
-	public $show_time;
+	public $product_selling_points;
 	
 	/** 
-	 * 投放开始时间。格式: "2020-12-01"
+	 * 卡片标题。长度最大为20。一个中文长度为1
 	 **/
-	public $start_time;	
+	public $title;	
 }
 ?>

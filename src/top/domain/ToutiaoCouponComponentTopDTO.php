@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 组件详细信息-电商优惠券磁贴
+ * 组件详细信息-电商优惠券磁贴-头条
  * @author auto create
  */
 class ToutiaoCouponComponentTopDTO

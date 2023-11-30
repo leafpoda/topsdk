@@ -18,11 +18,6 @@ class LabelVo
 	public $label_desc;
 	
 	/** 
-	 * 人群类型，所属类型
-	 **/
-	public $label_group_name;
-	
-	/** 
 	 * 定向标签id
 	 **/
 	public $label_id;
@@ -56,11 +51,6 @@ class LabelVo
 	 * 出价维度，OPTION:标签出价，多个子人群同时出价、LABEL:选项出价，以子人群为出价最小单位
 	 **/
 	public $price_dimension;
-	
-	/** 
-	 * 标签tag
-	 **/
-	public $show_tag_list;
 	
 	/** 
 	 * 定向标签类型
