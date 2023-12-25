@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 物料图片信息
+ * 主副图素材
  * @author auto create
  */
 class MaterialImageInfoVo

@@ -3,7 +3,7 @@
  * TOP API: taobao.ma.qrcode.common.create request
  * 
  * @author auto create
- * @since 1.0, 2022.05.24
+ * @since 1.0, 2023.12.13
  */
 class MaQrcodeCommonCreateRequest
 {

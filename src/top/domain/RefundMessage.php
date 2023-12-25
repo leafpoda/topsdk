@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 退款信息。包含id和created
+ * 查询到的退款留言/凭证列表
  * @author auto create
  */
 class RefundMessage

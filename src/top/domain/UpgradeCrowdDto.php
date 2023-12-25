@@ -1,16 +1,21 @@
 <?php
 
 /**
- * 人群列表
+ * 新增定向人群
  * @author auto create
  */
-class UpgradeCrowdDTO
+class UpgradeCrowdDto
 {
 	
 	/** 
 	 * 单元id
 	 **/
 	public $adgroup_id;
+	
+	/** 
+	 * 是否绑定crowd
+	 **/
+	public $bind_crowd;
 	
 	/** 
 	 * 计划id
@@ -23,27 +28,27 @@ class UpgradeCrowdDTO
 	public $crowd_desc;
 	
 	/** 
-	 * 人群名称
+	 * 人群名
 	 **/
 	public $crowd_name;
 	
 	/** 
-	 * 人群id
+	 * 主键
 	 **/
 	public $id;
 	
 	/** 
-	 * 交叉出价
+	 * 出价
 	 **/
-	public $matrix_price_list;
+	public $matrix_price;
 	
 	/** 
-	 * 人群状态
+	 * 状态
 	 **/
 	public $status;
 	
 	/** 
-	 * 标签
+	 * 人群标签
 	 **/
 	public $target_label;	
 }

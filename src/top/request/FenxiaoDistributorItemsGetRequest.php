@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.distributor.items.get request
  * 
  * @author auto create
- * @since 1.0, 2023.11.30
+ * @since 1.0, 2023.12.25
  */
 class FenxiaoDistributorItemsGetRequest
 {

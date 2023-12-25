@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 111
+ * 直通车实时报表调用返回结果
  * @author auto create
  */
 class RtRptResultEntityDTO

@@ -8,6 +8,11 @@ class LabelQueryVo
 {
 	
 	/** 
+	 * 单元id
+	 **/
+	public $adgroup_id;
+	
+	/** 
 	 * 计划id
 	 **/
 	public $campaign_id;
@@ -46,6 +51,11 @@ class LabelQueryVo
 	 * 报表数据统计时长
 	 **/
 	public $rec_query_time;
+	
+	/** 
+	 * 浮层里面用户选的类目
+	 **/
+	public $search_category;
 	
 	/** 
 	 * 推广子主体类型,item:商品，item_private_mini:独享橱窗，shop:店铺，you_hao_huo:有好货，picture:图文，short_video:短视频，live_room:直播间，live_spot:看点，tao_blocks:淘积木，user_define_url:自定义url

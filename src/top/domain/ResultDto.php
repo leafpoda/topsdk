@@ -1,19 +1,29 @@
 <?php
 
 /**
- * 返回结果对象
+ * 查询结果
  * @author auto create
  */
-class ResultDto
+class ResultDTO
 {
 	
 	/** 
-	 * message
+	 * 错误码
 	 **/
-	public $message;
+	public $error_code;
 	
 	/** 
-	 * 调用是否成功,true-成功，false-失败
+	 * 错误信息
+	 **/
+	public $error_message;
+	
+	/** 
+	 * 库存数量
+	 **/
+	public $module;
+	
+	/** 
+	 * 是否成功
 	 **/
 	public $success;	
 }
