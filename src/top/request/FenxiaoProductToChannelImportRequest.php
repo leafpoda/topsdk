@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.to.channel.import request
  * 
  * @author auto create
- * @since 1.0, 2023.12.25
+ * @since 1.0, 2024.03.01
  */
 class FenxiaoProductToChannelImportRequest
 {

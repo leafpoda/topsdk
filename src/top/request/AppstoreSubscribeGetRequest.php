@@ -3,7 +3,7 @@
  * TOP API: taobao.appstore.subscribe.get request
  * 
  * @author auto create
- * @since 1.0, 2022.05.31
+ * @since 1.0, 2024.03.01
  */
 class AppstoreSubscribeGetRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.vas.subscribe.get request
  * 
  * @author auto create
- * @since 1.0, 2022.06.07
+ * @since 1.0, 2024.03.01
  */
 class VasSubscribeGetRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.advertiser.adzone.rtrpts.get request
  * 
  * @author auto create
- * @since 1.0, 2021.11.25
+ * @since 1.0, 2024.03.01
  */
 class ZuanshiAdvertiserAdzoneRtrptsGetRequest
 {

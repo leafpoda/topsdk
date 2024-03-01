@@ -3,7 +3,7 @@
  * TOP API: taobao.wireless.bunting.shop.shorturl.create request
  * 
  * @author auto create
- * @since 1.0, 2023.12.13
+ * @since 1.0, 2024.01.24
  */
 class WirelessBuntingShopShorturlCreateRequest
 {

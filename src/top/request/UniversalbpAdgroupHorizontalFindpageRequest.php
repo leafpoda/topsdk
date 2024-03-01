@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.adgroup.horizontal.findpage request
  * 
  * @author auto create
- * @since 1.0, 2023.10.18
+ * @since 1.0, 2024.01.30
  */
 class UniversalbpAdgroupHorizontalFindpageRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.fuwu.scores.get request
  * 
  * @author auto create
- * @since 1.0, 2022.05.24
+ * @since 1.0, 2024.03.01
  */
 class FuwuScoresGetRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.vas.order.search request
  * 
  * @author auto create
- * @since 1.0, 2023.07.17
+ * @since 1.0, 2024.03.01
  */
 class VasOrderSearchRequest
 {

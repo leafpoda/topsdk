@@ -13,7 +13,7 @@ class TopAuthTokenCreateRequest
 	private $code;
 	
 	/** 
-	 * 与生成code的uuid配对
+	 * 非必填，与生成code的uuid配对，使用方式参考文档
 	 **/
 	private $uuid;
 	
