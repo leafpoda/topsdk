@@ -3,14 +3,24 @@
  * TOP API: alibaba.alimama.alimamacc.isv.sucai.query request
  * 
  * @author auto create
- * @since 1.0, 2023.10.27
+ * @since 1.0, 2024.04.03
  */
 class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 {
 	/** 
+	 * 业务标识
+	 **/
+	private $bizCode;
+	
+	/** 
 	 * 素材id
 	 **/
 	private $id;
+	
+	/** 
+	 * 叉乘账号memberId
+	 **/
+	private $memberId;
 	
 	/** 
 	 * 素材名称
@@ -54,6 +64,17 @@ class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 	
 	private $apiParas = array();
 	
+	public function setBizCode($bizCode)
+	{
+		$this->bizCode = $bizCode;
+		$this->apiParas["biz_code"] = $bizCode;
+	}
+
+	public function getBizCode()
+	{
+		return $this->bizCode;
+	}
+
 	public function setId($id)
 	{
 		$this->id = $id;
@@ -63,6 +84,17 @@ class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 	public function getId()
 	{
 		return $this->id;
+	}
+
+	public function setMemberId($memberId)
+	{
+		$this->memberId = $memberId;
+		$this->apiParas["member_id"] = $memberId;
+	}
+
+	public function getMemberId()
+	{
+		return $this->memberId;
 	}
 
 	public function setName($name)
@@ -166,6 +198,7 @@ class AlibabaAlimamaAlimamaccIsvSucaiQueryRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
 		RequestCheckUtil::checkNotNull($this->page,"page");
 		RequestCheckUtil::checkNotNull($this->perPage,"perPage");
 		RequestCheckUtil::checkNotNull($this->type,"type");

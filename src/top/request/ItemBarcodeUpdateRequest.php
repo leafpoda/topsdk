@@ -3,7 +3,7 @@
  * TOP API: taobao.item.barcode.update request
  * 
  * @author auto create
- * @since 1.0, 2024.03.01
+ * @since 1.0, 2024.04.03
  */
 class ItemBarcodeUpdateRequest
 {

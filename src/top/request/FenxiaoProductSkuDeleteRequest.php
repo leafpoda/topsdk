@@ -3,7 +3,7 @@
  * TOP API: taobao.fenxiao.product.sku.delete request
  * 
  * @author auto create
- * @since 1.0, 2024.03.01
+ * @since 1.0, 2024.04.03
  */
 class FenxiaoProductSkuDeleteRequest
 {

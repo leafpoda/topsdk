@@ -3,10 +3,20 @@
  * TOP API: alibaba.alimama.alimamacc.isv.sucai.put request
  * 
  * @author auto create
- * @since 1.0, 2023.06.02
+ * @since 1.0, 2024.04.03
  */
 class AlibabaAlimamaAlimamaccIsvSucaiPutRequest
 {
+	/** 
+	 * 业务标识
+	 **/
+	private $bizCode;
+	
+	/** 
+	 * 是否推送到内容中台获取tbVideoId
+	 **/
+	private $bizFlow;
+	
 	/** 
 	 * 素材可访问地址
 	 **/
@@ -16,6 +26,11 @@ class AlibabaAlimamaAlimamaccIsvSucaiPutRequest
 	 * 素材高
 	 **/
 	private $height;
+	
+	/** 
+	 * 叉乘账号memberId
+	 **/
+	private $memberId;
 	
 	/** 
 	 * 素材名称
@@ -34,6 +49,28 @@ class AlibabaAlimamaAlimamaccIsvSucaiPutRequest
 	
 	private $apiParas = array();
 	
+	public function setBizCode($bizCode)
+	{
+		$this->bizCode = $bizCode;
+		$this->apiParas["biz_code"] = $bizCode;
+	}
+
+	public function getBizCode()
+	{
+		return $this->bizCode;
+	}
+
+	public function setBizFlow($bizFlow)
+	{
+		$this->bizFlow = $bizFlow;
+		$this->apiParas["biz_flow"] = $bizFlow;
+	}
+
+	public function getBizFlow()
+	{
+		return $this->bizFlow;
+	}
+
 	public function setFileUrl($fileUrl)
 	{
 		$this->fileUrl = $fileUrl;
@@ -54,6 +91,17 @@ class AlibabaAlimamaAlimamaccIsvSucaiPutRequest
 	public function getHeight()
 	{
 		return $this->height;
+	}
+
+	public function setMemberId($memberId)
+	{
+		$this->memberId = $memberId;
+		$this->apiParas["member_id"] = $memberId;
+	}
+
+	public function getMemberId()
+	{
+		return $this->memberId;
 	}
 
 	public function setName($name)
@@ -102,6 +150,7 @@ class AlibabaAlimamaAlimamaccIsvSucaiPutRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->bizCode,"bizCode");
 		RequestCheckUtil::checkNotNull($this->fileUrl,"fileUrl");
 		RequestCheckUtil::checkNotNull($this->height,"height");
 		RequestCheckUtil::checkNotNull($this->name,"name");
