@@ -1,17 +1,12 @@
 <?php
 /**
- * TOP API: taobao.universalbp.new.report.query.realtime request
+ * TOP API: taobao.universalbp.new.check.complete.scene request
  * 
  * @author auto create
  * @since 1.0, 2024.04.08
  */
-class UniversalbpNewReportQueryRealtimeRequest
+class UniversalbpNewCheckCompleteSceneRequest
 {
-	/** 
-	 * topRealTimeReportQueryVO
-	 **/
-	private $topRealTimeReportQueryVO;
-	
 	/** 
 	 * topServiceContext
 	 **/
@@ -19,17 +14,6 @@ class UniversalbpNewReportQueryRealtimeRequest
 	
 	private $apiParas = array();
 	
-	public function setTopRealTimeReportQueryVO($topRealTimeReportQueryVO)
-	{
-		$this->topRealTimeReportQueryVO = $topRealTimeReportQueryVO;
-		$this->apiParas["top_real_time_report_query_v_o"] = $topRealTimeReportQueryVO;
-	}
-
-	public function getTopRealTimeReportQueryVO()
-	{
-		return $this->topRealTimeReportQueryVO;
-	}
-
 	public function setTopServiceContext($topServiceContext)
 	{
 		$this->topServiceContext = $topServiceContext;
@@ -43,7 +27,7 @@ class UniversalbpNewReportQueryRealtimeRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.universalbp.new.report.query.realtime";
+		return "taobao.universalbp.new.check.complete.scene";
 	}
 	
 	public function getApiParas()

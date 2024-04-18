@@ -3,7 +3,7 @@
  * TOP API: taobao.picture.category.update request
  * 
  * @author auto create
- * @since 1.0, 2024.04.03
+ * @since 1.0, 2024.04.18
  */
 class PictureCategoryUpdateRequest
 {

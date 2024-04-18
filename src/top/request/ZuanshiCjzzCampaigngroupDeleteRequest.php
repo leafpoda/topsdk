@@ -3,7 +3,7 @@
  * TOP API: taobao.zuanshi.cjzz.campaigngroup.delete request
  * 
  * @author auto create
- * @since 1.0, 2024.04.03
+ * @since 1.0, 2024.04.18
  */
 class ZuanshiCjzzCampaigngroupDeleteRequest
 {

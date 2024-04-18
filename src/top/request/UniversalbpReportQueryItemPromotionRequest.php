@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.report.query.item.promotion request
  * 
  * @author auto create
- * @since 1.0, 2023.09.15
+ * @since 1.0, 2024.04.08
  */
 class UniversalbpReportQueryItemPromotionRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.refund.get request
  * 
  * @author auto create
- * @since 1.0, 2023.10.12
+ * @since 1.0, 2024.04.07
  */
 class RefundGetRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.new.report.query.area request
  * 
  * @author auto create
- * @since 1.0, 2024.01.15
+ * @since 1.0, 2024.04.08
  */
 class UniversalbpNewReportQueryAreaRequest
 {
