@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.new.template.getsuggest request
  * 
  * @author auto create
- * @since 1.0, 2025.04.08
+ * @since 1.0, 2026.09.15
  */
 class UniversalbpNewTemplateGetsuggestRequest
 {
