@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.new.insight.catsdata.get request
  * 
  * @author auto create
- * @since 1.0, 2026.01.22
+ * @since 1.0, 2026.09.15
  */
 class UniversalbpNewInsightCatsdataGetRequest
 {

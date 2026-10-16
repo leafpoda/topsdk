@@ -3,7 +3,7 @@
  * TOP API: taobao.universalbp.new.report.query.realtime.maochao request
  * 
  * @author auto create
- * @since 1.0, 2025.12.29
+ * @since 1.0, 2026.09.15
  */
 class UniversalbpNewReportQueryRealtimeMaochaoRequest
 {
